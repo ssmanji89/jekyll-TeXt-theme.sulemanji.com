@@ -1,8 +1,29 @@
 header:
-  - titles: LinkedIn
+  - titless: LinkedIn
     url: "https://linkedin.com/in/sulemanmanji"
-  - titles: About
+  - titless: About
     url: /about.html
-  - titles: Archive
+  - titless: Archive
     url: /archive.html
-
+  - titles: Projects
+    children: 
+  - titles: AiTechSupportBot
+    url: "https://github.com/ssmanji89/aidiscordbot"
+  - titles: PCAE
+    url: "https://www.sulemanji.com/PCAECommercializationOverview"
+  - titles: Resources
+    children: 
+    - titles: "AI Learning Plan"
+      url: "https://www.sulemanji.com/ailearningplan"
+    - titles: "OODA in IT Project Management"
+      url: "https://www.sulemanji.com/ooda"
+    - titles: "ITIL Processes"
+      url: "https://wiki.en.it-processmaps.com/index.php/ITIL_Processes"
+    - titles: "Managerial Strategies"
+      url: "https://www.sulemanji.com/managerialStrategy"
+  - titles: External
+    children: 
+    - titles: MSPGeek
+    - url: "https://discord.gg/mspgeek"
+    - titles: "OS ISOs"
+    - url: "https://github.com/ssmanji89/ISO-Downloads"
