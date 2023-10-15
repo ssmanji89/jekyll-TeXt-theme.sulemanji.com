@@ -46,7 +46,7 @@ Technical role SME/Vendor Management/Vendor Escalation/Customer Success for ***C
 - Integrated Azure monitoring tools for real-time insights and error rectification.
 - Achieved a 40% reduction in hosting costs by optimizing Azure-hosted infrastructure parameters.
 
-***Infrastructure Engineer*** at Fulcrum Technology - Houston, TX; December 2021 to March 2023
+***Infrastructure Engineer*** at Fulcrum Technology - Houston, TX; December 2023 to March 2023
 - Lead efforts in policy reconciliation, optimization, and agent upgrades for the CyberArk Endpoint Management system.
 - Collaborated on GDPR compliance efforts, ensuring data migration to appropriate Azure resources.
 
@@ -87,15 +87,15 @@ Technical role SME/Vendor Management/Vendor Escalation/Customer Success for ***C
 ## Assessments
 ***Conscientiousness (Proficient); September 2023; [Full Results](https://share.indeedassessments.com/attempts/b4a24f57368b55ea4d38da8e75007871eed53dc074545cb7)***; Demonstrated well-organized, rule-abiding, and hard-working tendencies.
   
-***Technical Support (Proficient); November 2021; [Full Results](https://share.indeedassessments.com/attempts/5611fa33d2af7f3cac06a66e93bcc1efeed53dc074545cb7)***; Exhibited proficiency in performing software, hardware, and network operations.
+***Technical Support (Proficient); November 2023; [Full Results](https://share.indeedassessments.com/attempts/5611fa33d2af7f3cac06a66e93bcc1efeed53dc074545cb7)***; Exhibited proficiency in performing software, hardware, and network operations.
   
 ***Technical support: Customer situations — Proficient (Proficient); August 2020; [Full Results](https://share.indeedassessments.com/attempts/07b4e7e62e91b93ea1f7d9cad8fa05d0eed53dc074545cb7)***; Shown adeptness in responding to technical support situations with sensitivity.
   
 ***Analyzing Data (Proficient); October 2023; [Full Results](https://share.indeedassessments.com/attempts/37868e532570a885784ff74262097ea8eed53dc074545cb7)***; Capable of interpreting and producing graphs, identifying trends, and drawing justifiable conclusions from data.
   
-***Project Timeline Management (Proficient); November 2021; [Full Results](https://share.indeedassessments.com/attempts/ad06e39524d862ffa8083c362fd84210eed53dc074545cb7)***; Exhibited ability in prioritizing and allocating time to effectively achieve project deliverables.
+***Project Timeline Management (Proficient); November 2023; [Full Results](https://share.indeedassessments.com/attempts/ad06e39524d862ffa8083c362fd84210eed53dc074545cb7)***; Exhibited ability in prioritizing and allocating time to effectively achieve project deliverables.
   
-***Work Motivation (Proficient); November 2021; [Full Results](https://share.indeedassessments.com/attempts/d5115f7fc85e02b340a34748799d8c29eed53dc074545cb7)***; Displayed a high level of motivation and discipline applied toward work.
+***Work Motivation (Proficient); November 2023; [Full Results](https://share.indeedassessments.com/attempts/d5115f7fc85e02b340a34748799d8c29eed53dc074545cb7)***; Displayed a high level of motivation and discipline applied toward work.
 
 ---
 ## Avenues
