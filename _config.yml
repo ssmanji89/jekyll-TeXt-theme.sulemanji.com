@@ -22,10 +22,7 @@ url     : https://www.sulemanji.com # the base hostname & protocol for your site
 baseurl : / # does not include hostname
 title   : Suleman S. Manji
 description: > # this means to ignore newlines until "Language & timezone"
-  
 
-sidebar: 
-  nav: sidebar-en
 
 ## => Language and Timezone
 ##############################
