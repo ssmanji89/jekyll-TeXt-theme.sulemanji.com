@@ -215,7 +215,8 @@ defaults:
       show_subscribe: true
       pageview: true
 
-
+sidebar: 
+  nav: sidebar-en
 ## => Plugins
 ##############################
 plugins:
