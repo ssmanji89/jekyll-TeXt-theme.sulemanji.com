@@ -1,16 +1,16 @@
 header:
-  - titless: LinkedIn
+  - titles: LinkedIn
     url: "https://linkedin.com/in/sulemanmanji"
-  - titless: About
+  - titles: About
     url: /about.html
-  - titless: Archive
+  - titles: Archive
     url: /archive.html
   - titles: Projects
     children: 
-  - titles: AiTechSupportBot
-    url: "https://github.com/ssmanji89/aidiscordbot"
-  - titles: PCAE
-    url: "https://www.sulemanji.com/PCAECommercializationOverview"
+    - titles: AiTechSupportBot
+      url: "https://github.com/ssmanji89/aidiscordbot"
+    - titles: PCAE
+      url: "https://www.sulemanji.com/PCAECommercializationOverview"
   - titles: Resources
     children: 
     - titles: "AI Learning Plan"
