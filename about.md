@@ -62,7 +62,6 @@ Technical role SME/Vendor Management/Vendor Escalation/Customer Success for ***C
 - ***Certificate in Corporate Entrepreneurship***; University of Houston - Houston, TX; June 2011 to January 2012
 - ***Certificate in Corporate Intrapreneurship***; University of Houston - Houston, TX; January 2012 to June 2012
 
----
 ## Technical Proficiencies 
 - ***Cloud Platforms:*** Azure, AWS, Oracle, IBM
 - ***Scripting Languages:*** PowerShell, Shell Scripting
@@ -85,7 +84,6 @@ Technical role SME/Vendor Management/Vendor Escalation/Customer Success for ***C
 - ***Training:*** Training & Onboarding, Recruitment & Networking
 - ***Professional Development:*** Research & Technological Development, Technical Writing, Written Communication
 
----
 ## Assessments
 ***Conscientiousness (Proficient); September 2023; [Full Results](https://share.indeedassessments.com/attempts/b4a24f57368b55ea4d38da8e75007871eed53dc074545cb7)***; Demonstrated well-organized, rule-abiding, and hard-working tendencies.
   
