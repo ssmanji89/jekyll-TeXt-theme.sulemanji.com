@@ -1,6 +1,6 @@
 ---
 layout: page
-title: IT Project Management Framework: OODA SCRUM Methodology
+title: OODA in IT
 permalink: /ooda
 ---
 
