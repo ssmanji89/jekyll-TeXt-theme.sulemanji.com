@@ -3,21 +3,32 @@ header:
     url: /about.html
   - title: Archive
     url: /archive.html
-  - title: OODA
-    url: /ooda
-
-    
 sidebar-en:
+  - title: About
+    url: /about.html
   - title: Projects
-    children: 
+    children:
+    - title: AIxCC - Cyber Reasoning System (CRS)
+      url: https://github.com/ssmanji89/crs_aixcc#aixcc---cyber-reasoning-system-crs 
     - title: AiTechSupportBot
-      url: /_posts/aidiscordbot
+      url: /_posts/aidiscordbot.md
     - title: PCAE
-      url: /_posts/PCAECommercializationOverview
+      url: /_posts/PCAECommercializationOverview.md
+    - title: finBotStuff
+      url: https://github.com/ssmanji89/finBots
+    - title: ainativesoar
+      url: https://github.com/ssmanji89/aisoar
+    - title: Deep OTM Options 
+      url: _posts/Deep Out-of-the-Money Options.pdf
   - title: Resources
     children: 
     - title: AI Learning Plan
-      url: /_posts/ailearningplan
+      url: /_posts/ailearningplan.md
     - title: Managerial Strategies
-      url: /_posts/managerialStrategy
- 
+      url: /_posts/managerialStrategy.md
+    - title: ITIL Processes
+      url: https://wiki.en.it-processmaps.com/index.php/ITIL_Processes
+    - title: MSFT ISO's
+      url: https://github.com/ssmanji89/ISO-Downloads
+    - title: MetaGPT
+      url: https://github.com/ssmanji89/MetaGPT
