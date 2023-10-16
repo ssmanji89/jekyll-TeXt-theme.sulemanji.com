@@ -31,6 +31,7 @@ In light of his robust technical background and diverse skill set, Suleman is al
 
 ---
 
+
 ### Healthcare Team Insights
 
 This section distills the insights and recommendations from Suleman Manji's healthcare team, which includes specialists in psychoanalysis, psychology, and trauma. Given that family dynamics are identified as the likely root cause of outward-facing disorders, these insights are tailored to address that context.
@@ -51,6 +52,7 @@ This section distills the insights and recommendations from Suleman Manji's heal
 - **Recommendations**: Trauma-focused Cognitive Behavioral Therapy (TF-CBT) or Eye Movement Desensitization and Reprocessing (EMDR) could be effective. Family therapy is not recommended at this stage unless there is a significant change in family dynamics.
 
 ---
+
 ### Interpersonal Relations
 
 #### Family
@@ -76,6 +78,7 @@ This section distills the insights and recommendations from Suleman Manji's heal
 
 
 ---
+
 ### Professional Environment
 
 #### Work-Life Balance
