@@ -18,8 +18,6 @@ sidebar-en:
     children: 
     - title: AI Learning Plan
       url: /_posts/ailearningplan
-    - title: OODA in IT Project Management
-      url: /_posts/ooda
     - title: Managerial Strategies
       url: /_posts/managerialStrategy
  
