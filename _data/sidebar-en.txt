@@ -1,23 +1,23 @@
 sidebar-en:
-  - title: Projects
+  - titles: Projects
     children: 
-  - title: AiTechSupportBot
-    url: "https://github.com/ssmanji89/aidiscordbot"
-  - title: PCAE
-    url: "https://www.sulemanji.com/PCAECommercializationOverview"
-  - title: Resources
+    - titles: AiTechSupportBot
+      url: "https://github.com/ssmanji89/aidiscordbot"
+    - titles: PCAE
+      url: "https://www.sulemanji.com/PCAECommercializationOverview"
+  - titles: Resources
     children: 
-    - title: "AI Learning Plan"
+    - titles: "AI Learning Plan"
       url: "https://www.sulemanji.com/ailearningplan"
-    - title: "OODA in IT Project Management"
+    - titles: "OODA in IT Project Management"
       url: "https://www.sulemanji.com/ooda"
-    - title: "ITIL Processes"
+    - titles: "ITIL Processes"
       url: "https://wiki.en.it-processmaps.com/index.php/ITIL_Processes"
-    - title: "Managerial Strategies"
+    - titles: "Managerial Strategies"
       url: "https://www.sulemanji.com/managerialStrategy"
-  - title: External
+  - titles: External
     children: 
-    - title: MSPGeek
+    - titles: MSPGeek
     - url: "https://discord.gg/mspgeek"
-    - title: "OS ISOs"
+    - titles: "OS ISOs"
     - url: "https://github.com/ssmanji89/ISO-Downloads"
