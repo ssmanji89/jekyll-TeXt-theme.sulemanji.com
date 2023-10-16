@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 permalink: /aidiscordbot
 ---
 # Discord Bot with OpenAI Integration
