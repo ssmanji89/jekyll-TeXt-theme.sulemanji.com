@@ -1,25 +1,25 @@
 header:
-  - titles: About
+  - title: About
     url: /about.html
-  - titles: Archive
+  - title: Archive
     url: /archive.html
-  - titles: OODA
+  - title: OODA
     url: /ooda
 
     
 sidebar-en:
-  - titles: Projects
+  - title: Projects
     children: 
-    - titles: AiTechSupportBot
+    - title: AiTechSupportBot
       url: /_posts/aidiscordbot
-    - titles: PCAE
+    - title: PCAE
       url: /_posts/PCAECommercializationOverview
-  - titles: Resources
+  - title: Resources
     children: 
-    - titles: AI Learning Plan
+    - title: AI Learning Plan
       url: /_posts/ailearningplan
-    - titles: OODA in IT Project Management
+    - title: OODA in IT Project Management
       url: /_posts/ooda
-    - titles: Managerial Strategies
+    - title: Managerial Strategies
       url: /_posts/managerialStrategy
  
