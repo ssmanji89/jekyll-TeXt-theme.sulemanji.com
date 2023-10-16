@@ -1,7 +1,7 @@
 header:
-  - titles: LinkedIn
-    url: "https://linkedin.com/in/sulemanmanji"
   - titles: About
     url: /about.html
   - titles: Archive
     url: /archive.html
+  - titles: OODA
+    url: /ooda
