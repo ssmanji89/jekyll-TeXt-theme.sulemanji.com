@@ -4,13 +4,10 @@ title: "The Onion that is..."
 permalink: /sooliOnion
 ---
 ## Suleman Manji 
----
 
 ### Introduction
 
 This report aims to provide a comprehensive and nuanced understanding of Suleman Manji's complex journey towards mental and emotional stability. It has been meticulously crafted to be both informative and accessible to a wide audience, including professional colleagues and friends. The report synthesizes insights and recommendations from a simulated multidisciplinary healthcare team, each contributing their expert knowledge in their respective fields. The objective is to offer a holistic view of Suleman's experiences, challenges, and the therapeutic interventions currently in place to support him in achieving a more stable state of well-being.
-
----
 
 ### Executive Summary
 
