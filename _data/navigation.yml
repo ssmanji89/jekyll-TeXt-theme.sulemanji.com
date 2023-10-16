@@ -4,8 +4,6 @@ header:
   - title: Archive
     url: /archive.html
 sidebar-en:
-  - title: About
-    url: /about.html
   - title: Projects
     children:
     - title: finBotStuff
