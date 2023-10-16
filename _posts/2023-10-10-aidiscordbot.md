@@ -1,7 +1,9 @@
 ---
+layout: post
 permalink: /aidiscordbot
 ---
 # Discord Bot with OpenAI Integration
+## [GitHub Repository](https://github.com/ssmanji89/aidiscordbot)
 
 ## Overview
 
