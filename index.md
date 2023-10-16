@@ -6,7 +6,7 @@ sidebar:
 ---
 
 # Suleman Manji
-I'm a pragmatic principal engineer with a specialization in cloud services, privileged accesses, automation, and applied technologies in Human Efforts. Holding a Bachelor’s degree in Management of Information Systems from the Bauer School of Business at the University of Houston-Main, I combine academic prowess with hands-on experience. I am an avid researcher with a passion for science documentaries and engineering methods.
+I'm a pragmatic engineer with a specialization in cloud services, privileged accesses, automation, and applied technologies in Human Efforts. Holding a Bachelor’s degree in Management of Information Systems from the Bauer School of Business at the University of Houston-Main, I combine academic prowess with hands-on experience. I am an avid researcher with a passion for science documentaries and engineering methods.
 
 ## Contact
 - Mobile: [281.904.1969](281.904.1969)
