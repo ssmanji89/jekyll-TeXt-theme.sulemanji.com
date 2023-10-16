@@ -11,14 +11,15 @@ sidebar-en:
   - titles: Projects
     children: 
     - titles: AiTechSupportBot
-      url: "/_posts/aidiscordbot"
+      url: /_posts/aidiscordbot
     - titles: PCAE
-      url: "/_posts/PCAECommercializationOverview"
+      url: /_posts/PCAECommercializationOverview
   - titles: Resources
     children: 
-    - titles: "AI Learning Plan"
-      url: "/_posts/ailearningplan"
-    - titles: "OODA in IT Project Management"
-      url: "/_posts/ooda"
-    - titles: "Managerial Strategies"
-      url: "/_posts/managerialStrategy"
+    - titles: AI Learning Plan
+      url: /_posts/ailearningplan
+    - titles: OODA in IT Project Management
+      url: /_posts/ooda
+    - titles: Managerial Strategies
+      url: /_posts/managerialStrategy
+ 

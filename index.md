@@ -2,7 +2,7 @@
 title: Expert IT Consulting for Business Growth
 layout: article
 sidebar:
-  nav: header
+  nav: sidebar-en
 ---
 
 # Suleman Manji
