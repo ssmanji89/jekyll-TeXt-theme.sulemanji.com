@@ -1,6 +1,6 @@
 ---
 title: Expert IT Consulting for Business Growth
-layout: landing
+layout: page
 sidebar:
   nav: sidebar-en
 ---
