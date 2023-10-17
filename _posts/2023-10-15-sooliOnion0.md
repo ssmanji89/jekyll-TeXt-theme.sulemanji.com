@@ -108,13 +108,13 @@ This section distills the insights and recommendations from Suleman Manji's heal
 Suleman's journey towards stability is a multi-faceted effort involving healthcare professionals, self-care strategies, and understanding from those around him and experiences from his past. Continued support from family, friends, and colleagues will significantly contribute to his well-being.
 
 ---
-# **"The Unfolding Journey of Suleman Manji... thus far"**
+# **"The Unfolding Journey of Suleman Manji... "**
 
 ## 1. Prologue: Foundations of a Journey
 
 ### An Early Start: Elementary School Memories
 
-I was a child with an eye for detail, always observant of my surroundings. This vigilance would later become a protective mechanism, especially when it came to family dynamics. One could argue that my scar, which I refer to as my "HarryPotterScar," is a testament to my resilience. A product of a traumatic incident in 1997, it serves as a permanent reminder of the trials I've faced.
+I was a child with an eye for detail, always observant of my surroundings. This vigilance would later become a protective mechanism, especially when it came to family dynamics. There's a scar only that remains. A product of a traumatic incident in 1997, it serves as a permanent reminder of the trials I've faced.
 
 ### A Shift in Perspective: Father's Hospitalization
 
@@ -122,7 +122,7 @@ My father's hospitalization marked the beginning of a tumultuous period for my f
 
 ### The Loss: Saying Goodbye in 02/2000
 
-The loss of my father was a life-altering event. It triggered a journey filled with challenges and adversities, each one teaching me invaluable lessons about human nature, resilience, and the unpredictability of life.
+The loss was a life-altering event. It triggered a journey filled with challenges and adversities, each one teaching me invaluable lessons about human nature, resilience, and the unpredictability of life.
 
 ## 2. Cross-Country Changes
 
@@ -130,19 +130,19 @@ The loss of my father was a life-altering event. It triggered a journey filled w
 
 Moving to California promised a fresh start. However, new beginnings often come with their set of challenges. The ghosts of past experiences followed me, shaping my perception and interaction with my new environment.
 
-### Transition to Texas: Setting Roots in Houston
-
-Texas brought about a different set of challenges and opportunities. From academic trials to personal confrontations, my time here was a roller coaster of experiences that contributed significantly to my life's narrative.
-
 ### A Pause in Education: The Mystery of the Missing School Year
 
-The missing year in my educational journey was a time of introspection and self-discovery. It became a subject of speculation among my peers, but for me, it was a crucial period that helped me refocus my priorities.
+Still not entirely sure why, but I missed Fifth grade of school with no recourse. Spent this time in Vancouver, Canadia - in an apartment - watching Public Access (French) Arthur. My sister flew in with me, my uncle and my grandparents. I didn't see much of my sister and uncle. 
+
+### Roots in Houston
+
+Texas brought about a different set of challenges and opportunities. From academic trials to personal confrontations, my time here was a roller coaster of experiences that contributed significantly to my life's narrative. Started going to school at Mata Intermediate and things seemed OK. 
 
 ## 3. Adversity and Resilience
 
 ### Dark Clouds: The Aftermath of 9/11/01
 
-The events of 9/11 had a monumental impact on the world, and it shaped my teenage years. As a young Muslim man in America, navigating the complexities of identity became an added challenge.
+The events of 9/11 had a monumental impact on the world, and it shaped my teenage years. Specifically the feeling of being singled out by-way of a kick to the sternum. 
 
 ### Trials in Texas: From Alief to Fort Bend
 

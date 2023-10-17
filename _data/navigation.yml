@@ -8,14 +8,8 @@ sidebar-en:
     children:
     - title: finBotStuff
       url: https://github.com/ssmanji89/finBots
-    - title: Deep OTM Options 
-      url: _posts/Deep Out-of-the-Money Options.pdf
-    - title: ainativesoar
-      url: https://github.com/ssmanji89/aisoar
-    - title: MetaGPT
-      url: https://github.com/ssmanji89/MetaGPT
     - title: AIxCC - Cyber Reasoning System (CRS)
-      url: https://github.com/ssmanji89/crs_aixcc#aixcc---cyber-reasoning-system-crs 
+      url: https://github.com/ssmanji89/crs_aixcc
     - title: AiTechSupportBot
       url: /aidiscordbot
     - title: PCAE
@@ -24,8 +18,8 @@ sidebar-en:
     children: 
     - title: AI Learning Plan
       url: /_posts/ailearningplan.md
-    - title: Managerial Strategies
-      url: /_posts/managerialStrategy.md
+    - title: Explain the Crazy
+      url: /sooliOnion
     - title: ITIL Processes
       url: https://wiki.en.it-processmaps.com/index.php/ITIL_Processes
     - title: MSFT ISO's
