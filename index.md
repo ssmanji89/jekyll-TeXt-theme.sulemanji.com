@@ -13,12 +13,9 @@ A proficient IT consultant specializing in cloud services, privileged access man
 - Email: [ssmanji89@gmail.com](mailto:ssmanji89@gmail.com)
 - LinkedIn: [www.linkedin.com/in/sulemanmanji](https://www.linkedin.com/in/sulemanmanji)
 
----
 
 ## Professional Summary
 Accomplished in executing technical projects, optimizing security postures, and driving operational efficiencies within diverse organizational settings. With a knack for translating complex technical concepts into layman's terms, I excel in collaborating with cross-functional teams, stakeholders, and clients to achieve shared goals.
-
----
 
 ## Professional Experience
 
@@ -65,26 +62,18 @@ Accomplished in executing technical projects, optimizing security postures, and 
 - Crafted a data-driven, metrics-based Vendor Selection Worksheet using Excel, surveys, and industry use case scenarios.
 - Ensured multinational compliance with a focus on privileged access and cybersecurity insurances.
 
---- 
-
 ### **Houston IT Tech, LLC. - Houston, TX**
 #### **Lead Technical Architect** (December 2019 - July 2020)
---- 
-
 ### **Zakoil, LLC - Houston, TX**
 #### **Systems Administrator/Technology Consultant** (April 2017 - October 2019)
---- 
 ### **ERGOS Technology - Various Roles**
 #### **Senior Automation Architect** (May 2015 - April 2017)
---- 
 #### **Network Operations Manager** (May 2015 - November 2016)
---- 
 #### **Network Operations/Automation Consultant** (September 2013 - May 2015)
---- 
 #### **Technical Consultant** (May 2013 - September 2013)
---- 
 #### **Remote Support Consultant** (December 2011 - May 2013)
---- 
+
+---
 
 ## Education
 - **Bachelor of BA in Management Information Systems**; University of Houston-Bauer College of Business - Houston, TX; January 2009 to May 2013
