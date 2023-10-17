@@ -108,7 +108,7 @@ This section distills the insights and recommendations from Suleman Manji's heal
 Suleman's journey towards stability is a multi-faceted effort involving healthcare professionals, self-care strategies, and understanding from those around him and experiences from his past. Continued support from family, friends, and colleagues will significantly contribute to his well-being.
 
 ---
-# **"The Unfolding Journey of Suleman Manji... "**
+# **"The Unfolding Journey "**
 
 ## 1. Prologue: Foundations of a Journey
 
@@ -234,15 +234,15 @@ This is not the end; it's just the beginning. I invite you, the reader, to conne
 
 ---
 
-*Thank you for taking the time to read my autobiography. Your attention is sincerely appreciated.*
+*Thank you for taking the time to read my shniz. Your attention is sincerely appreciated.*
 
 ---
 
 *For further inquiries, collaborations, or to continue this journey with me, feel free to reach out.*
 
 * [Contact via Website](https://www.sulemanji.com)
-* [LinkedIn](#)
-* [Email](#)
+* [LinkedIn](https://www.linkedin.com/in/sulemanmanji/)
+* [Email](mailto:ssmanji89@gmail.com)
 
 ---
 
