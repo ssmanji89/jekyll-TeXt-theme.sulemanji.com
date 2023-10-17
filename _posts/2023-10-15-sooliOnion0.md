@@ -101,8 +101,6 @@ This section distills the insights and recommendations from Suleman Manji's heal
 - **Current State**: Maintaining an open dialogue with HR and management to accommodate any unique needs, especially in light of the family situation.
 - **Healthcare Team Insights**: Cognitive Behavioral Therapy (CBT) is helping Suleman articulate his needs and boundaries, particularly when family-induced stressors spill into the professional environment.
 
----
-
 ## Conclusions
 
 Suleman's journey towards stability is a multi-faceted effort involving healthcare professionals, self-care strategies, and understanding from those around him and experiences from his past. Continued support from family, friends, and colleagues will significantly contribute to his well-being.
@@ -220,30 +218,14 @@ As I look back at my journey, I see a tapestry of experiences, each one contribu
 
 ### An Invitation to Connect, Collaborate, and Continue the Tale
 
-This is not the end; it's just the beginning. I invite you, the reader
-
-### An Invitation to Connect, Collaborate, and Continue the Tale
-
 This is not the end; it's just the beginning. I invite you, the reader, to connect with me, collaborate on future endeavors, and continue this tale that is far from over.
 
----
-
-> **Public Service Announcement to Parents**: Please don't ignore your children; perhaps train a dog to understand yourself better.
-
-> **Note to Readers**: When you meet new people and something seems off, please ask questions. More often than not, the person has learned to ignore that scary memory. A special thanks to Justin and Tommy for their efforts in my life journey.
-
----
-
 *Thank you for taking the time to read my shniz. Your attention is sincerely appreciated.*
-
----
-
 *For further inquiries, collaborations, or to continue this journey with me, feel free to reach out.*
 
+---
+*© 2023 Suleman Manji, All Rights Reserved.*
 * [Contact via Website](https://www.sulemanji.com)
 * [LinkedIn](https://www.linkedin.com/in/sulemanmanji/)
 * [Email](mailto:ssmanji89@gmail.com)
 
----
-
-*© 2023 Suleman Manji, All Rights Reserved.*
