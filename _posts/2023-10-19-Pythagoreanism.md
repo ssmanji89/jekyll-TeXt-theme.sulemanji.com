@@ -1,9 +1,10 @@
 ---
-layout: page
-title: Pythagoreanism: A Confluence of Mysticism, Philosophy, and Mathematics
-permalink: /ailearningplan
+layout: article
+title: "Pythagoreanism: "
+permalink: /Pythagoreanism
 ---
 
+# A Confluence of Mysticism, Philosophy, and Mathematics
 Pythagoreanism, stemming from the ancient Greek philosopher Pythagoras and his followers, embarks on a profound journey to explain the cosmos through a blend of mystical, philosophical, and mathematical lenses. This movement has left an indelible mark on the trajectory of Western thought. Here’s a detailed exploration of Pythagoreanism divided into its core components: philosophical, mathematical, and religious elements, followed by its enduring legacy and controversies.
 
 ## Philosophical Components
