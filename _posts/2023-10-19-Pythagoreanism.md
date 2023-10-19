@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "Pythagoreanism: "
+title: "Pythagoreanism"
 permalink: /Pythagoreanism
 ---
 
