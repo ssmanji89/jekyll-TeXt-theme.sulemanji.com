@@ -1,0 +1,112 @@
+---
+layout: article
+title: "OMS for ZGC"
+permalink: /zgcompanies
+---
+
+
+# Phased Project Plan for Operational Management System (OMS)
+
+## Phase 1: Planning and Analysis
+
+### Milestones and Deliverables
+
+- **Milestone 1.1: Stakeholder Identification Completed**
+    - **Deliverable**: Stakeholder Identification Sheet
+    - **Conceptual Timeline**: 1 week
+
+- **Milestone 1.2: Workshops Scheduled and Completed**
+    - **Deliverable**: Workshop Schedule
+    - **Conceptual Timeline**: 1 week
+
+- **Milestone 1.3: Requirements Documentation**
+    - **Deliverable**: Requirements Documentation
+    - **Conceptual Timeline**: 3 weeks
+
+## Phase 2: Design and Development
+
+### Milestones and Deliverables
+
+- **Milestone 2.1: System Architecture Designed**
+    - **Deliverable**: System Architecture Document
+    - **Conceptual Timeline**: 2 weeks
+- **Milestone 2.2: User Interfaces**
+    - **Deliverable**: User Interfaces Document 
+    - **Conceptual Timeline**: 2 weeks
+- **Milestone 2.2: Workflows and Automation**
+    - **Deliverable**: Workflows and Automation 
+    - **Conceptual Timeline**: 2 weeks
+    
+
+
+## Phase 3: Integration and Testing
+
+### Milestones and Deliverables
+
+- **Milestone 3.1: Successful System Integration**
+    - **Deliverable**: Integration Test Report
+    - **Conceptual Timeline**: 2 weeks
+- **Milestone 3.1: User Acceptance Testing (UAT) Conducted**
+    - **Deliverable**: UAT Summary Report
+    - **Conceptual Timeline**: 2 weeks
+
+
+## Phase 4: Training and Deployment
+
+### Milestones and Deliverables
+
+- **Milestone 4.1: User Training Developed**
+    - **Deliverable**: Training Programs / Materials
+    - **Conceptual Timeline**: 3 week
+- **Milestone 4.1: OMS Deployed to Production**
+    - **Deliverable**: Deployment Checklist
+    - **Conceptual Timeline**: 1 week
+
+## Phase 5: Monitoring and Optimization
+
+### Milestones and Deliverables
+
+- **Milestone 5.1: Performance Metrics Established**
+    - **Deliverable**: Performance Metrics Dashboard
+    - **Conceptual Timeline**: Ongoing
+- **Milestone 5.1: Feedback Collection Mechanism Established**
+    - **Deliverable**: Feedback Collection Tools and Processes
+    - **Conceptual Timeline**: Ongoing
+
+
+---
+
+## Project Engagement Contract
+
+### Parties Involved
+
+- **Client**: [Client's Name], represented by [Primary Stakeholder's Name]
+- **Contractor**: [Your Name]
+
+### Project Description
+
+- Development and implementation of an Operational Management System (OMS) in accordance with the phased project plan with milestones, deliverables, and a conceptual timeline.
+
+### Scope of Work
+
+- As described in the Phased Project Plan document, dated [insert date].
+
+### Compensation and Payment Schedule
+
+#### Base Compensation
+
+- The contractor will be compensated based on a pro-rated salary model calculated from an annual salary of $75,000.
+
+#### Incentive for End-of-Year Working Version
+
+- An additional bonus of $10,000 will be awarded if a working version of the Operational Management System (OMS) is successfully implemented and approved by the client by the end of the year.
+
+... (and so on for the rest of the contract sections)
+
+### Signatures
+
+- Both parties agree to the terms laid out in this contract and affix their signatures as acknowledgment.
+
+## Note
+
+No further efforts will be provided without contractual commitments from the organization's end.
