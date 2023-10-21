@@ -1,25 +1,15 @@
 header:
   - title: About
-    url: /about.html
+    url: https://www.sulemanji.com
   - title: Archive
     url: /archive.html
 sidebar-en:
-  - title: Projects
-    children:
-    - title: finBotStuff
-      url: https://github.com/ssmanji89/finBots
-    - title: AIxCC - Cyber Reasoning System (CRS)
-      url: https://github.com/ssmanji89/crs_aixcc
-    - title: AiTechSupportBot
-      url: /aidiscordbot
-    - title: PCAE
-      url: /_posts/PCAECommercializationOverview.md
   - title: Resources
     children: 
     - title: AI Learning Plan
       url: /_posts/ailearningplan.md
-    - title: Explain the Crazy
-      url: /sooliOnion
+    - title: Trying to Explain the Crazy
+      url: /unwraveling-the-onions
     - title: ITIL Processes
       url: https://wiki.en.it-processmaps.com/index.php/ITIL_Processes
     - title: MSFT ISO's

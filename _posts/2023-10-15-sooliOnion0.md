@@ -1,7 +1,7 @@
 ---
 layout: page
-title: "The Onion that is Suleman."
-permalink: /sooliOnion
+title: "Unwraveling the Onions."
+permalink: /unwraveling-the-onions
 ---
 # Suleman Shahnawaz Manji
 ## Introduction
