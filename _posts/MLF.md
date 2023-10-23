@@ -6,9 +6,20 @@ permalink: /mlf
 
 # Cyber Security Research and Hunting Analyst
 
+
+---
+## Core Values 
+Meneses Law strives to consider extensively the following Values: 
+
+- Results 
+- Efficiency
+- Service
+- Accountability 
+- Advocacy 
+
 ---
 ## Benefits
-The company offers the following benefits:
+Meneses Law offers the following benefits:
 
 - 401(k) and 401(k) matching
 - Dental insurance
