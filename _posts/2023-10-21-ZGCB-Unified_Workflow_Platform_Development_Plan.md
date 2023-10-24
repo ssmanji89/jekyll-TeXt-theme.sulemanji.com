@@ -1,5 +1,7 @@
+---
+title: "Project Plan: Unified Workflow Platform Development"
 
-# Project Plan: Unified Workflow Platform Development
+---
 
 ## Table of Contents
 
