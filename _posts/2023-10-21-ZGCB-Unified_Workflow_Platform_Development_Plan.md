@@ -1,4 +1,5 @@
 ---
+layout: article
 title: "Project Plan: Unified Workflow Platform Development"
 
 ---
