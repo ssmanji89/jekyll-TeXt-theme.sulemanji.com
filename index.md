@@ -1,17 +1,17 @@
 ---
-title: Expert IT Consulting for Business Growth
+title: Advancing Business Growth Through Expert IT Consulting
 layout: article
 sidebar:
   nav: sidebar-en
 ---
 
 # Suleman Manji
-A proficient IT consultant specializing in cloud services, privileged access management, automation, and leveraging technology to augment human endeavors. Holding a Bachelor’s degree in Management of Information Systems from the University of Houston's Bauer School of Business, I blend academic insights with extensive practical experience. An inquisitive researcher, I enjoy exploring science documentaries and innovative engineering methodologies. Accomplished in executing technical projects, optimizing security postures, and driving operational efficiencies within diverse organizational settings. With a knack for translating complex technical concepts into layman's terms, I excel in collaborating with cross-functional teams, stakeholders, and clients to achieve shared goals.
+As a seasoned IT consultant, I specialize in cloud services, privileged access management, automation, and harnessing technology to elevate human endeavors. With a Bachelor’s degree in Management of Information Systems from the University of Houston's Bauer School of Business, I blend academic insights with robust practical experience. A curious researcher at heart, I relish delving into science documentaries and exploring innovative engineering methodologies. My forte lies in spearheading technical projects, fortifying security frameworks, and enhancing operational efficiencies across varied organizational landscapes. My ability to demystify complex technical concepts and collaborate effectively with cross-functional teams, stakeholders, and clients positions me as a reliable partner in achieving shared objectives.
 
 ## Contact
-- Mobile: [281.904.1969](281.904.1969)
-- Email: [ssmanji89@gmail.com](mailto:ssmanji89@gmail.com)
-- LinkedIn: [www.linkedin.com/in/sulemanmanji](https://www.linkedin.com/in/sulemanmanji)
+- **Phone:** [281.904.1969](tel:2819041969)
+- **Email:** [ssmanji89@gmail.com](mailto:ssmanji89@gmail.com)
+- **LinkedIn:** [www.linkedin.com/in/sulemanmanji](https://www.linkedin.com/in/sulemanmanji)
 
 ## Professional Experience
 
