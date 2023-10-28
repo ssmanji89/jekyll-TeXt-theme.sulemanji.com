@@ -1,6 +1,6 @@
 ---
-layout article
-title "AI Analysts for API Driven NOC Operations"
+layout: article
+title: "AI Analysts for API Driven NOC Operations"
 ---
 
 # Summary
