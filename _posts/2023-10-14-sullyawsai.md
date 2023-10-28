@@ -6,6 +6,7 @@ permalink: /ailearningplan
 # Comprehensive Learning Plan: Mastering AWS AI in Healthcare with Operational Automation
 
 ## Introduction
+
 This guide is tailored for Technology Consultants with a focus on Process Automation, aiming to achieve mastery over AWS AI services in healthcare. It encompasses both technical and soft skills, real-world case studies, and operationalized automation for a holistic learning experience.
 
 ---
@@ -13,6 +14,7 @@ This guide is tailored for Technology Consultants with a focus on Process Automa
 ## Week 1: Accelerated AWS Fundamentals
 
 ### 1. AWS Accelerated Course
+
 - **Action**: Choose an advanced AWS course focusing on AI/ML services.
 - **Features**: Basics of AWS, AI/ML services, cloud security.
 - **Tips**: Look for courses with hands-on labs for interactive learning.
@@ -25,6 +27,7 @@ This guide is tailored for Technology Consultants with a focus on Process Automa
 ## Week 2-3: Advanced Healthcare Data Management
 
 ### 1. Advanced Healthcare Data Management
+
 - **Action**: Take specialized courses on healthcare data management.
 - **Features**: Data types, EHR systems, HIPAA compliance.
 - **Tips**: Prioritize courses that offer real-world case studies.
@@ -37,6 +40,7 @@ This guide is tailored for Technology Consultants with a focus on Process Automa
 ## Week 4-6: AWS AI Services for Healthcare
 
 ### 1. AWS AI Specialized Training
+
 - **Action**: Opt for specialized AWS training that focuses on healthcare.
 - **Features**: AWS SageMaker, Comprehend Medical, Rekognition.
 - **Tips**: Use AWS's own sandbox environments for hands-on practice.
@@ -49,6 +53,7 @@ This guide is tailored for Technology Consultants with a focus on Process Automa
 ## Week 7-9: SageMaker and Operational Automation
 
 ### 1. SageMaker for Automation
+
 - **Action**: Tutorials on automating ML workflows in healthcare using SageMaker.
 - **Features**: Data preprocessing, model training, model deployment.
 - **Tips**: Experiment with different ML models to compare performances.
@@ -61,6 +66,7 @@ This guide is tailored for Technology Consultants with a focus on Process Automa
 ## Week 10-12: NLP and Medical Records with AWS Comprehend Medical
 
 ### 1. Comprehend Medical
+
 - **Action**: Use AWS Comprehend Medical for NLP solutions related to EHR.
 - **Features**: Named Entity Recognition, relationship extraction.
 - **Tips**: Look for open-source NLP projects in healthcare as inspiration.
@@ -73,6 +79,7 @@ This guide is tailored for Technology Consultants with a focus on Process Automa
 ## Week 13-24: Consultancy-Driven Capstone Project
 
 ### 1. Capstone Project
+
 - **Action**: Identify a healthcare problem to solve using AWS AI services.
 - **Features**: Complete, client-ready project with extensive documentation.
 - **Tips**: Use Agile methodologies for project management.
@@ -94,4 +101,3 @@ This guide is tailored for Technology Consultants with a focus on Process Automa
 
 - **Action**: Explore more advanced AWS certifications, consider contributing to open-source healthcare projects, or begin consultancy services focused on AWS and healthcare.
 - **Metrics**: Career advancement and contributions to the field.
-

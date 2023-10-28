@@ -3,11 +3,12 @@ layout: page
 permalink: /aidiscordbot
 ---
 # Discord Bot with OpenAI Integration
+
 ## [GitHub Repository](https://github.com/ssmanji89/aidiscordbot)
 
 ## Overview
 
-This Discord bot is designed to integrate with OpenAI's GPT-3 API to provide automated responses to user queries. 
+This Discord bot is designed to integrate with OpenAI's GPT-3 API to provide automated responses to user queries.
 It's built using Python and the discord.py library and comes containerized with Docker for easy deployment.
 
 ## Features
@@ -36,15 +37,20 @@ cd aidiscordbot
 ### Local Setup
 
 1. Install the required Python packages:
+
     ```bash
     pip install -r requirements.txt
     ```
+
 2. Set your Discord Bot Token and OpenAI API Key as environment variables:
+
     ```bash
     export DISCORD_BOT_TOKEN=your_discord_bot_token
     export OPENAI_API_KEY=your_openai_api_key
     ```
+
 3. Run the bot:
+
     ```bash
     python run.py
     ```
@@ -52,10 +58,13 @@ cd aidiscordbot
 ### Docker Setup
 
 1. Build the Docker image:
+
     ```bash
     docker build -t aidiscordbot .
     ```
+
 2. Run the Docker container:
+
     ```bash
     docker run -e DISCORD_BOT_TOKEN=your_token -e OPENAI_API_KEY=your_key aidiscordbot
     ```
@@ -76,4 +85,3 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 - The discord.py library for providing the framework for building this bot.
 - OpenAI for their GPT-3 API.
-

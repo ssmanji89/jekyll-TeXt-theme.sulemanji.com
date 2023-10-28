@@ -1,6 +1,6 @@
 ---
 layout article
-title "AI-Driven Orchestration Layer for API Driven RMM Platforms"
+title "AI Analysts for API Driven NOC Operations"
 ---
 
 # Summary

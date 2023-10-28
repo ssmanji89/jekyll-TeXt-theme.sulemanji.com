@@ -7,6 +7,7 @@ tags: LSTM, Stock Trading, Project Plan, ChatGPT, LLM, Finance
 Utilizing ChatGPT and LLMs (Language Models) can significantly accelerate various phases of the project by automating data analysis, code generation, and documentation tasks. Here's the revised project plan incorporating these advancements:
 
 ### Phase 1: Research and Preparation
+
 1. **Literature Review:**
    - Employ ChatGPT and LLMs to automate literature review process, extracting key insights on LSTM advancements in stock price prediction domain.
 
@@ -20,6 +21,7 @@ Utilizing ChatGPT and LLMs (Language Models) can significantly accelerate variou
    - Utilize ChatGPT to identify skill gaps and recommend training resources.
 
 ### Phase 2: Data Collection and Preprocessing
+
 1. **Data Collection:**
    - Automate data collection processes using scripts generated with the help of ChatGPT and LLMs.
 
@@ -36,6 +38,7 @@ Utilizing ChatGPT and LLMs (Language Models) can significantly accelerate variou
    - Utilize LLMs to automate the preparation of data sequences for LSTM input.
 
 ### Phase 3: Model Development and Training
+
 1. **Model Architecture Design:**
    - Use ChatGPT to generate LSTM model architectures based on best practices.
 
@@ -49,6 +52,7 @@ Utilizing ChatGPT and LLMs (Language Models) can significantly accelerate variou
    - Utilize ChatGPT for automated hyperparameter tuning and optimization.
 
 ### Phase 4: Model Evaluation and Backtesting
+
 1. **Model Evaluation:**
    - Use ChatGPT for automated generation of model evaluation scripts.
 
@@ -59,6 +63,7 @@ Utilizing ChatGPT and LLMs (Language Models) can significantly accelerate variou
    - Employ ChatGPT for deep performance analysis and insights extraction.
 
 ### Phase 5: Integration
+
 1. **Integration Planning:**
    - Utilize ChatGPT for creating a detailed integration plan.
 
@@ -69,6 +74,7 @@ Utilizing ChatGPT and LLMs (Language Models) can significantly accelerate variou
    - Employ ChatGPT and LLMs for automated testing script generation and execution.
 
 ### Phase 6: Deployment and Monitoring
+
 1. **Deployment:**
    - Use LLMs to generate deployment scripts for updated `finBots` in a live trading environment.
 
@@ -79,6 +85,7 @@ Utilizing ChatGPT and LLMs (Language Models) can significantly accelerate variou
    - Utilize ChatGPT for continuous performance optimization based on live performance data.
 
 ### Phase 7: Documentation and Review
+
 1. **Documentation:**
    - Leverage ChatGPT for automated documentation generation covering the entire process.
 
@@ -128,7 +135,6 @@ Enjoy the exploration of trading strategies through the lens of LSTM models and 
 
 ---
 *© 2023 Suleman Manji, All Rights Reserved.*
-* [Contact via Website](https://www.sulemanji.com)
-* [GitHub](https://github.com/ssmanji89/finBots)
-* [Email](mailto:ssmanji89@gmail.com)
-
+- [Contact via Website](https://www.sulemanji.com)
+- [GitHub](https://github.com/ssmanji89/finBots)
+- [Email](mailto:ssmanji89@gmail.com)

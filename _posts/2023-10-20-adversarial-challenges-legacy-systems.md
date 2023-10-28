@@ -1,7 +1,7 @@
 ---
 
 layout: page
-title: Adversarial Challenges in Legacy Systems: The Unseen Battle
+title: "Adversarial Challenges in Legacy Systems: The Unseen Battle"
 permalink: /adversarial-challenges-legacy-systems
 ---
 
