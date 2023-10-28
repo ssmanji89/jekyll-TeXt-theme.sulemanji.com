@@ -1,9 +1,9 @@
 ---
 layout article
-title "Project Brief AI-Driven Orchestration Layer for NOC within Microsoft Windows Infrastructure Leveraging ConnectWise Automate"
+title "AI-Driven Orchestration Layer for API Driven RMM Platforms"
 ---
 
-## Executive Summary
+# Summary
 The project aims to design and demonstrate an AI-driven orchestration layer integrated within a NOC environment operating on Microsoft Windows Infrastructure, leveraging ConnectWise Automate for remote monitoring, management, and automation. This solution will automate the processing of system-generated alerts and execute predefined actions based on ITIL service delivery standards, enhancing service desk operations and offloading meticulous tasks from human IT professionals.
 
 ## Objectives
