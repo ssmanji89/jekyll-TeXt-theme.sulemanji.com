@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "Navigating the Waters of Technology Adoption: A Holistic Approach"
+title: "The timeline of an IT Project"
 ---
 
 ## Project Initiation
