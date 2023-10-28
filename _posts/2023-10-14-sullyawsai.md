@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Ai Learning Plan for Technology Consultants
+title: "Ai Learning Plan for Technology Consultants"
 permalink: /ailearningplan
 ---
 # Comprehensive Learning Plan: Mastering AWS AI in Healthcare with Operational Automation
