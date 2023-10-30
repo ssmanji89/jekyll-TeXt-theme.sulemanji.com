@@ -96,3 +96,8 @@ This Technical Execution Plan outlines the steps for implementing an integrated 
 
 This Technical Execution Plan provides a structured and chronological approach towards implementing an integrated communication system. Following this plan will ensure a methodical execution, allowing for tracking progress, identifying and resolving issues timely, and achieving the intended goals of enhanced communication and operational efficiency.
 
+*© ### Suleman Manji, All Rights Reserved. 
+* [Contact via Website](https://www.sulemanji.com) 
+* [LinkedIn](https://www.linkedin.com/in/sulemanmanji/) 
+* [Email](mailto:ssmanji89@gmail.com) 
+ 
