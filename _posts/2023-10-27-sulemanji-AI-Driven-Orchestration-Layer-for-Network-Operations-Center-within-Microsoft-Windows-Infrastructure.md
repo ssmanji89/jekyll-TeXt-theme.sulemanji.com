@@ -3,11 +3,6 @@ layout: article
 title: "AI Analysts for API Driven NOC Operations"
 ---
 
----
-title: "AutoGen-Powered AI Orchestration for Network Operations Center (NOC)"
-tags: AutoGen, AI, NOC, Microsoft Azure, AZ-104, AZ-305, AZ-400, AZ-800, AZ-801, Security Engineer, Security Operations Analyst, Solution Architect
----
-
 # Summary
 
 This project aims to design and implement an AI-driven orchestration layer, powered by AutoGen, integrated within a Network Operations Center (NOC). This orchestration layer will operate in line with Microsoft Azure certifications AZ-104, AZ-305, AZ-400, AZ-800, and AZ-801, and will serve roles such as Security Engineer, Security Operations Analyst, and Solution Architect.

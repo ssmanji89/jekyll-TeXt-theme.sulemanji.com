@@ -1,6 +1,7 @@
 ---
 layout: article
-title: "AutoGen powered Ai Agent Analysts using Python and API Driven"
+title: "AutoGen powered Ai Agents/Analysts"
+tags: AutoGen, AI, NOC, Microsoft Azure, AZ-104, AZ-305, AZ-400, AZ-800, AZ-801, Security Engineer, Security Operations Analyst, Solution Architect
 ---
 
 ## Project Execution Timeline, Milestones, Budget Allocation, and Stakeholders
