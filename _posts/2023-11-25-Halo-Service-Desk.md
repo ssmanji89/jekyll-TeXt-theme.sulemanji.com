@@ -1,6 +1,7 @@
 ---
 title: "Advancing HaloPSA Implementations"
 tags: HaloPSA, HaloITSM, IT Consulting, Service Desk Optimization, Cloud Services, Automation, Operational Efficiency, Security Posture, IT Service Transformation, Technical Excellence
+permalink: /halopsa
 ---
 
 # Suleman Manji's Consulting Services for Halo Service Desk
