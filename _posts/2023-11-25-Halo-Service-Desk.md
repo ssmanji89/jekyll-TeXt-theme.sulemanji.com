@@ -13,7 +13,6 @@ permalink: /halopsa
 - **Experience**: Over a Decade in IT Consulting, with Expertise in the Latest Halo Innovations
 - **Contact**: [suleman@botStuff.org](mailto:suleman@botStuff.org)
 - **Phone**: 281.904.1969
-- **LinkedIn**: [www.linkedin.com/in/sulemanmanji](https://www.linkedin.com/in/sulemanmanji)
 
 ## Competitive Pricing
 
@@ -61,13 +60,3 @@ Elevate your IT service delivery with cutting-edge HaloPSA/HaloITSM technology a
 - [HaloPSA Academy: Interactive Training and Best Practices](https://academy.halopsa.com)
 - [HaloPSA Online Courses and Certifications](https://halopsa.com/academy)
 - [Live Webinars and Product User Guides for HaloPSA](https://halopsa.com/academy)
-
----
-
-For inquiries or discussions regarding Halo Service Desk consulting services, please reach out via email or phone.
-
----
-
-*© ### Suleman Manji, All Rights Reserved.
-* [LinkedIn](https://www.linkedin.com/in/sulemanmanji/) 
-* [Email](mailto:ssmanji89@gmail.com)
