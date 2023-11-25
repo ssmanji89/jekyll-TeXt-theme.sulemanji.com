@@ -1,5 +1,5 @@
 ---
-title: Suleman Manji's Halo Service Desk Consulting - Advanced IT Solutions at Competitive Rates
+title: "Advancing HaloPSA Implementations"
 tags: HaloPSA, HaloITSM, IT Consulting, Service Desk Optimization, Cloud Services, Automation, Operational Efficiency, Security Posture, IT Service Transformation, Technical Excellence
 ---
 
@@ -18,8 +18,8 @@ tags: HaloPSA, HaloITSM, IT Consulting, Service Desk Optimization, Cloud Service
 
 Offering exceptional value, our consulting services are priced competitively within the Houston market. Our rates are reflective of the high-level expertise and tailored solutions provided:
 
-- **Standard Consulting Rate**: $150 per hour.
-- **Package Deals**: Available for long-term projects or extensive implementations.
+- **Standard Consulting Rate**: $99.99 per hour.
+- **Alternatively**: Available for long-term projects or engagements at negotiated agreement.
 - **Negotiable Rates**: For large-scale or enterprise-level engagements.
 
 We believe in transparent pricing and are open to discussing your specific needs to find a pricing structure that works for you.
