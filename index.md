@@ -98,7 +98,7 @@ University of Houston's Bauer College of Business, Houston, TX | Graduated: May 
 
 ## Location
 
-Based in Houston, TX, available for on-site work within 50 miles of client's U.S. offices and remote collaboration
+Available for on-site work within 50 miles of Houston, TX.
 
 <style>
 body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 20px; }
