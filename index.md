@@ -22,80 +22,99 @@ I have a proven track record of executing technical projects, enhancing security
 - **Certificate in Corporate Intrapreneurship**; University of Houston - Houston, TX; January 2012 to June 2012
   
 ## Professional Experience
+### StackAdvisors, LLC - Denver, CO  
+**Integrations Manager / Interim Azure C# .NET Engineer**  
+*March 2023 - August 2023*
 
-### **StackAdvisors, LLC. - Denver, CO**
-#### **Integrations Manager / Interim Azure C# .NET Engineering** (March 2023 - August 2023)
-In this role, I embraced a dual responsibility of managing integration projects and stepping in as an interim engineer for Azure C# .NET applications. My contributions spanned across several facets of the software development lifecycle, bolstered by my adeptness in Azure, .NET C# Blazor, and CI/CD methodologies via Azure DevOps.
+In this role, I took on dual responsibilities: leading integration projects while serving as an interim engineer for Azure C# .NET applications. My efforts focused on improving architectural, performance, and deployment aspects of critical systems, leveraging my expertise in Azure, .NET C# Blazor, and CI/CD methodologies via Azure DevOps.
 
-- **Architectural Rectification:** Identified and addressed architectural bottlenecks in a .NET C# Blazor Server application. Proposed an optimization roadmap that enhanced system resilience, leading to a 20% improvement in application response times.
+#### Key Achievements:
+- **Architectural Optimization**  
+  - Identified and resolved key architectural bottlenecks in a .NET C# Blazor Server application.
+  - Proposed and implemented optimization strategies, leading to a **20% improvement in application response times**.
+  
+- **Azure Monitoring & Error Management**  
+  - Integrated Azure monitoring tools for real-time system insights.
+  - Reduced error identification time by **35%** and minimized system downtime through efficient monitoring.
+  - Addressed and significantly reduced Server 500 errors by **70%**, improving stability and user experience.
 
-- **Azure-Powered Monitoring:** Integrated Azure monitoring tools, leveraging my expertise in cloud platforms to provide real-time insights into system performance. This initiative sped up error identification and rectification by 35%, significantly reducing system downtime.
+- **Infrastructure & Hosting Optimization**  
+  - Conducted a strategic review of Azure-hosted infrastructure, optimizing performance parameters.
+  - Achieved a **40% reduction in hosting costs** without compromising on performance.
 
-- **Hosting & Infrastructure Optimization:** Led a strategic review of Azure-hosted infrastructure parameters, achieving a remarkable 40% reduction in hosting costs within months without compromising on performance.
+- **CI/CD Process Enhancement**  
+  - Revamped CI/CD pipelines using Azure DevOps, ensuring seamless, automated deployments.
+  - Reduced deployment failures by **50%** and shortened release cycles, enabling faster time-to-market.
 
-- **Revamped Deployment Workflows:** Established robust CI/CD processes using Azure DevOps, ensuring seamless and error-free deployments. This revamp minimized deployment failures by 50% and accelerated release cycles.
+- **Application Performance Improvement**  
+  - Consolidated app registration within Azure, improving application load times by **25%**.
 
-- **Application Efficiency:** Enhanced overall application performance through app registration consolidation within Azure, leading to a 25% improvement in load times.
+- **Quality Assurance & Load Testing**  
+  - Led the implementation of rigorous load testing procedures using Azure-based tools to validate system scalability.
+  - Ensured the system’s readiness to handle real-world traffic, supporting future scalability needs.
 
-- **Quality Assurance & Load Testing:** Implemented rigorous load testing measures using Azure-based tools and .NET C# Blazor Server expertise, validating the system's real-world traffic handling capability and ensuring readiness for scaling.
+- **Scalability Adjustments**  
+  - Improved architectural scalability to accommodate increased traffic and system demands.
+  - Ensured a smooth user experience during peak traffic, preparing the system for future growth.
 
-- **Error Management & Reduction:** Spearheaded efforts to address system errors, notably reducing daily Server 500 errors by 70%, thereby improving system stability and user experience.
-
-- **Scalability Revisions:** Proactively tweaked application architecture for better scalability, ensuring the system is well-poised for future growth and system demands. This foresight ensured a seamless user experience even during peak traffic periods.
-
-Throughout this tenure, my ability to blend technical skills with project management acumen fostered a culture of continuous improvement and cross-functional collaboration, driving forward the objectives of StackAdvisors and ensuring project deliverables were met in a timely and efficient manner.
-
-### **Fulcrum Technology (FTSC) - Various Projects**
-#### **Technical SME, Engineer, Project Manager, and Other Engineer Roles**
-
-Embarking on a mercenary-like venture with Fulcrum Technology, I assumed multiple roles across different projects, showcasing adaptability, technical prowess, and a drive to meet client objectives. My journey illustrated a blend of technical expertise and strategic oversight, aligning technologies with project goals to deliver robust solutions.
-
-#### **Project: CyberArk Endpoint Privileges Management for International Healthcare Organization - USA**
-Entrusted with optimizing the CyberArk Endpoint Management system, I led policy reconciliation, optimization, and agent upgrades, enhancing security posture and operational efficiency.
-
-- Conducted comprehensive policy reconciliation, identifying and rectifying inconsistencies.
-- Optimized policies, reducing operational bottlenecks and improving system responsiveness.
-- Led agent upgrades, ensuring alignment with the latest security standards and performance benchmarks.
-
-#### **Project: CorePAS Azure Deployment for International Healthcare Organization - UK/Ireland**
-A critical player in GDPR compliance efforts, I managed data migration to appropriate Azure resources while maintaining system parity across Enterprise Active Directory Domain Implementations.
-
-- Spearheaded data migration efforts ensuring GDPR compliance, leveraging Azure's security and compliance frameworks.
-- Ensured system parity across various enterprise Active Directory Domain implementations, mitigating potential security risks.
-- Fostered close collaboration with Application and Operational Support teams, ensuring smooth operations post-migration.
-
-#### **Project: VMWare Security Posture Reporting for International Healthcare Organization - UK/Ireland/Canada/USA**
-In a concerted effort to bolster VMWare security posture, I designed a robust reporting system using vCenter and PowerShell, setting new standards in security compliance reporting.
-
-- Architected a security posture reporting system using vCenter and PowerShell, providing real-time insights into VMWare infrastructure security.
-- Utilized CIS Level Compliance as standard compliance indicators, relaying the status to a Splunk collector(s), enhancing the overall security monitoring framework.
-
-#### **Project: CyberArk PrivilegeCloud PAM Implementation for Vertically Integrated O&G Organization**
-Transitioning from KeePass to CyberArk PrivilegeCloud was a pivotal move to bolster privileged access management. I spearheaded this transition ensuring a seamless migration and enhanced security protocols.
-
-- Led the migration from KeePass to CyberArk PrivilegeCloud, ensuring no data loss or downtime.
-- Developed internal privileged access processes, creating a robust framework for managing privileged accesses.
-- Initiated an automated credential rotation program for priority Active Directory accounts, significantly enhancing system security.
-
-#### **Project: Ransomware Incident Response for major Home Building Supplies Organiation**
-In the wake of a ransomware attack, I played an instrumental role in orchestrating a comprehensive incident response, rebuilding the Active Directory domain, and bolstering IT security measures.
-
-- Coordinated with other Architects, Engineers, and Executives for domain and network infrastructure rebuilding, setting a strong foundation for enhanced security measures.
-- Implemented CortexEDR, TaniumXDR, and Standard Policies to bolster IT security measures, reducing the likelihood of future security breaches.
-
-#### **Project: Directory Services for Children's Hospital System**
-Architecting and implementing shared Azure Global Administrator accesses was a critical task to optimize directory services. My role was pivotal in ensuring a secure and efficient directory service infrastructure.
-
-- Architected and implemented shared Azure Global Administrator accesses using PowerShell, enhancing administrative efficiency.
-- Utilized technologies like ServiceNOW, PowerShell, and hybrid Azure Active Directory infrastructure to optimize directory services, achieving a 30% improvement in directory access times.
-
-#### **Project: Vendor Selection for Global Networking Devices and Security Solutions Provider**
-Crafting a data-driven, metrics-based Vendor Selection Worksheet was essential for ensuring multinational compliance with a focus on privileged access and cybersecurity insurances.
-
-- Crafted a data-driven, metrics-based Vendor Selection Worksheet using Excel, surveys, and industry use case scenarios, aiding in a more informed vendor selection process.
-- Ensured multinational compliance with a focus on privileged access and cybersecurity insurances, setting new standards in vendor compliance assessment.
+#### Impact:
+- Fostered a culture of continuous improvement and cross-functional collaboration.
+- Delivered significant improvements in system performance, cost-efficiency, and user satisfaction.
+- Demonstrated technical expertise and leadership by aligning project deliverables with business objectives, driving success for both StackAdvisors and its clients.
 
 ---
+
+### Fulcrum Technology (FTSC) - Various Projects  
+**Technical SME, Engineer, Project Manager, and Other Engineering Roles**
+
+Throughout my time at Fulcrum Technology, I served in various capacities across multiple projects, demonstrating adaptability, technical expertise, and a results-driven approach. I worked on diverse projects that spanned cybersecurity, cloud migrations, privileged access management, and incident response, aligning technology with client objectives to deliver impactful solutions.
+
+#### Project: CyberArk Endpoint Privileges Management 
+Led the optimization of CyberArk Endpoint Management, improving security protocols and system efficiency.
+
+- **Policy Reconciliation & Optimization**: Conducted in-depth policy audits, identifying inconsistencies and optimizing policies, reducing operational delays and improving system responsiveness.
+- **Agent Upgrades**: Directed agent upgrades, ensuring systems met the latest security standards and performance benchmarks, enhancing the overall security posture.
+
+#### Project: CorePAS Azure Deployment (International) 
+Played a key role in ensuring GDPR compliance and system integrity during a critical Azure deployment project.
+
+- **GDPR Compliance & Data Migration**: Managed the migration of sensitive data to Azure resources, adhering to GDPR and leveraging Azure’s security frameworks.
+- **System Parity Across Active Directory Domains**: Ensured parity and security across multiple Enterprise Active Directory Domain implementations, minimizing security risks post-migration.
+- **Collaboration with Support Teams**: Facilitated collaboration between application and operational support teams, ensuring smooth post-deployment operations.
+
+#### Project: VMWare Security Posture Reporting using vCenter via Powershell / perl
+Architected a security reporting system to enhance VMWare infrastructure security across multiple regions.
+
+- **Security Posture Reporting**: Developed a comprehensive reporting system using vCenter and PowerShell, providing real-time security insights.
+- **CIS Level Compliance Integration**: Used CIS compliance as benchmarks, with data relayed to Splunk collectors to fortify security monitoring.
+
+#### Project: CyberArk PrivilegeCloud Implementation
+Led the migration to CyberArk PrivilegeCloud to enhance privileged access management (PAM).
+
+- **KeePass to CyberArk Migration**: Spearheaded the seamless migration from KeePass to CyberArk PrivilegeCloud, ensuring no data loss or downtime.
+- **Credential Rotation Program**: Established automated credential rotation for priority Active Directory accounts, significantly improving security protocols.
+- **Internal Access Processes**: Designed robust internal processes for managing privileged access, enhancing overall system governance.
+
+#### Project: Major Ransomware Incident Response
+Directed a critical incident response following a ransomware attack, rebuilding core infrastructure and strengthening security measures.
+
+- **Active Directory Domain Rebuild**: Collaborated with architects and engineers to rebuild the compromised domain and network infrastructure, creating a more secure foundation.
+- **Enhanced IT Security Measures**: Implemented CortexEDR, TaniumXDR, and industry-standard security policies, reducing the potential for future security breaches.
+
+#### Project: Directory Services for Hospital System
+Architected a secure and efficient directory service infrastructure, improving administrative efficiency and access times.
+
+- **Azure Global Admin Access**: Implemented shared Azure Global Administrator access using PowerShell, streamlining administrative processes and improving security.
+- **Hybrid Azure Active Directory Optimization**: Utilized PowerShell and ServiceNOW to optimize directory services, achieving a **30% improvement in directory access times**.
+
+#### Project: Vendor Selection for Global Networking Solutions Provider
+Developed a comprehensive, data-driven process for vendor selection, ensuring compliance and focus on privileged access management.
+
+- **Vendor Selection Worksheet**: Designed a metrics-based Vendor Selection Worksheet using Excel and surveys, providing a robust, data-driven framework for vendor evaluation.
+- **Multinational Compliance Focus**: Ensured that vendor selection met multinational compliance requirements, particularly in privileged access and cybersecurity.
+
+---
+
 #### **Houston IT Tech, LLC. - Technical and Operations Architect - Houston, TX** (December 2019 - February 2020)
 In this role at Houston IT Tech, LLC., I wore multiple hats as both a technical and operations architect, focusing on optimizing operational processes and enhancing the technical infrastructure to ensure seamless service delivery and improved client engagement. My journey showcased a blend of technical ingenuity and operational acumen, leading to substantial improvements in service desk operations, client engagement, and SharePoint architecture.
 
@@ -120,6 +139,8 @@ In this role at Houston IT Tech, LLC., I wore multiple hats as both a technical 
    - Successfully completed migrations within stipulated timelines, ensuring business continuity and achieving a 100% success rate in data integrity.
 
 Throughout this tenure, the blend of technical expertise with a methodical approach to operations significantly contributed to enhancing the operational efficiency and technical robustness at Houston IT Tech, LLC. The solutions crafted and implemented during this period laid a strong foundation for the organization’s technical and operational infrastructure.
+
+---
 
 ### **Zakoil, LLC / Lonestar Petroleum / Sugar Land Petroleum - Houston, TX**
 #### **Systems Administrator/Technology Consultant** (April 2017 - October 2019)
@@ -151,6 +172,8 @@ At the heart of the bustling energy sector in Houston, I embraced the role of Sy
 
 The amalgamation of technical foresight with a systematic approach towards operational enhancement significantly bolstered the technological resilience and operational efficacy across Zakoil, LLC, Lonestar Petroleum, and Sugar Land Petroleum. The infrastructural and procedural enhancements implemented during this period substantially contributed to the streamlined operations and robust disaster recovery readiness, setting a new benchmark in operational excellence within the organizations.
 
+---
+
 ### **ERGOS Technology - Various Roles** (December 2011 - April 2017)
 #### **Senior Automation Architect** (May 2015 - April 2017)
 Embarking on the voyage as a Senior Automation Architect, I plunged into the depths of automation, streamlining client onboarding processes through the adept use of LabTech (now [ConnectWise Automate](https://www.connectwise.com/platform/unified-management/automate/it-automation)). This tenure was an expedition of technical innovation, process automation, and client-centric solutions development, ensuring a seamless onboarding experience for the clients.
@@ -169,8 +192,6 @@ Embarking on the voyage as a Senior Automation Architect, I plunged into the dep
 
 - **Advanced Client User Department Onboarding Processes:**
    - Formulated and executed advanced client user department onboarding processes within LabTech, ensuring accurate and streamlined setup of departmental configurations, thereby fostering a well-organized and efficient service delivery.
-
-This journey as a Senior Automation Architect was about pushing the boundaries of what's possible with automation, ensuring a client-centric approach in all undertakings, and leaving a lasting positive impact on the client onboarding experience. The departure in April 2017 marked a phase of personal growth, where I took time away from an upbeat workplace to reflect, learn, and prepare for the next chapter of my professional and personal expedition.
 
 #### **Network Operations Manager** (May 2015 - November 2016)
 As a Network Operations Manager, my journey was about leveraging big data analytics, honing resource planning, exploring business development opportunities, and innovating in key performance indicators and programmatic systems. The essence of this role was to amplify operational efficiencies, enhance service delivery, and foster business growth through technical innovation and strategic planning.
@@ -198,8 +219,6 @@ As a Network Operations Manager, my journey was about leveraging big data analyt
 - **Third-Party Application Patching System:**
    - Crafted and deployed a third-party application patching system across the Windows Device Landscape, ensuring up-to-date and secure software deployments.
 
-The tenure as a Network Operations Manager was a blend of technical innovation, strategic planning, and business development. The initiatives undertaken not only enhanced operational efficiencies and service delivery but also opened new avenues for business growth and technical advancements, setting a high bar in operational excellence and customer satisfaction.
-
 #### **Network Operations/Automation Consultant** (September 2013 - May 2015)
 Evolving into the role of Network Operations/Automation Consultant, the spectrum of responsibilities broadened, embodying an enhanced focus on Programmatic Systems Administration, big data analytics, and advanced diagnostic routines. This journey was about scaling the pinnacle of technical innovation, leveraging data analytics, and crafting sophisticated programs to fortify the organizational IT infrastructure.
 
@@ -217,8 +236,6 @@ Evolving into the role of Network Operations/Automation Consultant, the spectrum
 - **Advanced Windows Diagnostics Routines:**
    - Crafted and deployed advanced Windows Diagnostics Routines in-response to Events, ensuring swift identification and rectification of system anomalies.
    - The diagnostic routines significantly reduced system downtime and improved the response time to critical system events, thereby enhancing overall operational efficiency.
-
-The journey as a Network Operations/Automation Consultant was about pushing the technical envelope, blending programmatic expertise with big data insights to craft robust monitoring, security patching, and diagnostic solutions. The legacy of this tenure was not only about the tangible improvements in system security and efficiency but also about fostering a culture of continuous learning and innovation in the face of evolving technical challenges.
 
 #### **Technical Consultant** (May 2013 - September 2013)
 Transitioning into a Technical Consultant role, I not only carried forward the acumen acquired from my previous stint as a Support Consultant / Managed Services Intern but also ventured into new territories of program development and technical training. This period was characterized by a blend of technical expertise, mentorship, and program development, ensuring a legacy of well-structured programs and well-equipped technical resources.
@@ -238,9 +255,6 @@ Transitioning into a Technical Consultant role, I not only carried forward the a
 - **Training of Technical Resources:**
    - Conducted training sessions for technical resources on Subject Matter Expertise including Automation, Remote Management and Support, Customer Service, Project Management, and Intrapreneurship.
    - Enhanced the technical prowess and customer service skills of the team, contributing to improved service delivery and customer satisfaction.
-
-This tenure as a Technical Consultant was a fruitful amalgam of technical sustenance, mentorship, and contributing back to the organizational ecosystem by developing robust programs for intern and technical resource onboarding. The ripple effects of these initiatives not only enriched the learning experience for the newcomers but also significantly contributed to creating a well-informed and capable technical workforce, ready to tackle the challenges ahead with vigor and adeptness.
-
 
 #### **Support Consultant / Managed Services Intern** (December 2011 - May 2013)
 Embarking on the professional journey in the realm of IT support and managed services, my stint as a Support Consultant and Managed Services Intern was replete with opportunities to delve into both remote and on-site technical support, system debugging, and disaster/incident response processes. This period was a testament to my proclivity for automation, standardized documentation, and adept handling of escalated field issues.
@@ -263,9 +277,6 @@ Embarking on the professional journey in the realm of IT support and managed ser
 - **Standardized Documentation Techniques:**
    - Championed the adoption of standardized documentation techniques using a pre-Markdown format, fostering a culture of thorough documentation and knowledge sharing within the team.
 
-The blend of technical acumen, process automation, and a knack for documentation during this period laid a strong foundation for my future endeavors in the ever-evolving IT landscape. The experiences garnered were not merely a demonstration of technical prowess, but a reflection of a growing professional ready to take on the myriad challenges the IT domain unfurls.
-
-
 ---
 ## Technical Proficiencies
 
@@ -279,7 +290,6 @@ The blend of technical acumen, process automation, and a knack for documentation
   - Shell Scripting
   - Power Platform
   - Python
-  - 
 
 - **Database Management:**
   - Database Administration & Development
@@ -300,7 +310,7 @@ The blend of technical acumen, process automation, and a knack for documentation
 - **Privileged Access Management:**
   - CyberArk Endpoint Privilege Manager (Onsite)
   - CyberArk PrivilegeCloud
-  - CyberArk Privilaged Access Manager (Onsite)
+  - CyberArk Privileged Access Manager (Onsite)
   - BeyondTrust PasswordVault
 
 - **Project Management:**
