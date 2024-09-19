@@ -7,15 +7,20 @@ sidebar:
 
 # Suleman Manji
 
-With a rich background in IT consulting, I specialize in cloud services, privileged access management, and automation, with a keen focus on leveraging technology to augment human endeavors. As a holder of a Bachelor’s degree in Management of Information Systems from the University of Houston's Bauer School of Business, I marry academic insights with extensive practical experience to navigate the technical landscape. My curiosity drives me towards continuous learning, often indulging in science documentaries and innovative engineering methodologies.
+With extensive experience in IT consulting, I specialize in cloud services, privileged access management, and automation—driven by a passion for leveraging technology to amplify human potential. Holding a Bachelor's degree in Management of Information Systems from the University of Houston's Bauer School of Business, I combine academic knowledge with practical expertise to navigate the ever-evolving tech landscape effectively. My relentless curiosity fuels a commitment to continuous learning, often immersing myself in science documentaries and innovative engineering practices.
 
-I have a proven track record in executing technical projects, optimizing security postures, and driving operational efficiencies across diverse organizational settings. My ability to demystify complex technical concepts and collaborate effectively with cross-functional teams, stakeholders, and clients has been instrumental in achieving shared goals and delivering value.
+I have a proven track record of executing technical projects, enhancing security postures, and driving operational efficiencies across diverse organizational settings. My ability to demystify complex technical concepts and collaborate seamlessly with cross-functional teams, stakeholders, and clients has been instrumental in achieving shared goals and delivering measurable value.
 
 ## Contact
 - **Mobile:** [281.904.1969](tel:2819041969)
 - **Email:** [ssmanji89@gmail.com](mailto:ssmanji89@gmail.com)
 - **LinkedIn:** [www.linkedin.com/in/sulemanmanji](https://www.linkedin.com/in/sulemanmanji)
 
+## Education
+- **Bachelor of BA in Management Information Systems**; University of Houston-Bauer College of Business - Houston, TX; January 2009 to May 2013
+- **Certificate in Corporate Entrepreneurship**; University of Houston - Houston, TX; June 2011 to January 2012
+- **Certificate in Corporate Intrapreneurship**; University of Houston - Houston, TX; January 2012 to June 2012
+  
 ## Professional Experience
 
 ### **StackAdvisors, LLC. - Denver, CO**
@@ -41,7 +46,7 @@ In this role, I embraced a dual responsibility of managing integration projects 
 Throughout this tenure, my ability to blend technical skills with project management acumen fostered a culture of continuous improvement and cross-functional collaboration, driving forward the objectives of StackAdvisors and ensuring project deliverables were met in a timely and efficient manner.
 
 ### **Fulcrum Technology (FTSC) - Various Projects**
-#### **Technical SME/Architect, Engineer, Project Manager, and Junior Engineer Roles**
+#### **Technical SME, Engineer, Project Manager, and Other Engineer Roles**
 
 Embarking on a mercenary-like venture with Fulcrum Technology, I assumed multiple roles across different projects, showcasing adaptability, technical prowess, and a drive to meet client objectives. My journey illustrated a blend of technical expertise and strategic oversight, aligning technologies with project goals to deliver robust solutions.
 
@@ -260,36 +265,67 @@ Embarking on the professional journey in the realm of IT support and managed ser
 
 The blend of technical acumen, process automation, and a knack for documentation during this period laid a strong foundation for my future endeavors in the ever-evolving IT landscape. The experiences garnered were not merely a demonstration of technical prowess, but a reflection of a growing professional ready to take on the myriad challenges the IT domain unfurls.
 
----
-
-## Education
-- **Bachelor of BA in Management Information Systems**; University of Houston-Bauer College of Business - Houston, TX; January 2009 to May 2013
-- **Certificate in Corporate Entrepreneurship**; University of Houston - Houston, TX; June 2011 to January 2012
-- **Certificate in Corporate Intrapreneurship**; University of Houston - Houston, TX; January 2012 to June 2012
 
 ---
-
 ## Technical Proficiencies
-- ***Cloud Platforms:*** Azure, AWS, Oracle, IBM
-- ***Scripting Languages:*** PowerShell, Shell Scripting
-- ***Database Management:*** Microsoft SQL Server, Database Administration, Database Development
-- ***Networking:*** TCP/IP, DNS, DHCP, VPN, LAN, WAN
-- ***Virtualization Technologies:*** VMWare, Microsoft Hyper-V, vCenter
-- ***Operating Systems:*** Windows Server & Desktop, Linux
-- ***Web Technologies:*** IIS, Load Balancing, High Availability
-- ***Privileged Access Management:*** CyberArk Endpoint Privileges Management, CyberArk PrivilegeCloud PAM Implementation
-- ***Compliance & Reporting:*** GDPR Compliance, CIS Level Compliance, VMWare Security Posture Reporting
-- ***Incident Response:*** Ransomware Incident Response, Network Firewalls, SSH
-- ***Project Management:*** Agile, Scrum, Kanban, Project Timeline Management
-- ***Operations:*** NOC Oversight, IT Infrastructure Upgrade, Deployment Workflows, Hosting & Infrastructure Optimization
-- ***Development Tools:*** .NET C# Blazor, ServiceNow, Citrix
-- ***Monitoring Tools:*** Azure Monitoring Tools, vCenter
-- ***Collaboration & Communication:*** Microsoft Office, Microsoft Exchange, Microsoft Project
-- ***IT Management:*** ConnectWise (7 years), ScreenConnect (4 years), LabTech (7 years)
-- ***Customer Service:*** Technical Support, Help Desk, Client Services
-- ***Client Relationship Management:*** Customer Relationship Management, Onsite Technical Support, Remote Client Communication
-- ***Training:*** Training & Onboarding, Recruitment & Networking
-- ***Professional Development:*** Research & Technological Development, Technical Writing, Written Communication
+
+- **Cloud Platforms:**
+  - Azure
+  - AWS
+  - GCP
+
+- **Scripting & Automation:**
+  - PowerShell
+  - Shell Scripting
+  - Power Platform
+  - Python
+  - 
+
+- **Database Management:**
+  - Database Administration & Development
+
+- **Networking & Security:**
+  - TCP/IP, DNS, DHCP
+  - VPN, LAN, WAN
+  - Network Firewalls, SSH
+
+- **Virtualization Technologies:**
+  - VMware vSphere, vCenter
+  - Microsoft Hyper-V
+
+- **Operating Systems:**
+  - Windows Server & Desktop
+  - Linux
+
+- **Privileged Access Management:**
+  - CyberArk Endpoint Privilege Manager (Onsite)
+  - CyberArk PrivilegeCloud
+  - CyberArk Privilaged Access Manager (Onsite)
+  - BeyondTrust PasswordVault
+
+- **Project Management:**
+  - Agile, Scrum, Kanban
+  - Project Timeline Management
+
+- **IT Operations:**
+  - NOC Oversight
+  - IT Infrastructure Implementations, Upgrades, Migrations and Deprecation
+  - Business Requirements Workflow Development 
+
+- **Communication & Collaboration:**
+  - Microsoft Office Suite
+  - Microsoft Teams
+  - Microsoft Planner / Project 
+  - Microsoft Exchange 
+
+- **Customer Service & Support:**
+  - Technical Support
+  - Help Desk
+  - Client Services
+
+- **Training & Development:**
+  - Training & Onboarding
+  - Technical Writing
 
 ---
 
