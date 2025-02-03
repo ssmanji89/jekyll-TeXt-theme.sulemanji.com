@@ -5,8 +5,7 @@ before_install:
   - git clone https://github.com/rbenv/ruby-build.git
   - cd ruby-build && sudo ./install.sh && cd ..
   - sudo apt-get update -qq && sudo apt-get install -y libyaml-dev libgdbm-dev libreadline-dev libncurses5-dev
-  - ruby-build 3.1.4 $PREFIX
-  - touch $PREFIX.complete
+  - if [ ! -f "$PREFIX.complete" ]; then sudo ruby-build 3.1.4 $PREFIX && sudo touch "$PREFIX.complete"; fi
 branches:
   only:
     - master
