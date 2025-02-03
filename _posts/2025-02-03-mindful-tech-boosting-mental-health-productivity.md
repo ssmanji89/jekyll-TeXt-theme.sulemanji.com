@@ -2,7 +2,7 @@
 title: "Mindful Tech: Boosting Mental Health & Productivity - Insights and Trends"
 description: "An in-depth look at Mindful Tech: Boosting Mental Health & Productivity with insights, trends, and relevant products."
 date: 2025-02-03T03:47:03Z
-permalink: /mindful-tech-boosting-mental-health--productivity/
+permalink: /mindful-tech-boosting-mental-health-productivity/
 keywords: "Mindful Tech: Boosting Mental Health & Productivity, trends, insights, blog"
 ---
 
