@@ -1,13 +1,18 @@
 language: ruby
+env:
+  - PREFIX=/opt/hostedtoolcache/Ruby/3.1.4/x64
 before_install:
-  - ruby-build 3.1.4 /opt/hostedtoolcache/Ruby/3.1.4/x64
-  - touch /opt/hostedtoolcache/Ruby/3.1.4/x64.complete
-rvm:
-  - 3.1.4
+  - git clone https://github.com/rbenv/ruby-build.git
+  - cd ruby-build && sudo ./install.sh && cd ..
+  - sudo apt-get update -qq && sudo apt-get install -y libyaml-dev libgdbm-dev libreadline-dev libncurses5-dev
+  - ruby-build 3.1.4 $PREFIX
+  - touch $PREFIX.complete
 branches:
   only:
     - master
-before_script: cp -rfv docs/_includes .
+before_script:
+  - export PATH=$PREFIX/bin:$PATH
+  - cp -rfv docs/_includes .
 script: JEKYLL_ENV=production bundle exec jekyll build --config ./docs/_config.yml
 deploy:
   provider: pages
