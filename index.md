@@ -1,5 +1,5 @@
 ---
-title: Independent IT Consulting for Business Innovation
+title: IT Consulting for Business Innovation
 layout: article
 sidebar:
   nav: sidebar-en
