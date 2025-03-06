@@ -68,23 +68,6 @@ After years of delivering IT solutions for diverse organizations, I am excited t
 - Standardized remote service desk processes, reducing response times by 25%.
 - Overhauled SharePoint permissions and data storage, resulting in a 30% improvement in access times.
 
-*Additional details on previous roles (Zakoil, LLC; ERGOS Technology) remain available below to showcase a full spectrum of technical expertise.*
-
----
-
-## Full Professional Experience
-
-<!-- Retain your detailed project and career history below for clients who want to dive deeper. -->
-
-### Fulcrum Technology (FTSC) – Various Projects  
-*(Detailed project descriptions...)*
-
-### Houston IT Tech, LLC – Houston, TX  
-
-### Zakoil, LLC / Lonestar Petroleum / Sugar Land Petroleum – Houston, TX  
-
-### ERGOS Technology – Various Roles  
-
 ---
 
 ## Technical Proficiencies
