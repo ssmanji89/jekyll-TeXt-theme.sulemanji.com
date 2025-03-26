@@ -1,0 +1,210 @@
+---
+layout: article
+title: Contact Me
+permalink: /contact/
+---
+
+<div class="grid-container">
+  <div class="hero-section">
+    <h1>Get in Touch</h1>
+    <p class="text-lead">Let's discuss how automation can transform your business processes and drive growth. Reach out using any of the methods below, and I'll get back to you promptly.</p>
+  </div>
+  
+  <div class="section">
+    <div class="grid grid--p-3">
+      <div class="cell cell--12 cell--md-6">
+        <div class="contact-info">
+          <div class="contact-method">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <h3>Email</h3>
+            <p><a href="mailto:ssmanji89@gmail.com">ssmanji89@gmail.com</a></p>
+          </div>
+          
+          <div class="contact-method">
+            <div class="contact-icon">
+              <i class="fas fa-phone"></i>
+            </div>
+            <h3>Phone</h3>
+            <p><a href="tel:2819041969">281.904.1969</a></p>
+          </div>
+          
+          <div class="contact-method">
+            <div class="contact-icon">
+              <i class="fab fa-linkedin"></i>
+            </div>
+            <h3>LinkedIn</h3>
+            <p><a href="https://www.linkedin.com/in/sulemanmanji" target="_blank">linkedin.com/in/sulemanmanji</a></p>
+          </div>
+          
+          <div class="contact-method">
+            <div class="contact-icon">
+              <i class="fab fa-github"></i>
+            </div>
+            <h3>GitHub</h3>
+            <p><a href="https://github.com/ssmanji89" target="_blank">github.com/ssmanji89</a></p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="cell cell--12 cell--md-6">
+        <div class="contact-form-container">
+          <h2>Send a Message</h2>
+          <form class="contact-form" action="https://formspree.io/f/YOUR_FORMSPREE_ENDPOINT" method="POST">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="_replyto" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="6" required></textarea>
+            </div>
+            
+            <button type="submit" class="button button--primary button--rounded button--lg">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="section availability-section">
+    <h2>Availability</h2>
+    <p>I am currently accepting new automation consulting projects and am available for:</p>
+    
+    <div class="grid grid--p-3">
+      <div class="cell cell--12 cell--md-4">
+        <div class="availability-card">
+          <div class="availability-icon">
+            <i class="fas fa-project-diagram"></i>
+          </div>
+          <h3>Project-Based Work</h3>
+          <p>Defined scope projects with clear deliverables and timelines.</p>
+        </div>
+      </div>
+      
+      <div class="cell cell--12 cell--md-4">
+        <div class="availability-card">
+          <div class="availability-icon">
+            <i class="fas fa-calendar-check"></i>
+          </div>
+          <h3>Retainer Arrangements</h3>
+          <p>Ongoing support and development with dedicated monthly hours.</p>
+        </div>
+      </div>
+      
+      <div class="cell cell--12 cell--md-4">
+        <div class="availability-card">
+          <div class="availability-icon">
+            <i class="fas fa-users"></i>
+          </div>
+          <h3>Team Augmentation</h3>
+          <p>Temporary team membership for specific initiatives or capabilities.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+.text-lead {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+}
+
+.hero-section {
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #eee;
+}
+
+.section {
+  margin-bottom: 4rem;
+}
+
+.contact-info {
+  margin-bottom: 2rem;
+}
+
+.contact-method {
+  margin-bottom: 2rem;
+}
+
+.contact-icon {
+  font-size: 2rem;
+  color: #228B22;
+  margin-bottom: 1rem;
+}
+
+.contact-form-container {
+  background-color: #f9f9f9;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.availability-section {
+  text-align: center;
+}
+
+.availability-section p {
+  margin-bottom: 2rem;
+}
+
+.availability-card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  transition: transform 0.3s ease;
+}
+
+.availability-card:hover {
+  transform: translateY(-5px);
+}
+
+.availability-icon {
+  font-size: 2rem;
+  color: #228B22;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .contact-form-container {
+    margin-top: 2rem;
+  }
+}
+</style>

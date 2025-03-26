@@ -1,31 +1,19 @@
 header:
+  - title: Home
+    url: /
+  - title: Services
+    url: /services/
+    key: services
+    children:
+      - title: Microsoft 365 Power Platform
+        url: /services/power-platform/
+      - title: Cloud Infrastructure Automation
+        url: /services/cloud-automation/
+      - title: AI-Enhanced Process Automation
+        url: /services/ai-automation/
+  - title: Case Studies
+    url: /case-studies/
   - title: About
-    url: https://www.sulemanji.com
-  - title: Archive
-    url: /archive.html
-sidebar-en:
-  - title: Resources
-    children: 
-    - title: AI Learning Plan
-      url: /_posts/ailearningplan.md
-    - title: Trying to Explain the Crazy
-      url: /unwraveling-the-onions
-    - title: MSPGeek
-      url: https://mspgeek.org/
-    - title: ITIL Processes
-      url: https://wiki.en.it-processmaps.com/index.php/ITIL_Processes
-    - title: MSFT ISO's
-      url: https://github.com/ssmanji89/ISO-Downloads
-    - title: eia Overview
-      url: https://www.eia.gov/electricity/gridmonitor/dashboard/electric_overview 
-    - title: OilPrices.com
-      url: https://oilprice.com/Latest-Energy-News/World-News/
-    - title: Ventusky
-      url: https://www.ventusky.com/
-    - title: TropicalTidbits
-      url: https://www.tropicaltidbits.com/ 
-    - title: WeatherNerds
-      url: https://www.weathernerds.org/
-    - title: robinBots
-      url: https://robinBots.botStuff.org
-
+    url: /about/
+  - title: Contact
+    url: /contact/

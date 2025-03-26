@@ -20,9 +20,10 @@ text_skin: dark # "default" (default), "dark", "forest", "ocean", "chocolate", "
 highlight_theme: tomorrow-night-bright # "default" (default), "tomorrow", "tomorrow-night", "tomorrow-night-eighties", "tomorrow-night-blue", "tomorrow-night-bright"
 url     : https://www.sulemanji.com # the base hostname & protocol for your site e.g. https://www.someone.com
 baseurl : / # does not include hostname
-title   : Suleman S. Manji
+title   : Suleman S. Manji | Business Process Automation Expert
 description: > # this means to ignore newlines until "Language & timezone"
-
+  Expert in Microsoft 365, Power Platform and AI-driven business process automation.
+  Transform your workflows, reduce operational costs, and drive business growth.
 
 ## => Language and Timezone
 ##############################
@@ -32,12 +33,12 @@ timezone: America/Chicago # see https://en.wikipedia.org/wiki/List_of_tz_databas
 
 ## => Author and Social
 ##############################
-author: 
-  type      : Human # "person" (default), "organization"
+author:
+  type      : person # "person" (default), "organization"
   name      : Suleman Manji
-  url       : www.sulemanji.com
-  avatar    : # path or url of avatar image (square)
-  bio       : .
+  url       : https://www.sulemanji.com
+  avatar    : /assets/images/sulemanji-profile.jpg # path or url of avatar image (square)
+  bio       : Business Process Automation Expert specializing in Microsoft 365, Power Platform, and AI-driven solutions.
   email     : ssmanji89@gmail.com
   facebook  : # "user_name" the last part of your profile url, e.g. https://www.facebook.com/user_name
   twitter   : # "slullyman" the last part of your profile url, e.g. https://twitter.com/user_name
@@ -47,14 +48,14 @@ author:
   medium    : # "user_name" the last part of your profile url, e.g. https://medium.com/user_name
   zhihu     : # "user_name" the last part of your profile url, e.g. https://www.zhihu.com/people/user_name
   douban    : # "user_name" the last part of your profile url, e.g. https://www.douban.com/people/user_name
-  linkedin  : # "sulemanmanji" the last part of your profile url, e.g. https://www.linkedin.com/in/user_name
-  github    : # "ssmanji89" the last part of your profile url, e.g. https://github.com/user_name
-  npm       : # "user_name" the last part of your profile url, e.g. https://www.npmjs.com/~user_name
+  linkedin  : suleman-manji-1a46852a0/ # "sulemanmanji" the last part of your profile url, e.g. https://www.linkedin.com/in/user_name
+  github    : ssmanji89 # "ssmanji89" the last part of your profile url, e.g. https://github.com/user_name
+  npm       : sullyman # "user_name" the last part of your profile url, e.g. https://www.npmjs.com/~user_name
 
 
 ## => GitHub Repository (if the site is hosted by GitHub)
 ##############################
-repository: ssmanji89/botStuff
+repository: ssmanji89/jekyll-TeXt-theme.sulemanji.com
 repository_tree: master
 
 
