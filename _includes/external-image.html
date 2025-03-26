@@ -1,0 +1,14 @@
+{% comment %}External Image Handler{% endcomment %}
+{% if include.src %}
+  <img 
+    src="{{ include.src }}" 
+    alt="{{ include.alt | default: 'Image' }}"
+    class="external-image"
+    {% if include.width %}width="{{ include.width }}"{% endif %}
+    {% if include.height %}height="{{ include.height }}"{% endif %}
+    loading="lazy"
+    onerror="this.onerror=null; this.src='https://via.placeholder.com/400x300?text=Image+Not+Found';"
+  />
+{% else %}
+  <div class="error-message">No image source provided</div>
+{% endif %}

@@ -1,54 +1,68 @@
 ---
-layout: article
-title: Property Inspection Workflow Automation Case Study
+layout: page
+title: Property Inspection Automation Case Study
 permalink: /case-studies/property-inspection/
 ---
 
-<div class="grid-container">
-  <div class="hero-section">
-    <div class="grid grid--p-3">
-      <div class="cell cell--12 cell--md-8">
-        <span class="case-study-tag">SharePoint & Power Automate</span>
-        <h1>Property Inspection Workflow Automation</h1>
-        <p class="client-name">Client: ZG Companies</p>
-        <p class="text-lead">A comprehensive solution that transformed manual property inspections into an efficient, standardized digital process with SharePoint and Power Automate.</p>
-      </div>
-      <div class="cell cell--12 cell--md-4">
-        <div class="results-box">
-          <div class="results-item">
-            <div class="results-number">60%</div>
-            <div class="results-label">Reduction in inspection time</div>
-          </div>
-          <div class="results-item">
-            <div class="results-number">100%</div>
-            <div class="results-label">Compliance documentation</div>
-          </div>
-          <div class="results-item">
-            <div class="results-number">23+</div>
-            <div class="results-label">Properties managed</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+<div class="case-study-container">
+  <section class="case-study-hero">
+    {% include external-image.html 
+      src="https://cdn.sulemanji.com/case-studies/property-inspection-hero.jpg" 
+      alt="Property Inspection Automation Hero Image"
+      width="1200"
+      height="400"
+    %}
+    <h1>Revolutionizing Property Inspections with Automation</h1>
+  </section>
 
-  {% include case-study-challenge.html %}
-  
-  {% include case-study-solution.html %}
-  
-  {% include case-study-implementation.html %}
-  
-  {% include case-study-results.html %}
-  
-  {% include case-study-testimonial.html %}
-  
-  {% include case-study-technologies.html %}
-  
-  <div class="cta-section">
-    <h2>Ready to Transform Your Business Processes?</h2>
-    <p>Let's discuss how automation can streamline your operations and drive growth.</p>
-    <a href="/contact" class="button button--success button--rounded button--lg">Get Started</a>
-  </div>
+  <section class="case-study-overview">
+    <div class="overview-content">
+      <h2>Project Overview</h2>
+      <p>Transformed traditional property inspection processes by implementing cutting-edge automation technologies, reducing inspection time by 60% and eliminating manual data entry errors.</p>
+      
+      {% include external-image.html 
+        src="https://cdn.sulemanji.com/case-studies/property-inspection-workflow.jpg" 
+        alt="Automated Property Inspection Workflow"
+        width="800"
+        height="400"
+      %}
+    </div>
+  </section>
+
+  <section class="technologies-used">
+    <h2>Technologies Utilized</h2>
+    <div class="tech-stack">
+      {% include external-image.html 
+        src="https://cdn.sulemanji.com/case-studies/property-inspection-tech-stack.png" 
+        alt="Technology Stack Logos"
+        width="1000"
+        height="200"
+      %}
+    </div>
+  </section>
+
+  <section class="results">
+    <h2>Measurable Outcomes</h2>
+    <ul>
+      <li>60% reduction in inspection processing time</li>
+      <li>95% accuracy in data capture</li>
+      <li>Seamless integration with existing systems</li>
+    </ul>
+  </section>
 </div>
 
-{% include case-study-styles.html %}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Accessibility and interaction enhancements
+  const sections = document.querySelectorAll('section');
+  sections.forEach(section => {
+    section.setAttribute('tabindex', '0');
+    section.addEventListener('focus', function() {
+      this.classList.add('focused');
+    });
+    section.addEventListener('blur', function() {
+      this.classList.remove('focused');
+    });
+  });
+});
+</script>

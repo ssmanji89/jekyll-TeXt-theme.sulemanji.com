@@ -1,0 +1,23 @@
+{% comment %}Case Study Card with External Image Handling{% endcomment %}
+<div class="case-study-card" aria-labelledby="case-study-{{ include.id }}-title">
+  {% if include.image_url %}
+    {% include external-image.html 
+      src=include.image_url 
+      alt=include.title 
+      width="400" 
+      height="300" 
+    %}
+  {% endif %}
+  
+  <div class="case-study-content">
+    <h3 id="case-study-{{ include.id }}-title">{{ include.title }}</h3>
+    <p>{{ include.description }}</p>
+    <a 
+      href="{{ include.link }}" 
+      class="btn btn-primary"
+      aria-label="View {{ include.title }} Case Study"
+    >
+      View Case Study
+    </a>
+  </div>
+</div>

@@ -1,172 +1,38 @@
 ---
-layout: article
-title: Automation Case Studies
+layout: page
+title: Case Studies
 permalink: /case-studies/
 ---
 
-<div class="grid-container">
-  <div class="hero-section">
-    <h1>Automation Success Stories</h1>
-    <p class="text-lead">These case studies demonstrate how I've helped organizations transform their operations through strategic automation solutions. Each project delivered measurable business value and improved operational efficiency.</p>
-  </div>
-
-  <div class="section">
-    <h2>Microsoft 365 Power Platform Automation</h2>
-    
-    <div class="case-study-grid">
-      <div class="grid grid--p-3">
-        <div class="cell cell--12 cell--md-6">
-          <div class="case-study-card">
-            <div class="case-study-image">
-              <img src="/assets/images/case-study-property.jpg" alt="Property Inspection Automation">
-            </div>
-            <div class="case-study-content">
-              <span class="case-study-tag">SharePoint & Power Automate</span>
-              <h3>Property Inspection Workflow Automation</h3>
-              <p>Created a SharePoint-based inspection system with Power Automate integration for a property management company, reducing manual effort by 60% and improving compliance documentation.</p>
-              <a href="/case-studies/property-inspection" class="button button--outline-success button--rounded">View Case Study</a>
-            </div>
-          </div>
-        </div>
-        
-        <div class="cell cell--12 cell--md-6">
-          <div class="case-study-card">
-            <div class="case-study-image">
-              <img src="/assets/images/case-study-financial.jpg" alt="Financial Reconciliation Automation">
-            </div>
-            <div class="case-study-content">
-              <span class="case-study-tag">Power Automate & Expensify</span>
-              <h3>Financial Reconciliation Automation</h3>
-              <p>Integrated Expensify with Power Automate to create an end-to-end financial reconciliation process, reducing accounting workload by 65% and virtually eliminating data entry errors.</p>
-              <a href="/case-studies/financial-reconciliation" class="button button--outline-success button--rounded">View Case Study</a>
-            </div>
-          </div>
-        </div>
+<div class="case-studies-container">
+  {% assign case_studies = site.data.case_studies %}
+  
+  <div class="case-studies-grid">
+    {% for study in case_studies %}
+      <div class="case-study-preview">
+        {% include case-study-card.html 
+          id=study.id
+          title=study.title
+          description=study.description
+          image_url=study.image_url
+          link=study.link
+        %}
       </div>
-    </div>
-  </div>
-
-  <div class="section">
-    <h2>Cloud Infrastructure Automation</h2>
-    
-    <div class="case-study-grid">
-      <div class="grid grid--p-3">
-        <div class="cell cell--12 cell--md-6">
-          <div class="case-study-card">
-            <div class="case-study-image">
-              <img src="/assets/images/case-study-azure-devops.jpg" alt="Azure DevOps CI/CD">
-            </div>
-            <div class="case-study-content">
-              <span class="case-study-tag">Azure DevOps</span>
-              <h3>CI/CD Pipeline Optimization</h3>
-              <p>Implemented CI/CD optimizations in Azure DevOps for StackAdvisors, improving deployment speed by 50% and reducing build failures by 75%.</p>
-              <a href="/case-studies/azure-devops-cicd" class="button button--outline-info button--rounded">View Case Study</a>
-            </div>
-          </div>
-        </div>
-        
-        <div class="cell cell--12 cell--md-6">
-          <div class="case-study-card">
-            <div class="case-study-image">
-              <img src="/assets/images/case-study-azure-cost.jpg" alt="Azure Cost Optimization">
-            </div>
-            <div class="case-study-content">
-              <span class="case-study-tag">Azure Cloud</span>
-              <h3>Azure Cost Optimization</h3>
-              <p>Reduced Azure hosting costs by 40% through strategic infrastructure refinements, resource right-sizing, and implementation of scheduled scaling.</p>
-              <a href="/case-studies/azure-cost-optimization" class="button button--outline-info button--rounded">View Case Study</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="section">
-    <h2>AI-Enhanced Process Automation</h2>
-    
-    <div class="case-study-grid">
-      <div class="grid grid--p-3">
-        <div class="cell cell--12 cell--md-6">
-          <div class="case-study-card">
-            <div class="case-study-image">
-              <img src="/assets/images/case-study-halopsa.jpg" alt="HaloPSA AI Triager">
-            </div>
-            <div class="case-study-content">
-              <span class="case-study-tag">AI Integration</span>
-              <h3>AI-Powered Ticket Triaging</h3>
-              <p>Developed a middleware solution integrating with HaloPSA's API to provide AI-powered ticket triaging capabilities, reducing initial response time by 78% and improving service desk efficiency.</p>
-              <a href="/case-studies/halopsa-triager" class="button button--outline-theme button--rounded">View Case Study</a>
-            </div>
-          </div>
-        </div>
-        
-        <div class="cell cell--12 cell--md-6">
-          <div class="case-study-card">
-            <div class="case-study-image">
-              <img src="/assets/images/case-study-executive-assistant.jpg" alt="Executive Assistant">
-            </div>
-            <div class="case-study-content">
-              <span class="case-study-tag">AI Agent</span>
-              <h3>AI Executive Assistant</h3>
-              <p>Created a middleware application that monitors Microsoft 365 inboxes and leverages OpenAI to draft responses, create tasks, and schedule events, saving executives an average of 15 hours per week.</p>
-              <a href="/case-studies/executive-assistant" class="button button--outline-theme button--rounded">View Case Study</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    {% endfor %}
   </div>
 </div>
 
-<style>
-.text-lead {
-  font-size: 1.25rem;
-  line-height: 1.6;
-  font-weight: 300;
-  margin-bottom: 1.5rem;
-}
-
-.hero-section {
-  margin-bottom: 3rem;
-  padding-bottom: 2rem;
-  border-bottom: 1px solid #eee;
-}
-
-.section {
-  margin-bottom: 4rem;
-}
-
-.case-study-card {
-  background-color: #fff;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  height: 100%;
-  transition: transform 0.3s ease;
-}
-
-.case-study-card:hover {
-  transform: translateY(-5px);
-}
-
-.case-study-image img {
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
-}
-
-.case-study-content {
-  padding: 1.5rem;
-}
-
-.case-study-tag {
-  display: inline-block;
-  background-color: #f0f0f0;
-  color: #666;
-  padding: 0.25rem 0.75rem;
-  border-radius: 4px;
-  font-size: 0.8rem;
-  margin-bottom: 0.75rem;
-}
-</style>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const casestudyCards = document.querySelectorAll('.case-study-preview');
+  
+  casestudyCards.forEach(card => {
+    card.addEventListener('keydown', function(event) {
+      if (event.key === 'Enter' || event.key === ' ') {
+        const link = this.querySelector('a');
+        if (link) link.click();
+      }
+    });
+  });
+});
+</script>

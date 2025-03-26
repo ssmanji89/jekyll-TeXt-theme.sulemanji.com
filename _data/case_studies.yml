@@ -1,0 +1,17 @@
+- id: property-inspection
+  title: Property Inspection Automation
+  description: Streamlining real estate property inspections through advanced automation technologies
+  image_url: https://cdn.sulemanji.com/case-studies/property-inspection-cover.jpg
+  link: /case-studies/property-inspection
+
+- id: workflow-optimization
+  title: Enterprise Workflow Optimization
+  description: Transforming complex business processes with Microsoft Power Platform
+  image_url: https://cdn.sulemanji.com/case-studies/workflow-optimization-cover.jpg
+  link: /case-studies/workflow-optimization
+
+- id: ai-document-processing
+  title: AI-Powered Document Processing
+  description: Leveraging AI to automate document intake and classification
+  image_url: https://cdn.sulemanji.com/case-studies/ai-document-processing-cover.jpg
+  link: /case-studies/ai-document-processing

@@ -1,3 +1,44 @@
-/* start custom scss snippet */
+/* Custom SCSS Imports */
+@import "custom/accessibility";
 
-/* end custom scss snippet */
+// External Image References Handler
+.external-image {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.02);
+  }
+}
+
+// Ensure External Image References
+@mixin external-image-handler {
+  img {
+    @extend .external-image;
+    
+    // Ensure no locally stored images
+    @if str-index(#{&}, 'local-') {
+      display: none;
+      content: 'Invalid local image reference';
+    }
+  }
+}
+
+// Apply to key components
+.case-study-card {
+  @include external-image-handler;
+}
+
+.service-card {
+  @include external-image-handler;
+}
+
+// Responsive Image Handling
+@media (max-width: 768px) {
+  .external-image {
+    width: 100%;
+    max-height: 300px;
+  }
+}
