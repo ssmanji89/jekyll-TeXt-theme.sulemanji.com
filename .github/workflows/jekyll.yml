@@ -29,9 +29,13 @@ jobs:
       
       - name: Install Dependencies
         run: |
-          bundle config set deployment 'true'
+          bundle config unset deployment
           bundle install
           bundle update
+      
+      - name: Generate Lockfile
+        run: |
+          bundle lock --update
       
       - name: Setup Pages
         id: pages

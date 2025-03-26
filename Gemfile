@@ -13,6 +13,7 @@ group :jekyll_plugins do
   gem 'jekyll-sitemap'
   gem 'jekyll-seo-tag'
   gem 'jekyll-redirect-from'
+  gem 'jemoji'
 end
 
 # Windows and other dependencies
@@ -21,6 +22,10 @@ platforms :mingw, :x64_mingw, :mswin, :jruby do
   gem 'tzinfo-data'
 end
 
-# Performance
-gem 'wdm', '~> 0.1.1', platforms: [:mingw, :x64_mingw, :mswin]
+# Performance-related
 gem 'webrick', '~> 1.8'
+
+# Development dependencies
+group :development do
+  gem 'wdm', '~> 0.1.1', platforms: [:mingw, :x64_mingw, :mswin]
+end
