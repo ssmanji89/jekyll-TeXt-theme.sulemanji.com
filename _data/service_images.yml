@@ -1,0 +1,24 @@
+# Service Page Image References
+
+power_platform:
+  hero: https://stock.adobe.com/images/businesswoman-sign-a-contract-document-management-system-hologram/575553061.html
+  automation: https://stock.adobe.com/images/business-process-and-workflow-automation-with-flowchart-businessman-in-background/530712064.html
+  integration: https://stock.adobe.com/images/data-integration-concept-data-system-technology-integration-icon-with-gears-businessman-use-laptop-with-virtual-system-integration-technology-industrial-and-smart-business-and-automation-solution/1084818625.html
+  case_study: https://stock.adobe.com/images/document-management-concept-check-electronic-documents-on-digital-documents-on-virtual-screen-document-management-system-and-process-automation-to-efficiently-document-paperless-operate-document/1048161399.html
+
+cloud_automation:
+  hero: https://stock.adobe.com/images/cloud-innovation-embracing-digital-transformation-in-modern-technology-and-connectivity/981332973.html
+  architecture: https://stock.adobe.com/images/digital-transformation-ai-technology-strategy-digitization-and-digitalization-of-business-processes-businesswomen-use-technology-to-enhance-global-business-capabilities-modernization-in-management/1078757496.html
+  migration: https://stock.adobe.com/images/automation-for-business-process-workflow-optimization-and-production-efficiency-improvement-robotic-process-automation-and-business-process-management-ai-technology-innovation-data-analytics/617326413.html
+  optimization: https://stock.adobe.com/images/corporate-workflow-optimization-integrating-technology-to-improve-efficiency-and-productivity/950419578.html
+
+ai_automation:
+  hero: https://stock.adobe.com/images/ai-chatbot-technology-virtual-assistant-for-customer-service-futuristic-smart-automation-ai-powered-chatbot-on-tablet-digital-business-support-artificial-intelligence-conversation-bot/1248736663.html
+  machine_learning: https://stock.adobe.com/images/ai-artificial-intelligence-technology-for-data-analysis-research-planning-and-work-generate-man-uses-a-laptop-and-ai-assistant-dashboard-technology-smart-robot-ai-agents-and-agentic-workflows/1198786685.html
+  document_processing: https://stock.adobe.com/images/ai-driven-document-processing-allows-businessmen-to-extract-key-information-from-contracts-and-reports-enhancing-decision-making-and-overall-business-efficiency/988160815.html
+  intelligent_automation: https://stock.adobe.com/images/ai-agent-and-generative-artificial-intelligence-robotic-processes-automation-and-data-analysis-businessman-touching-head-and-ai-icon-on-application-network-system/1088481721.html
+
+# Fallback Images
+fallback:
+  default: https://stock.adobe.com/images/business-process-management-and-automation-concept-with-person-moving-wooden-pieces-on-flowchart-diagram-workflow-implementation-to-improve-productivity-and-efficiency-management-and-organization/503006152.html
+  error: https://stock.adobe.com/images/businessman-holding-virtual-gears-connected-with-lines-representing-automation-of-business-processes-optimization-and-new-technologies/914041732.html
