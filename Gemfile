@@ -1,13 +1,12 @@
 source 'https://rubygems.org'
 
-# Core Jekyll
-gem 'jekyll', '~> 4.4.1'
-
-# Theme
-gem 'jekyll-text-theme', git: 'https://github.com/kitian616/jekyll-TeXt-theme.git'
-
-# GitHub Pages gem for compatibility
+# Core Jekyll and GitHub Pages
 gem 'github-pages', group: :jekyll_plugins
+gem 'jekyll', '~> 3.9.5'
+
+# Theme (with remote and local options)
+gem 'jekyll-text-theme'
+gem 'jekyll-remote-theme'
 
 # Plugins
 group :jekyll_plugins do
@@ -17,18 +16,18 @@ group :jekyll_plugins do
   gem 'jekyll-seo-tag'
   gem 'jekyll-redirect-from'
   gem 'jemoji'
+  gem 'jekyll-include-cache'
 end
 
-# Windows and other dependencies
-platforms :mingw, :x64_mingw, :mswin, :jruby do
-  gem 'tzinfo', '>= 1', '< 3'
-  gem 'tzinfo-data'
-end
+# Compatibility and Performance
+gem 'webrick'
+gem 'faraday-retry'
 
-# Performance-related
-gem 'webrick', '~> 1.8'
-
-# Development dependencies
+# Development and Platform Support
 group :development do
-  gem 'wdm', '~> 0.1.1', platforms: [:mingw, :x64_mingw, :mswin]
+  gem 'wdm', '>= 0.1.0' if Gem.win_platform?
 end
+
+# Pinned versions for stability
+gem 'kramdown', '~> 2.3.1'
+gem 'kramdown-parser-gfm', '~> 1.1.0'

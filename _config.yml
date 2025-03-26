@@ -1,24 +1,16 @@
 # Site Settings
-title: Suleman S. Manji
-description: >
-  Business Process Automation Specialist with expertise in Microsoft 365,
-  cloud services, and AI-driven process improvements.
+title: Suleman S. Manji | Business Process Automation Expert
+description: Business Process Automation Specialist with expertise in Microsoft 365, cloud services, and AI-driven process improvements.
 url: "https://www.sulemanji.com"
 baseurl: ""
 
-# Theme Settings
+# Theme Configuration
 theme: jekyll-text-theme
-remote_theme: kitian616/jekyll-TeXt-theme
+remote_theme: "kitian616/jekyll-TeXt-theme"
 
 # Build Settings
 markdown: kramdown
 highlighter: rouge
-
-# Conversion
-incremental: false
-
-# Serving
-detach: false
 
 # Plugins
 plugins:
@@ -28,48 +20,21 @@ plugins:
   - jekyll-seo-tag
   - jekyll-redirect-from
   - jemoji
+  - jekyll-include-cache
+  - jekyll-remote-theme
 
 # Markdown Processing
 kramdown:
   input: GFM
   hard_wrap: false
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  smart_quotes: laquo,raquo,bdquo,rdquo
   syntax_highlighter: rouge
 
-# Default Front Matter
-defaults:
-  - scope:
-      path: ""
-      type: "pages"
-    values:
-      layout: "page"
-      comments: false
-      sidebar:
-        nav: "main"
-
-# Exclude from processing
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - node_modules
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
-  - README.md
-  - LICENSE
-
-# Theme Specific Configuration
+# Theme-Specific Settings
 text_skin: default
 highlight_theme: default
 lang: en
-timezone: America/Chicago
 
-# Author
+# Author Information
 author:
   name: Suleman S. Manji
   email: ssmanji89@gmail.com
@@ -81,5 +46,21 @@ author:
       icon: fab fa-github
       url: https://github.com/ssmanji89
 
-# CDN and Performance
+# Exclude from Processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md
+  - LICENSE
+
+# Performance and CDN
 image_cdn: https://cdn.sulemanji.com
+
+# GitHub Pages Settings
+github:
+  is_project_page: true
