@@ -6,6 +6,18 @@ description: >
 url: "https://www.sulemanji.com"
 baseurl: ""
 
+# SEO Settings
+author: Suleman S. Manji
+twitter:
+  username: ssmanji89
+  card: summary
+
+social:
+  name: Suleman S. Manji
+  links:
+    - https://www.linkedin.com/in/sulemanmanji
+    - https://github.com/ssmanji89
+
 # Build Settings
 markdown: kramdown
 theme: jekyll-text-theme
@@ -16,6 +28,7 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-redirect-from
 
 # Conversion
 highlighter: rouge
@@ -71,3 +84,8 @@ exclude:
 
 # Custom Configuration
 image_cdn: https://cdn.sulemanji.com
+
+# Additional SEO configurations
+webmaster_verifications:
+  google: your_google_site_verification_code
+  bing: your_bing_site_verification_code
