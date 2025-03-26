@@ -1,0 +1,1083 @@
+<!DOCTYPE html><html lang="en">
+  <head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"><title>AI-Enhanced Process Automation Services - Suleman S. Manji | Business Process Automation Expert</title>
+
+<meta name="description" content="Business Process Automation Specialist with expertise in Microsoft 365, cloud services, and AI-driven process improvements.">
+<link rel="canonical" href="https://www.sulemanji.com/services/ai-automation/"><link rel="alternate" type="application/rss+xml" title="Suleman S. Manji | Business Process Automation Expert" href="/feed.xml"><!-- start favicons snippet, use https://realfavicongenerator.net/ --><link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png"><link rel="manifest" href="/assets/site.webmanifest"><link rel="mask-icon" href="/assets/safari-pinned-tab.svg" color="#fc4d50"><link rel="shortcut icon" href="/assets/favicon.ico">
+
+<meta name="msapplication-TileColor" content="#ffc40d"><meta name="msapplication-config" content="/assets/browserconfig.xml">
+
+<meta name="theme-color" content="#ffffff">
+<!-- end favicons snippet --><link rel="stylesheet" href="/assets/css/main.css"><link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.15.1/css/all.css" ><!-- start custom head snippets -->
+
+<!-- end custom head snippets -->
+<script>(function() {
+  window.isArray = function(val) {
+    return Object.prototype.toString.call(val) === '[object Array]';
+  };
+  window.isString = function(val) {
+    return typeof val === 'string';
+  };
+
+  window.hasEvent = function(event) {
+    return 'on'.concat(event) in window.document;
+  };
+
+  window.isOverallScroller = function(node) {
+    return node === document.documentElement || node === document.body || node === window;
+  };
+
+  window.isFormElement = function(node) {
+    var tagName = node.tagName;
+    return tagName === 'INPUT' || tagName === 'SELECT' || tagName === 'TEXTAREA';
+  };
+
+  window.pageLoad = (function () {
+    var loaded = false, cbs = [];
+    window.addEventListener('load', function () {
+      var i;
+      loaded = true;
+      if (cbs.length > 0) {
+        for (i = 0; i < cbs.length; i++) {
+          cbs[i]();
+        }
+      }
+    });
+    return {
+      then: function(cb) {
+        cb && (loaded ? cb() : (cbs.push(cb)));
+      }
+    };
+  })();
+})();
+(function() {
+  window.throttle = function(func, wait) {
+    var args, result, thisArg, timeoutId, lastCalled = 0;
+
+    function trailingCall() {
+      lastCalled = new Date;
+      timeoutId = null;
+      result = func.apply(thisArg, args);
+    }
+    return function() {
+      var now = new Date,
+        remaining = wait - (now - lastCalled);
+
+      args = arguments;
+      thisArg = this;
+
+      if (remaining <= 0) {
+        clearTimeout(timeoutId);
+        timeoutId = null;
+        lastCalled = now;
+        result = func.apply(thisArg, args);
+      } else if (!timeoutId) {
+        timeoutId = setTimeout(trailingCall, remaining);
+      }
+      return result;
+    };
+  };
+})();
+(function() {
+  var Set = (function() {
+    var add = function(item) {
+      var i, data = this._data;
+      for (i = 0; i < data.length; i++) {
+        if (data[i] === item) {
+          return;
+        }
+      }
+      this.size ++;
+      data.push(item);
+      return data;
+    };
+
+    var Set = function(data) {
+      this.size = 0;
+      this._data = [];
+      var i;
+      if (data.length > 0) {
+        for (i = 0; i < data.length; i++) {
+          add.call(this, data[i]);
+        }
+      }
+    };
+    Set.prototype.add = add;
+    Set.prototype.get = function(index) { return this._data[index]; };
+    Set.prototype.has = function(item) {
+      var i, data = this._data;
+      for (i = 0; i < data.length; i++) {
+        if (this.get(i) === item) {
+          return true;
+        }
+      }
+      return false;
+    };
+    Set.prototype.is = function(map) {
+      if (map._data.length !== this._data.length) { return false; }
+      var i, j, flag, tData = this._data, mData = map._data;
+      for (i = 0; i < tData.length; i++) {
+        for (flag = false, j = 0; j < mData.length; j++) {
+          if (tData[i] === mData[j]) {
+            flag = true;
+            break;
+          }
+        }
+        if (!flag) { return false; }
+      }
+      return true;
+    };
+    Set.prototype.values = function() {
+      return this._data;
+    };
+    return Set;
+  })();
+
+  window.Lazyload = (function(doc) {
+    var queue = {js: [], css: []}, sources = {js: {}, css: {}}, context = this;
+    var createNode = function(name, attrs) {
+      var node = doc.createElement(name), attr;
+      for (attr in attrs) {
+        if (attrs.hasOwnProperty(attr)) {
+          node.setAttribute(attr, attrs[attr]);
+        }
+      }
+      return node;
+    };
+    var end = function(type, url) {
+      var s, q, qi, cbs, i, j, cur, val, flag;
+      if (type === 'js' || type ==='css') {
+        s = sources[type], q = queue[type];
+        s[url] = true;
+        for (i = 0; i < q.length; i++) {
+          cur = q[i];
+          if (cur.urls.has(url)) {
+            qi = cur, val = qi.urls.values();
+            qi && (cbs = qi.callbacks);
+            for (flag = true, j = 0; j < val.length; j++) {
+              cur = val[j];
+              if (!s[cur]) {
+                flag = false;
+              }
+            }
+            if (flag && cbs && cbs.length > 0) {
+              for (j = 0; j < cbs.length; j++) {
+                cbs[j].call(context);
+              }
+              qi.load = true;
+            }
+          }
+        }
+      }
+    };
+    var load = function(type, urls, callback) {
+      var s, q, qi, node, i, cur,
+        _urls = typeof urls === 'string' ? new Set([urls]) : new Set(urls), val, url;
+      if (type === 'js' || type ==='css') {
+        s = sources[type], q = queue[type];
+        for (i = 0; i < q.length; i++) {
+          cur = q[i];
+          if (_urls.is(cur.urls)) {
+            qi = cur;
+            break;
+          }
+        }
+        val = _urls.values();
+        if (qi) {
+          callback && (qi.load || qi.callbacks.push(callback));
+          callback && (qi.load && callback());
+        } else {
+          q.push({
+            urls: _urls,
+            callbacks: callback ? [callback] : [],
+            load: false
+          });
+          for (i = 0; i < val.length; i++) {
+            node = null, url = val[i];
+            if (s[url] === undefined) {
+              (type === 'js' ) && (node = createNode('script', { src: url }));
+              (type === 'css') && (node = createNode('link', { rel: 'stylesheet', href: url }));
+              if (node) {
+                node.onload = (function(type, url) {
+                  return function() {
+                    end(type, url);
+                  };
+                })(type, url);
+                (doc.head || doc.body).appendChild(node);
+                s[url] = false;
+              }
+            }
+          }
+        }
+      }
+    };
+    return {
+      js: function(url, callback) {
+        load('js', url, callback);
+      },
+      css: function(url, callback) {
+        load('css', url, callback);
+      }
+    };
+  })(this.document);
+})();
+</script><script>
+  (function() {
+    var TEXT_VARIABLES = {
+      version: '2.2.6',
+      sources: {
+        font_awesome: 'https://cdn.bootcdn.net/ajax/libs/font-awesome/5.15.1/css/all.css',
+        jquery: 'https://cdn.bootcss.com/jquery/3.1.1/jquery.min.js',
+        leancloud_js_sdk: '//cdn.jsdelivr.net/npm/leancloud-storage@3.13.2/dist/av-min.js',
+        chart: 'https://cdn.bootcss.com/Chart.js/2.7.2/Chart.bundle.min.js',
+        gitalk: {
+          js: 'https://cdn.bootcss.com/gitalk/1.2.2/gitalk.min.js',
+          css: 'https://cdn.bootcss.com/gitalk/1.2.2/gitalk.min.css'
+        },
+        valine: 'https://unpkg.com/valine/dist/Valine.min.js',
+        mathjax: 'https://cdn.bootcss.com/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML',
+        mermaid: 'https://cdn.bootcss.com/mermaid/8.0.0-rc.8/mermaid.min.js'
+      },
+      site: {
+        toc: {
+          selectors: 'h1,h2,h3'
+        }
+      },
+      paths: {
+        search_js: '/assets/search.js'
+      }
+    };
+    window.TEXT_VARIABLES = TEXT_VARIABLES;
+  })();
+</script>
+</head>
+  <body>
+    <div class="root" data-is-touch="false">
+      <div class="layout--page js-page-root"><div class="page__main js-page-main page__viewport cell cell--auto">
+
+      <div class="page__main-inner"><div class="page__header d-print-none"><header class="header"><div class="main">
+      <div class="header__title">
+        <div class="header__brand"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="24px" height="24px" viewBox="0 0 24 24">
+<style type="text/css">
+	.st0{fill:#515151;}
+</style>
+<path class="st0" d="M1.7,22.3c5.7-5.7,11.3-5.7,17,0c3.3-3.3,3.5-5.3,0.8-6c2.7,0.7,3.5-1.1,2.3-5.6s-3.3-5.2-6.3-2.1
+	c3-3,2.3-5.2-2.1-6.3S7,1.8,7.7,4.6C7,1.8,5,2.1,1.7,5.3C7.3,11,7.3,16.7,1.7,22.3"/>
+</svg>
+<a title="Business Process Automation Specialist with expertise in Microsoft 365, cloud services, and AI-driven process improvements." href="/">Suleman S. Manji | Business Process Automation Expert</a></div></div><nav class="navigation">
+        <ul><li class="navigation__item"><a href="/">About</a></li><li class="navigation__item"><a href="/services">Services</a></li><li class="navigation__item"><a href="/case-studies">Case Studies</a></li><li class="navigation__item"><a href="/contact">Contact</a></li></ul>
+      </nav></div>
+  </header>
+</div><div class="page__content"><div class ="main"><div class="grid grid--reverse">
+
+              <div class="col-aside d-print-none js-col-aside"></div>
+
+              <div class="col-main cell cell--auto"><!-- start custom main top snippet -->
+
+<!-- end custom main top snippet -->
+<article itemscope itemtype="http://schema.org/Article"><div class="article__header"><header><h1>AI-Enhanced Process Automation Services</h1></header></div><meta itemprop="headline" content="AI-Enhanced Process Automation Services"><meta itemprop="author" content="Suleman S. Manji"/><div class="js-article-content"><div class="layout--article"><!-- start custom article top snippet -->
+
+<!-- end custom article top snippet -->
+<div class="article__content" itemprop="articleBody" width="100%"><div class="grid-container">
+  <div class="hero-section">
+    <div class="grid grid--p-3">
+      <div class="cell cell--12 cell--md-8">
+        <h1>AI-Enhanced Process Automation</h1>
+        <p class="text-lead">Take your automation to the next level with intelligent solutions that can learn, adapt, and make decisions to handle complex business scenarios.</p>
+      </div>
+      <div class="cell cell--12 cell--md-4">
+        <div class="stats-box">
+          <div class="stats-item">
+            <div class="stats-number">78%</div>
+            <div class="stats-label">Response time reduction</div>
+          </div>
+          <div class="stats-item">
+            <div class="stats-number">24/7</div>
+            <div class="stats-label">Automated operations</div>
+          </div>
+          <div class="stats-item">
+            <div class="stats-number">85%</div>
+            <div class="stats-label">Accuracy in predictions</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>AI Automation Solutions</h2>
+    <p>I develop custom AI-enhanced automation solutions that go beyond simple rule-based processes to deliver intelligent, adaptive workflows that transform how your business operates.</p>
+    
+    <div class="grid grid--p-3 mt-5">
+  <div class="cell cell--6 cell--md-3">
+    <div class="platform-card">
+      <div class="platform-icon">
+        <img src="/assets/images/icon-chatgpt.png" alt="ChatGPT Integration">
+      </div>
+      <h3>ChatGPT</h3>
+      <p>Integrate powerful language model capabilities into your business processes for natural language understanding and generation.</p>
+    </div>
+  </div>
+  
+  <div class="cell cell--6 cell--md-3">
+    <div class="platform-card">
+      <div class="platform-icon">
+        <img src="/assets/images/icon-autogen.png" alt="AI Agent Development">
+      </div>
+      <h3>AI Agents</h3>
+      <p>Custom AI agents that can handle complex tasks, make decisions, and automate end-to-end business processes.</p>
+    </div>
+  </div>
+  
+  <div class="cell cell--6 cell--md-3">
+    <div class="platform-card">
+      <div class="platform-icon">
+        <img src="/assets/images/icon-ml.png" alt="Machine Learning">
+      </div>
+      <h3>Machine Learning</h3>
+      <p>Predictive analytics and pattern recognition to enhance decision-making and process optimization.</p>
+    </div>
+  </div>
+  
+  <div class="cell cell--6 cell--md-3">
+    <div class="platform-card">
+      <div class="platform-icon">
+        <img src="/assets/images/icon-nlp.png" alt="Natural Language Processing">
+      </div>
+      <h3>NLP</h3>
+      <p>Natural language processing for document understanding, sentiment analysis, and automated communication.</p>
+    </div>
+  </div>
+</div>
+  </div>
+  
+  <div class="section">
+    <h2>My AI Automation Services</h2>
+    
+    <div class="service-card">
+  <div class="service-card-header">
+    <h3>AI Agent Development</h3>
+  </div>
+  <div class="service-card-body">
+    <p>I design and implement custom AI agents that can operate autonomously to handle complex business processes, making decisions and adapting to changing conditions.</p>
+    <ul class="service-features">
+      <li>Service desk automation with intelligent ticket triage</li>
+      <li>Systems administration agents for proactive maintenance</li>
+      <li>Customer service chatbots with natural language understanding</li>
+      <li>Workflow orchestration agents</li>
+      <li>Autonomous decision-making systems</li>
+    </ul>
+  </div>
+</div>
+
+<div class="service-card">
+  <div class="service-card-header">
+    <h3>Natural Language Processing Solutions</h3>
+  </div>
+  <div class="service-card-body">
+    <p>I implement NLP capabilities into your business processes to understand, analyze, and generate human language at scale.</p>
+    <ul class="service-features">
+      <li>Automated document processing and data extraction</li>
+      <li>Sentiment analysis for customer feedback</li>
+      <li>Email and communication automation</li>
+      <li>Content classification and categorization</li>
+      <li>Multi-language support and translation</li>
+    </ul>
+  </div>
+</div>
+
+<div class="service-card">
+  <div class="service-card-header">
+    <h3>ChatGPT Integration</h3>
+  </div>
+  <div class="service-card-body">
+    <p>I seamlessly integrate OpenAI's ChatGPT into your existing business systems to enhance capabilities, improve user experiences, and automate complex tasks.</p>
+    <ul class="service-features">
+      <li>Custom ChatGPT implementations for specific business domains</li>
+      <li>Integration with communication channels and customer touchpoints</li>
+      <li>Context-aware responses based on business data</li>
+      <li>Automated content generation and summarization</li>
+      <li>Knowledge base and documentation enhancement</li>
+    </ul>
+  </div>
+</div>
+
+<div class="service-card">
+  <div class="service-card-header">
+    <h3>Predictive Analytics</h3>
+  </div>
+  <div class="service-card-body">
+    <p>I develop machine learning models that can analyze historical data to predict future events, enabling proactive decision-making and process optimization.</p>
+    <ul class="service-features">
+      <li>Demand forecasting and inventory optimization</li>
+      <li>Predictive maintenance for equipment and systems</li>
+      <li>Customer behavior prediction</li>
+      <li>Risk assessment and fraud detection</li>
+      <li>Trend analysis and pattern recognition</li>
+    </ul>
+  </div>
+</div>
+
+<div class="service-card">
+  <div class="service-card-header">
+    <h3>Computer Vision Integration</h3>
+  </div>
+  <div class="service-card-body">
+    <p>I implement computer vision capabilities to automate processes that involve image analysis, object recognition, and visual inspection.</p>
+    <ul class="service-features">
+      <li>Automated document scanning and processing</li>
+      <li>Quality control and defect detection</li>
+      <li>Visual inspection automation</li>
+      <li>Image classification and tagging</li>
+      <li>Object recognition and tracking</li>
+    </ul>
+  </div>
+</div>
+  </div>
+  
+  <div class="section">
+    <h2>Case Studies</h2>
+    
+    <div class="case-study-grid">
+  <div class="grid grid--p-3">
+    <div class="cell cell--12 cell--md-6">
+      <div class="case-study-card">
+        <div class="case-study-image">
+          <img src="/assets/images/case-study-halopsa.jpg" alt="HaloPSA AI Triager">
+        </div>
+        <div class="case-study-content">
+          <h3>AI-Powered Ticket Triaging</h3>
+          <p>Developed a middleware solution integrating with HaloPSA's API to provide AI-powered ticket triaging capabilities, reducing initial response time by 78% and improving service desk efficiency.</p>
+          <a href="/case-studies/halopsa-triager" class="button button--outline-theme-dark button--rounded">View Case Study</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="cell cell--12 cell--md-6">
+      <div class="case-study-card">
+        <div class="case-study-image">
+          <img src="/assets/images/case-study-executive-assistant.jpg" alt="Executive Assistant">
+        </div>
+        <div class="case-study-content">
+          <h3>AI Executive Assistant</h3>
+          <p>Created a middleware application that monitors Microsoft 365 inboxes and leverages OpenAI to draft responses, create tasks, and schedule events, saving executives an average of 15 hours per week.</p>
+          <a href="/case-studies/executive-assistant" class="button button--outline-theme-dark button--rounded">View Case Study</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+  
+  <div class="section">
+    <h2>My Approach</h2>
+    
+    <div class="approach-timeline">
+  <div class="approach-step">
+    <div class="approach-number">1</div>
+    <div class="approach-content">
+      <h4>Process Analysis & AI Opportunity Assessment</h4>
+      <p>I begin by thoroughly analyzing your existing business processes to identify areas where AI can add the most value, considering complexity, volume, data availability, and potential return on investment.</p>
+    </div>
+  </div>
+  
+  <div class="approach-step">
+    <div class="approach-number">2</div>
+    <div class="approach-content">
+      <h4>AI Solution Design</h4>
+      <p>Based on the assessment, I design a comprehensive AI-enhanced automation solution, selecting the appropriate technologies, defining data requirements, and establishing success metrics.</p>
+    </div>
+  </div>
+  
+  <div class="approach-step">
+    <div class="approach-number">3</div>
+    <div class="approach-content">
+      <h4>Training & Development</h4>
+      <p>I develop and train the AI models using your business data, ensuring they learn the specific patterns and contexts relevant to your operations while maintaining data privacy and security.</p>
+    </div>
+  </div>
+  
+  <div class="approach-step">
+    <div class="approach-number">4</div>
+    <div class="approach-content">
+      <h4>Integration & Testing</h4>
+      <p>I integrate the AI solution with your existing systems and conduct rigorous testing to ensure accuracy, reliability, and seamless operation within your business environment.</p>
+    </div>
+  </div>
+  
+  <div class="approach-step">
+    <div class="approach-number">5</div>
+    <div class="approach-content">
+      <h4>Continuous Learning & Optimization</h4>
+      <p>After deployment, I implement monitoring and feedback loops to ensure the AI system continues to learn and improve over time, adapting to changing business conditions and requirements.</p>
+    </div>
+  </div>
+</div>
+  </div>
+  
+  <div class="cta-section">
+    <h2>Ready to Enhance Your Automation with AI?</h2>
+    <p>Let's discuss how AI-enhanced automation can transform your business processes and deliver unprecedented efficiency and insights.</p>
+    <a href="/contact" class="button button--theme button--rounded button--lg">Get Started</a>
+  </div>
+</div>
+
+<style>
+.text-lead {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+}
+
+.hero-section {
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #eee;
+}
+
+.stats-box {
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.stats-item {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.stats-item:last-child {
+  margin-bottom: 0;
+}
+
+.stats-number {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #8A2BE2; /* Purple for AI */
+  line-height: 1;
+}
+
+.stats-label {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 0.5rem;
+}
+
+.section {
+  margin-bottom: 4rem;
+}
+
+.platform-card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.platform-card:hover {
+  transform: translateY(-5px);
+}
+
+.platform-icon {
+  margin-bottom: 1rem;
+}
+
+.platform-icon img {
+  width: 64px;
+  height: 64px;
+}
+
+.service-card {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.service-card-header {
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  border-bottom: 1px solid #eee;
+}
+
+.service-card-header h3 {
+  margin: 0;
+  color: #8A2BE2; /* Purple for AI */
+}
+
+.service-card-body {
+  padding: 1.5rem;
+}
+
+.service-features {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 1rem;
+}
+
+.service-features li {
+  padding-left: 1.5rem;
+  position: relative;
+  margin-bottom: 0.5rem;
+}
+
+.service-features li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #8A2BE2; /* Purple for AI */
+  font-weight: bold;
+}
+
+.case-study-card {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  height: 100%;
+}
+
+.case-study-image img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.case-study-content {
+  padding: 1.5rem;
+}
+
+.approach-timeline {
+  position: relative;
+  margin-left: 2rem;
+}
+
+.approach-timeline:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 15px;
+  width: 2px;
+  background-color: #8A2BE2; /* Purple for AI */
+  transform: translateX(-50%);
+}
+
+.approach-step {
+  position: relative;
+  margin-bottom: 2rem;
+  padding-left: 2rem;
+}
+
+.approach-number {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 30px;
+  height: 30px;
+  background-color: #8A2BE2; /* Purple for AI */
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.approach-content {
+  padding-top: 0.25rem;
+}
+
+.cta-section {
+  background-color: #f9f9f9;
+  padding: 3rem;
+  text-align: center;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  .approach-timeline {
+    margin-left: 0;
+  }
+  
+  .approach-step {
+    padding-left: 3rem;
+  }
+}
+</style>
+</div><div class="d-print-none"><footer class="article__footer"><!-- start custom article footer snippet -->
+
+<!-- end custom article footer snippet -->
+</footer>
+</div>
+
+</div>
+
+<script>(function() {
+  var SOURCES = window.TEXT_VARIABLES.sources;
+  window.Lazyload.js(SOURCES.jquery, function() {
+    $(function() {
+      var $this ,$scroll;
+      var $articleContent = $('.js-article-content');
+      var hasSidebar = $('.js-page-root').hasClass('layout--page--sidebar');
+      var scroll = hasSidebar ? '.js-page-main' : 'html, body';
+      $scroll = $(scroll);
+
+      $articleContent.find('.highlight').each(function() {
+        $this = $(this);
+        $this.attr('data-lang', $this.find('code').attr('data-lang'));
+      });
+      $articleContent.find('h1[id], h2[id], h3[id], h4[id], h5[id], h6[id]').each(function() {
+        $this = $(this);
+        $this.append($('<a class="anchor d-print-none" aria-hidden="true"></a>').html('<i class="fas fa-anchor"></i>'));
+      });
+      $articleContent.on('click', '.anchor', function() {
+        $scroll.scrollToAnchor('#' + $(this).parent().attr('id'), 400);
+      });
+    });
+  });
+})();
+</script>
+</div><section class="page__comments d-print-none"></section></article><!-- start custom main bottom snippet -->
+
+<!-- end custom main bottom snippet -->
+</div>
+            </div></div></div><div class="page__footer d-print-none">
+<footer class="footer py-4 js-page-footer">
+  <div class="main"><div itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Suleman S. Manji"><meta itemprop="url" content="/"><div class="footer__author-links"><div class="author-links">
+  <ul class="menu menu--nowrap menu--inline"><li title="Send me an Email.">
+      <a class="button button--circle mail-button" itemprop="email" href="mailto:ssmanji89@gmail.com" target="_blank">
+        <i class="fas fa-envelope"></i>
+      </a></ul>
+</div>
+</div>
+    </div><div class="site-info mt-2">
+    </div>
+  </div>
+</footer>
+</div></div>
+    </div><script>(function() {
+  var SOURCES = window.TEXT_VARIABLES.sources;
+  window.Lazyload.js(SOURCES.jquery, function() {
+    var $body = $('body'), $window = $(window);
+    var $pageRoot = $('.js-page-root'), $pageMain = $('.js-page-main');
+    var activeCount = 0;
+    function modal(options) {
+      var $root = this, visible, onChange, hideWhenWindowScroll = false;
+      var scrollTop;
+      function setOptions(options) {
+        var _options = options || {};
+        visible = _options.initialVisible === undefined ? false : show;
+        onChange = _options.onChange;
+        hideWhenWindowScroll = _options.hideWhenWindowScroll;
+      }
+      function init() {
+        setState(visible);
+      }
+      function setState(isShow) {
+        if (isShow === visible) {
+          return;
+        }
+        visible = isShow;
+        if (visible) {
+          activeCount++;
+          scrollTop = $(window).scrollTop() || $pageMain.scrollTop();
+          $root.addClass('modal--show');
+          $pageMain.scrollTop(scrollTop);
+          activeCount === 1 && ($pageRoot.addClass('show-modal'), $body.addClass('of-hidden'));
+          hideWhenWindowScroll && window.hasEvent('touchstart') && $window.on('scroll', hide);
+          $window.on('keyup', handleKeyup);
+        } else {
+          activeCount > 0 && activeCount--;
+          $root.removeClass('modal--show');
+          $window.scrollTop(scrollTop);
+          activeCount === 0 && ($pageRoot.removeClass('show-modal'), $body.removeClass('of-hidden'));
+          hideWhenWindowScroll && window.hasEvent('touchstart') && $window.off('scroll', hide);
+          $window.off('keyup', handleKeyup);
+        }
+        onChange && onChange(visible);
+      }
+      function show() {
+        setState(true);
+      }
+      function hide() {
+        setState(false);
+      }
+      function handleKeyup(e) {
+        // Char Code: 27  ESC
+        if (e.which ===  27) {
+          hide();
+        }
+      }
+      setOptions(options);
+      init();
+      return {
+        show: show,
+        hide: hide,
+        $el: $root
+      };
+    }
+    $.fn.modal = modal;
+  });
+})();
+</script><div class="modal modal--overflow page__search-modal d-print-none js-page-search-modal"></div></div>
+
+
+<script>(function() {
+  var SOURCES = window.TEXT_VARIABLES.sources;
+  window.Lazyload.js(SOURCES.jquery, function() {
+    function scrollToAnchor(anchor, duration, callback) {
+      var $root = this;
+      $root.animate({ scrollTop: $(anchor).position().top }, duration, function() {
+        window.history.replaceState(null, '', window.location.href.split('#')[0] + anchor);
+        callback && callback();
+      });
+    }
+    $.fn.scrollToAnchor = scrollToAnchor;
+  });
+})();
+(function() {
+  var SOURCES = window.TEXT_VARIABLES.sources;
+  window.Lazyload.js(SOURCES.jquery, function() {
+    function affix(options) {
+      var $root = this, $window = $(window), $scrollTarget, $scroll,
+        offsetBottom = 0, scrollTarget = window, scroll = window.document, disabled = false, isOverallScroller = true,
+        rootTop, rootLeft, rootHeight, scrollBottom, rootBottomTop,
+        hasInit = false, curState;
+
+      function setOptions(options) {
+        var _options = options || {};
+        _options.offsetBottom && (offsetBottom = _options.offsetBottom);
+        _options.scrollTarget && (scrollTarget = _options.scrollTarget);
+        _options.scroll && (scroll = _options.scroll);
+        _options.disabled !== undefined && (disabled = _options.disabled);
+        $scrollTarget = $(scrollTarget);
+        isOverallScroller = window.isOverallScroller($scrollTarget[0]);
+        $scroll = $(scroll);
+      }
+      function preCalc() {
+        top();
+        rootHeight = $root.outerHeight();
+        rootTop = $root.offset().top + (isOverallScroller ? 0 :  $scrollTarget.scrollTop());
+        rootLeft = $root.offset().left;
+      }
+      function calc(needPreCalc) {
+        needPreCalc && preCalc();
+        scrollBottom = $scroll.outerHeight() - offsetBottom - rootHeight;
+        rootBottomTop = scrollBottom - rootTop;
+      }
+      function top() {
+        if (curState !== 'top') {
+          $root.removeClass('fixed').css({
+            left: 0,
+            top: 0
+          });
+          curState = 'top';
+        }
+      }
+      function fixed() {
+        if (curState !== 'fixed') {
+          $root.addClass('fixed').css({
+            left: rootLeft + 'px',
+            top: 0
+          });
+          curState = 'fixed';
+        }
+      }
+      function bottom() {
+        if (curState !== 'bottom') {
+          $root.removeClass('fixed').css({
+            left: 0,
+            top: rootBottomTop + 'px'
+          });
+          curState = 'bottom';
+        }
+      }
+      function setState() {
+        var scrollTop = $scrollTarget.scrollTop();
+        if (scrollTop >= rootTop && scrollTop <= scrollBottom) {
+          fixed();
+        } else if (scrollTop < rootTop) {
+          top();
+        } else {
+          bottom();
+        }
+      }
+      function init() {
+        if(!hasInit) {
+          var interval, timeout;
+          calc(true); setState();
+          // run calc every 100 millisecond
+          interval = setInterval(function() {
+            calc();
+          }, 100);
+          timeout = setTimeout(function() {
+            clearInterval(interval);
+          }, 45000);
+          window.pageLoad.then(function() {
+            setTimeout(function() {
+              clearInterval(interval);
+              clearTimeout(timeout);
+            }, 3000);
+          });
+          $scrollTarget.on('scroll', function() {
+            disabled || setState();
+          });
+          $window.on('resize', function() {
+            disabled || (calc(true), setState());
+          });
+          hasInit = true;
+        }
+      }
+
+      setOptions(options);
+      if (!disabled) {
+        init();
+      }
+      $window.on('resize', window.throttle(function() {
+        init();
+      }, 200));
+      return {
+        setOptions: setOptions,
+        refresh: function() {
+          calc(true, { animation: false }); setState();
+        }
+      };
+    }
+    $.fn.affix = affix;
+  });
+})();
+(function() {
+  var SOURCES = window.TEXT_VARIABLES.sources;
+  window.Lazyload.js(SOURCES.jquery, function() {
+    function toc(options) {
+      var $root = this, $window = $(window), $scrollTarget, $scroller, $tocUl = $('<ul class="toc toc--ellipsis"></ul>'), $tocLi, $headings, $activeLast, $activeCur,
+        selectors = 'h1,h2,h3', container = 'body', scrollTarget = window, scroller = 'html, body', disabled = false,
+        headingsPos, scrolling = false, hasRendered = false, hasInit = false;
+
+      function setOptions(options) {
+        var _options = options || {};
+        _options.selectors && (selectors = _options.selectors);
+        _options.container && (container = _options.container);
+        _options.scrollTarget && (scrollTarget = _options.scrollTarget);
+        _options.scroller && (scroller = _options.scroller);
+        _options.disabled !== undefined && (disabled = _options.disabled);
+        $headings = $(container).find(selectors).filter('[id]');
+        $scrollTarget = $(scrollTarget);
+        $scroller = $(scroller);
+      }
+      function calc() {
+        headingsPos = [];
+        $headings.each(function() {
+          headingsPos.push(Math.floor($(this).position().top));
+        });
+      }
+      function setState(element, disabled) {
+        var scrollTop = $scrollTarget.scrollTop(), i;
+        if (disabled || !headingsPos || headingsPos.length < 1) { return; }
+        if (element) {
+          $activeCur = element;
+        } else {
+          for (i = 0; i < headingsPos.length; i++) {
+            if (scrollTop >= headingsPos[i]) {
+              $activeCur = $tocLi.eq(i);
+            } else {
+              $activeCur || ($activeCur = $tocLi.eq(i));
+              break;
+            }
+          }
+        }
+        $activeLast && $activeLast.removeClass('active');
+        ($activeLast = $activeCur).addClass('active');
+      }
+      function render() {
+        if(!hasRendered) {
+          $root.append($tocUl);
+          $headings.each(function() {
+            var $this = $(this);
+            $tocUl.append($('<li></li>').addClass('toc-' + $this.prop('tagName').toLowerCase())
+              .append($('<a></a>').text($this.text()).attr('href', '#' + $this.prop('id'))));
+          });
+          $tocLi = $tocUl.children('li');
+          $tocUl.on('click', 'a', function(e) {
+            e.preventDefault();
+            var $this = $(this);
+            scrolling = true;
+            setState($this.parent());
+            $scroller.scrollToAnchor($this.attr('href'), 400, function() {
+              scrolling = false;
+            });
+          });
+        }
+        hasRendered = true;
+      }
+      function init() {
+        var interval, timeout;
+        if(!hasInit) {
+          render(); calc(); setState(null, scrolling);
+          // run calc every 100 millisecond
+          interval = setInterval(function() {
+            calc();
+          }, 100);
+          timeout = setTimeout(function() {
+            clearInterval(interval);
+          }, 45000);
+          window.pageLoad.then(function() {
+            setTimeout(function() {
+              clearInterval(interval);
+              clearTimeout(timeout);
+            }, 3000);
+          });
+          $scrollTarget.on('scroll', function() {
+            disabled || setState(null, scrolling);
+          });
+          $window.on('resize', window.throttle(function() {
+            if (!disabled) {
+              render(); calc(); setState(null, scrolling);
+            }
+          }, 100));
+        }
+        hasInit = true;
+      }
+
+      setOptions(options);
+      if (!disabled) {
+        init();
+      }
+      $window.on('resize', window.throttle(function() {
+        init();
+      }, 200));
+      return {
+        setOptions: setOptions
+      };
+    }
+    $.fn.toc = toc;
+  });
+})();
+/*(function () {
+
+})();*/
+</script>
+    </div>
+    
+    <script>(function () {
+  var $root = document.getElementsByClassName('root')[0];
+  if (window.hasEvent('touchstart')) {
+    $root.dataset.isTouch = true;
+    document.addEventListener('touchstart', function(){}, false);
+  }
+})();
+</script>
+  </body>
+</html>
+

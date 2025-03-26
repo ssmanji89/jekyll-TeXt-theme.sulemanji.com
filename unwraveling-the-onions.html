@@ -1,0 +1,860 @@
+<!DOCTYPE html><html lang="en">
+  <head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"><title>Unwraveling the Onions. - Suleman S. Manji | Business Process Automation Expert</title>
+
+<meta name="description" content="Suleman Shahnawaz ManjiIntroduction">
+<link rel="canonical" href="https://www.sulemanji.com/unwraveling-the-onions"><link rel="alternate" type="application/rss+xml" title="Suleman S. Manji | Business Process Automation Expert" href="/feed.xml"><!-- start favicons snippet, use https://realfavicongenerator.net/ --><link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png"><link rel="manifest" href="/assets/site.webmanifest"><link rel="mask-icon" href="/assets/safari-pinned-tab.svg" color="#fc4d50"><link rel="shortcut icon" href="/assets/favicon.ico">
+
+<meta name="msapplication-TileColor" content="#ffc40d"><meta name="msapplication-config" content="/assets/browserconfig.xml">
+
+<meta name="theme-color" content="#ffffff">
+<!-- end favicons snippet --><link rel="stylesheet" href="/assets/css/main.css"><link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.15.1/css/all.css" ><!-- start custom head snippets -->
+
+<!-- end custom head snippets -->
+<script>(function() {
+  window.isArray = function(val) {
+    return Object.prototype.toString.call(val) === '[object Array]';
+  };
+  window.isString = function(val) {
+    return typeof val === 'string';
+  };
+
+  window.hasEvent = function(event) {
+    return 'on'.concat(event) in window.document;
+  };
+
+  window.isOverallScroller = function(node) {
+    return node === document.documentElement || node === document.body || node === window;
+  };
+
+  window.isFormElement = function(node) {
+    var tagName = node.tagName;
+    return tagName === 'INPUT' || tagName === 'SELECT' || tagName === 'TEXTAREA';
+  };
+
+  window.pageLoad = (function () {
+    var loaded = false, cbs = [];
+    window.addEventListener('load', function () {
+      var i;
+      loaded = true;
+      if (cbs.length > 0) {
+        for (i = 0; i < cbs.length; i++) {
+          cbs[i]();
+        }
+      }
+    });
+    return {
+      then: function(cb) {
+        cb && (loaded ? cb() : (cbs.push(cb)));
+      }
+    };
+  })();
+})();
+(function() {
+  window.throttle = function(func, wait) {
+    var args, result, thisArg, timeoutId, lastCalled = 0;
+
+    function trailingCall() {
+      lastCalled = new Date;
+      timeoutId = null;
+      result = func.apply(thisArg, args);
+    }
+    return function() {
+      var now = new Date,
+        remaining = wait - (now - lastCalled);
+
+      args = arguments;
+      thisArg = this;
+
+      if (remaining <= 0) {
+        clearTimeout(timeoutId);
+        timeoutId = null;
+        lastCalled = now;
+        result = func.apply(thisArg, args);
+      } else if (!timeoutId) {
+        timeoutId = setTimeout(trailingCall, remaining);
+      }
+      return result;
+    };
+  };
+})();
+(function() {
+  var Set = (function() {
+    var add = function(item) {
+      var i, data = this._data;
+      for (i = 0; i < data.length; i++) {
+        if (data[i] === item) {
+          return;
+        }
+      }
+      this.size ++;
+      data.push(item);
+      return data;
+    };
+
+    var Set = function(data) {
+      this.size = 0;
+      this._data = [];
+      var i;
+      if (data.length > 0) {
+        for (i = 0; i < data.length; i++) {
+          add.call(this, data[i]);
+        }
+      }
+    };
+    Set.prototype.add = add;
+    Set.prototype.get = function(index) { return this._data[index]; };
+    Set.prototype.has = function(item) {
+      var i, data = this._data;
+      for (i = 0; i < data.length; i++) {
+        if (this.get(i) === item) {
+          return true;
+        }
+      }
+      return false;
+    };
+    Set.prototype.is = function(map) {
+      if (map._data.length !== this._data.length) { return false; }
+      var i, j, flag, tData = this._data, mData = map._data;
+      for (i = 0; i < tData.length; i++) {
+        for (flag = false, j = 0; j < mData.length; j++) {
+          if (tData[i] === mData[j]) {
+            flag = true;
+            break;
+          }
+        }
+        if (!flag) { return false; }
+      }
+      return true;
+    };
+    Set.prototype.values = function() {
+      return this._data;
+    };
+    return Set;
+  })();
+
+  window.Lazyload = (function(doc) {
+    var queue = {js: [], css: []}, sources = {js: {}, css: {}}, context = this;
+    var createNode = function(name, attrs) {
+      var node = doc.createElement(name), attr;
+      for (attr in attrs) {
+        if (attrs.hasOwnProperty(attr)) {
+          node.setAttribute(attr, attrs[attr]);
+        }
+      }
+      return node;
+    };
+    var end = function(type, url) {
+      var s, q, qi, cbs, i, j, cur, val, flag;
+      if (type === 'js' || type ==='css') {
+        s = sources[type], q = queue[type];
+        s[url] = true;
+        for (i = 0; i < q.length; i++) {
+          cur = q[i];
+          if (cur.urls.has(url)) {
+            qi = cur, val = qi.urls.values();
+            qi && (cbs = qi.callbacks);
+            for (flag = true, j = 0; j < val.length; j++) {
+              cur = val[j];
+              if (!s[cur]) {
+                flag = false;
+              }
+            }
+            if (flag && cbs && cbs.length > 0) {
+              for (j = 0; j < cbs.length; j++) {
+                cbs[j].call(context);
+              }
+              qi.load = true;
+            }
+          }
+        }
+      }
+    };
+    var load = function(type, urls, callback) {
+      var s, q, qi, node, i, cur,
+        _urls = typeof urls === 'string' ? new Set([urls]) : new Set(urls), val, url;
+      if (type === 'js' || type ==='css') {
+        s = sources[type], q = queue[type];
+        for (i = 0; i < q.length; i++) {
+          cur = q[i];
+          if (_urls.is(cur.urls)) {
+            qi = cur;
+            break;
+          }
+        }
+        val = _urls.values();
+        if (qi) {
+          callback && (qi.load || qi.callbacks.push(callback));
+          callback && (qi.load && callback());
+        } else {
+          q.push({
+            urls: _urls,
+            callbacks: callback ? [callback] : [],
+            load: false
+          });
+          for (i = 0; i < val.length; i++) {
+            node = null, url = val[i];
+            if (s[url] === undefined) {
+              (type === 'js' ) && (node = createNode('script', { src: url }));
+              (type === 'css') && (node = createNode('link', { rel: 'stylesheet', href: url }));
+              if (node) {
+                node.onload = (function(type, url) {
+                  return function() {
+                    end(type, url);
+                  };
+                })(type, url);
+                (doc.head || doc.body).appendChild(node);
+                s[url] = false;
+              }
+            }
+          }
+        }
+      }
+    };
+    return {
+      js: function(url, callback) {
+        load('js', url, callback);
+      },
+      css: function(url, callback) {
+        load('css', url, callback);
+      }
+    };
+  })(this.document);
+})();
+</script><script>
+  (function() {
+    var TEXT_VARIABLES = {
+      version: '2.2.6',
+      sources: {
+        font_awesome: 'https://cdn.bootcdn.net/ajax/libs/font-awesome/5.15.1/css/all.css',
+        jquery: 'https://cdn.bootcss.com/jquery/3.1.1/jquery.min.js',
+        leancloud_js_sdk: '//cdn.jsdelivr.net/npm/leancloud-storage@3.13.2/dist/av-min.js',
+        chart: 'https://cdn.bootcss.com/Chart.js/2.7.2/Chart.bundle.min.js',
+        gitalk: {
+          js: 'https://cdn.bootcss.com/gitalk/1.2.2/gitalk.min.js',
+          css: 'https://cdn.bootcss.com/gitalk/1.2.2/gitalk.min.css'
+        },
+        valine: 'https://unpkg.com/valine/dist/Valine.min.js',
+        mathjax: 'https://cdn.bootcss.com/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML',
+        mermaid: 'https://cdn.bootcss.com/mermaid/8.0.0-rc.8/mermaid.min.js'
+      },
+      site: {
+        toc: {
+          selectors: 'h1,h2,h3'
+        }
+      },
+      paths: {
+        search_js: '/assets/search.js'
+      }
+    };
+    window.TEXT_VARIABLES = TEXT_VARIABLES;
+  })();
+</script>
+</head>
+  <body>
+    <div class="root" data-is-touch="false">
+      <div class="layout--page js-page-root"><div class="page__main js-page-main page__viewport cell cell--auto">
+
+      <div class="page__main-inner"><div class="page__header d-print-none"><header class="header"><div class="main">
+      <div class="header__title">
+        <div class="header__brand"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="24px" height="24px" viewBox="0 0 24 24">
+<style type="text/css">
+	.st0{fill:#515151;}
+</style>
+<path class="st0" d="M1.7,22.3c5.7-5.7,11.3-5.7,17,0c3.3-3.3,3.5-5.3,0.8-6c2.7,0.7,3.5-1.1,2.3-5.6s-3.3-5.2-6.3-2.1
+	c3-3,2.3-5.2-2.1-6.3S7,1.8,7.7,4.6C7,1.8,5,2.1,1.7,5.3C7.3,11,7.3,16.7,1.7,22.3"/>
+</svg>
+<a title="Business Process Automation Specialist with expertise in Microsoft 365, cloud services, and AI-driven process improvements." href="/">Suleman S. Manji | Business Process Automation Expert</a></div></div><nav class="navigation">
+        <ul><li class="navigation__item"><a href="/">About</a></li><li class="navigation__item"><a href="/services">Services</a></li><li class="navigation__item"><a href="/case-studies">Case Studies</a></li><li class="navigation__item"><a href="/contact">Contact</a></li></ul>
+      </nav></div>
+  </header>
+</div><div class="page__content"><div class ="main"><div class="grid grid--reverse">
+
+              <div class="col-aside d-print-none js-col-aside"></div>
+
+              <div class="col-main cell cell--auto"><!-- start custom main top snippet -->
+
+<!-- end custom main top snippet -->
+<article itemscope itemtype="http://schema.org/WebPage"><div class="article__header"><header><h1>Unwraveling the Onions.</h1></header></div><meta itemprop="headline" content="Unwraveling the Onions."><div class="article__info clearfix"><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>Oct 15, 2023</span>
+            </li></ul></div><meta itemprop="author" content="Suleman S. Manji"/><meta itemprop="datePublished" content="2023-10-15T00:00:00-05:00"><div class="js-article-content"><h1 id="suleman-shahnawaz-manji">Suleman Shahnawaz Manji</h1>
+<h2 id="introduction">Introduction</h2>
+
+<p>This report aims to provide a comprehensive and nuanced understanding of Suleman Manji’s complex journey towards mental and emotional stability. It has been meticulously crafted to be both informative and accessible to a wide audience, including professional colleagues and friends. The report synthesizes insights and recommendations from a simulated multidisciplinary healthcare team, each contributing their expert knowledge in their respective fields. The objective is to offer a holistic view of Suleman’s experiences, challenges, and the therapeutic interventions currently in place to support him in achieving a more stable state of well-being.</p>
+
+<h2 id="executive-summary">Executive Summary</h2>
+
+<p>Suleman Manji is in the active phase of a multifaceted journey towards mental and emotional stability. Collaborating closely with healthcare professionals, he is exploring a range of therapeutic interventions to address complex psychological and emotional needs. This report serves as a synthesized document to provide a comprehensive understanding of Suleman’s journey, the challenges he faces, and the strategies in place for achieving stability.</p>
+
+<p>In light of his robust technical background and diverse skill set, Suleman is also open to exploring various professional avenues. These range from roles in technical writing and product management to opportunities in technology consulting and training &amp; development. The list of potential roles is extensive and leverages his unique blend of technical acumen and interpersonal skills.</p>
+
+<h3 id="avenues-for-professional-engagement">Avenues for Professional Engagement</h3>
+
+<ul>
+  <li><strong>Technical Writer</strong>: Crafting user-friendly guides, manuals, and documentation.</li>
+  <li><strong>Product Manager</strong>: Serving as a strategic bridge between various departments.</li>
+  <li><strong>Technology Consultant</strong>: Providing strategic advice on technology stacks and operations.</li>
+  <li><strong>Sales Engineer or Solutions Architect</strong>: Customizing and explaining technical products to potential clients.</li>
+  <li><strong>Training &amp; Development Specialist</strong>: Sharing expertise on technical tools and best practices.</li>
+  <li><strong>Business Analyst</strong>: Bridging the gap between technological solutions and business goals.</li>
+  <li><strong>Customer Success Manager</strong>: Ensuring post-sale product success and coordinating with tech teams for issue resolution.</li>
+  <li><strong>Technology Journalist or Blogger</strong>: Investigating and writing about emerging technologies and trends.</li>
+  <li><strong>Technical Recruiter</strong>: Identifying and onboarding talent in the tech domain.</li>
+  <li><strong>Startup Advisor or Mentor</strong>: Guiding startups towards a strong technological foundation.</li>
+  <li><strong>R&amp;D in Emerging Tech</strong>: Exploring new technological horizons such as VR/AR, blockchain, or AI.</li>
+</ul>
+
+<hr />
+
+<h2 id="healthcare-team-insights">Healthcare Team Insights</h2>
+
+<p>This section distills the insights and recommendations from Suleman Manji’s healthcare team, which includes specialists in psychoanalysis, psychology, and trauma. Given that family dynamics are identified as the likely root cause of outward-facing disorders, these insights are tailored to address that context.</p>
+
+<h3 id="psychoanalytical-insights">Psychoanalytical Insights</h3>
+
+<ul>
+  <li><strong>Overview</strong>: Family dynamics have been identified as a primary source of psychological challenges.</li>
+  <li><strong>Recommendations</strong>: Continued sessions to unpack the emotional and psychological impact of family relationships. Potential exploration of psychodynamic therapies to dig deeper into early life experiences and their lasting impact.</li>
+</ul>
+
+<h3 id="psychological-assessments">Psychological Assessments</h3>
+
+<ul>
+  <li><strong>Overview</strong>: Emotional and psychological complexities are heightened due to family influences.</li>
+  <li><strong>Recommendations</strong>: Cognitive Behavioral Therapy (CBT) to address immediate behavioral issues stemming from family complexities. Mindfulness techniques are also advised to manage stress and anxiety.</li>
+</ul>
+
+<h3 id="trauma-specialist-insights">Trauma Specialist Insights</h3>
+
+<ul>
+  <li><strong>Overview</strong>: Previous and ongoing family experiences have been identified as likely traumatic events contributing to current disorders.</li>
+  <li><strong>Recommendations</strong>: Trauma-focused Cognitive Behavioral Therapy (TF-CBT) or Eye Movement Desensitization and Reprocessing (EMDR) could be effective. Family therapy is not recommended at this stage unless there is a significant change in family dynamics.</li>
+</ul>
+
+<hr />
+
+<h2 id="interpersonal-relations">Interpersonal Relations</h2>
+
+<h3 id="family">Family</h3>
+
+<ul>
+  <li><strong>Overview</strong>: Complex family dynamics, identified as a probable root cause of outward-facing disorders, have contributed to trust issues.</li>
+  <li><strong>Challenges</strong>: Navigating the complexities of family relationships while managing emotional and psychological health.</li>
+  <li><strong>Current State</strong>: Limited engagement with immediate family members to safeguard emotional well-being.</li>
+  <li><strong>Healthcare Team Insights</strong>: Ongoing psychoanalysis and trauma-focused therapies are helping identify and manage triggers originating from family dynamics.</li>
+</ul>
+
+<h3 id="friends">Friends</h3>
+
+<ul>
+  <li><strong>Overview</strong>: Past experiences, likely influenced by family dynamics, have led to certain social challenges but have also shaped a resilient individual.</li>
+  <li><strong>Challenges</strong>: Balancing the need for social interaction with the instinctual wariness rooted in family experiences.</li>
+  <li><strong>Current State</strong>: Maintaining a cautious but open approach to friendships, with an emphasis on emotional safety.</li>
+  <li><strong>Healthcare Team Insights</strong>: Cognitive Behavioral Therapy is assisting in social skills and trust issues, with some roots traced back to family experiences.</li>
+</ul>
+
+<h3 id="professional-colleagues">Professional Colleagues</h3>
+
+<ul>
+  <li><strong>Overview</strong>: Generally positive interactions but colored by underlying stress and the residual effects of complex family dynamics.</li>
+  <li><strong>Challenges</strong>: Managing professional relationships while dealing with the emotional and psychological complexities that stem from family.</li>
+  <li><strong>Current State</strong>: Actively working to separate professional interactions from the emotional volatility associated with family history.</li>
+  <li><strong>Healthcare Team Insights</strong>: Mindfulness techniques are recommended to manage stress during interactions with colleagues, particularly when family-induced stressors are triggered.</li>
+</ul>
+
+<hr />
+
+<h2 id="professional-environment">Professional Environment</h2>
+
+<h3 id="work-life-balance">Work-Life Balance</h3>
+
+<ul>
+  <li><strong>Overview</strong>: With a career in technology, Suleman aims to maintain work-life balance, especially since family dynamics may not be a source of reliable emotional support.</li>
+  <li><strong>Challenges</strong>: The absence of a supportive family network heightens the need for a balanced professional life.</li>
+  <li><strong>Current State</strong>: Proactively seeking a balance between work responsibilities and personal self-care.</li>
+  <li><strong>Healthcare Team Insights</strong>: Psychoanalytical therapy is aiding in identifying and mitigating stressors that arise from family dynamics.</li>
+</ul>
+
+<h3 id="stress-management">Stress Management</h3>
+
+<ul>
+  <li><strong>Overview</strong>: In the absence of familial support, managing stress effectively is even more critical.</li>
+  <li><strong>Challenges</strong>: The lack of a supportive family background can exacerbate work-related stress.</li>
+  <li><strong>Current State</strong>: Actively incorporating mindfulness and relaxation techniques as part of stress management.</li>
+  <li><strong>Healthcare Team Insights</strong>: Trauma specialists recommend targeted therapies to manage triggers related to family issues.</li>
+</ul>
+
+<h3 id="communication">Communication</h3>
+
+<ul>
+  <li><strong>Overview</strong>: Open communication becomes more critical when support from family is unreliable or harmful.</li>
+  <li><strong>Challenges</strong>: Needing to communicate clearly and effectively while managing stress and emotional complexities that stem from family.</li>
+  <li><strong>Current State</strong>: Maintaining an open dialogue with HR and management to accommodate any unique needs, especially in light of the family situation.</li>
+  <li><strong>Healthcare Team Insights</strong>: Cognitive Behavioral Therapy (CBT) is helping Suleman articulate his needs and boundaries, particularly when family-induced stressors spill into the professional environment.</li>
+</ul>
+
+<h2 id="conclusions">Conclusions</h2>
+
+<p>Suleman’s journey towards stability is a multi-faceted effort involving healthcare professionals, self-care strategies, and understanding from those around him and experiences from his past. Continued support from family, friends, and colleagues will significantly contribute to his well-being.</p>
+
+<hr />
+<h1 id="the-unfolding-journey-"><strong>“The Unfolding Journey “</strong></h1>
+
+<h2 id="1-prologue-foundations-of-a-journey">1. Prologue: Foundations of a Journey</h2>
+
+<h3 id="an-early-start-elementary-school-memories">An Early Start: Elementary School Memories</h3>
+
+<p>I was a child with an eye for detail, always observant of my surroundings. This vigilance would later become a protective mechanism, especially when it came to family dynamics. There’s a scar only that remains. A product of a traumatic incident in 1997, it serves as a permanent reminder of the trials I’ve faced.</p>
+
+<h3 id="a-shift-in-perspective-fathers-hospitalization">A Shift in Perspective: Father’s Hospitalization</h3>
+
+<p>My father’s hospitalization marked the beginning of a tumultuous period for my family. It was a time of uncertainty, and its impact was profound. My father’s eventual passing would later become a cornerstone of my existence, shaping my perspectives on life, death, and the complexities of human relationships.</p>
+
+<h3 id="the-loss-saying-goodbye-in-022000">The Loss: Saying Goodbye in 02/2000</h3>
+
+<p>The loss was a life-altering event. It triggered a journey filled with challenges and adversities, each one teaching me invaluable lessons about human nature, resilience, and the unpredictability of life.</p>
+
+<h2 id="2-cross-country-changes">2. Cross-Country Changes</h2>
+
+<h3 id="new-beginnings-california-dreams-in-4th-grade">New Beginnings: California Dreams in 4th Grade</h3>
+
+<p>Moving to California promised a fresh start. However, new beginnings often come with their set of challenges. The ghosts of past experiences followed me, shaping my perception and interaction with my new environment.</p>
+
+<h3 id="a-pause-in-education-the-mystery-of-the-missing-school-year">A Pause in Education: The Mystery of the Missing School Year</h3>
+
+<p>Still not entirely sure why, but I missed Fifth grade of school with no recourse. Spent this time in Vancouver, Canadia - in an apartment - watching Public Access (French) Arthur. My sister flew in with me, my uncle and my grandparents. I didn’t see much of my sister and uncle.</p>
+
+<h3 id="roots-in-houston">Roots in Houston</h3>
+
+<p>Texas brought about a different set of challenges and opportunities. From academic trials to personal confrontations, my time here was a roller coaster of experiences that contributed significantly to my life’s narrative. Started going to school at Mata Intermediate and things seemed OK.</p>
+
+<h2 id="3-adversity-and-resilience">3. Adversity and Resilience</h2>
+
+<h3 id="dark-clouds-the-aftermath-of-91101">Dark Clouds: The Aftermath of 9/11/01</h3>
+
+<p>The events of 9/11 had a monumental impact on the world, and it shaped my teenage years. Specifically the feeling of being singled out by-way of a kick to the sternum.</p>
+
+<h3 id="trials-in-texas-from-alief-to-fort-bend">Trials in Texas: From Alief to Fort Bend</h3>
+
+<p>My time in Texas was anything but straightforward. From brushes with the law to navigating complicated family dynamics, these experiences became a series of life lessons. It was during this period that I began to understand the power dynamics within my family, especially concerning my mother and sister.</p>
+
+<h3 id="confrontations-arrests-and-lessons-learned">Confrontations: Arrests and Lessons Learned</h3>
+
+<p>Legal troubles were a part of my journey. While difficult, these experiences taught me about the American justice system, human behavior, and the value of a good support system.</p>
+
+<h2 id="4-the-work-life-beckons">4. The Work Life Beckons</h2>
+
+<h3 id="stepping-into-responsibility-days-at-brake-check">Stepping into Responsibility: Days at Brake Check</h3>
+
+<p>My first job at Brake Check was a stark contrast to academic life. The real-world responsibilities were challenging yet educational. It was my first step into the world of adulthood, a world that I would later navigate with a blend of curiosity and caution.</p>
+
+<h3 id="building-a-career-from-brakes-to-bytes">Building a Career: From Brakes to Bytes</h3>
+
+<p>My career in technology, spanning from ERGOS Technology to sulemanji, LLC, has been a voyage filled with ups and downs. Professional relationships, especially with figures like Matt C. and Aaron H., have shaped my career in significant ways. My abrupt departure from ERGOS in 2017 was a result of overwhelming stress, a need for change, and a quest for a deeper understanding of my career aspirations.</p>
+
+<h2 id="5-the-bauer-foundation">5. The Bauer Foundation</h2>
+
+<h3 id="university-days-more-than-just-books">University Days: More Than Just Books</h3>
+
+<p>The University of Houston’s Bauer College was not just an educational institution; it was a life-changing experience. It provided the intellectual foundation for my career and instilled in me the values of hard work, dedication, and continuous learning.</p>
+
+<h3 id="lessons-from-the-school-of-business">Lessons from the School of Business</h3>
+
+<p>Bauer College taught me essential life lessons that went beyond academics. From networking to navigating group dynamics, my time here was a holistic education experience.</p>
+
+<h2 id="6-ascending-the-tech-ladder">6. Ascending the Tech Ladder</h2>
+
+<h3 id="climbing-up-fulcrum-technology-solutions-to-stack-advisors">Climbing Up: Fulcrum Technology Solutions to Stack Advisors</h3>
+
+<p>Each professional move brought new challenges and opportunities. From Fulcrum Technology Solutions to Stack Advisors, my journey was marked by continuous learning, adaptability, and a relentless pursuit of excellence.</p>
+
+<h3 id="consulting-horizons-a-world-of-opportunities">Consulting Horizons: A World of Opportunities</h3>
+
+<p>Consulting offered me a unique platform to leverage my skills. It was a realm that allowed me to interact with diverse industries and contribute to various high-stakes projects.</p>
+
+<h2 id="7-challenges-triumphs-and-balance">7. Challenges, Triumphs, and Balance</h2>
+
+<h3 id="tech-humanity-and-everything-in-between">Tech, Humanity, and Everything in Between</h3>
+
+<p>My life has been a constant balancing act between technical challenges and human relations. Whether it was managing complex tech issues or understanding intricate human behavior, each experience added a new layer to my life’s story.</p>
+
+<h3 id="striving-for-equilibrium-work-life-pursuits">Striving for Equilibrium: Work-Life Pursuits</h3>
+
+<p>Achieving a work-life balance has been one of my most significant challenges. Despite the hurdles, I’ve managed to carve out moments of equilibrium, thanks to a relentless pursuit of personal and professional growth.</p>
+
+<h2 id="8-continuous-learning-and-evolution">8. Continuous Learning and Evolution</h2>
+
+<h3 id="certifications-training-and-staying-ahead">Certifications, Training, and Staying Ahead</h3>
+
+<p>The rapidly evolving tech industry requires a commitment to continuous learning. I’ve pursued various certifications and training programs to stay ahead of industry trends and to enhance my skill set.</p>
+
+<h3 id="industry-innovations-keeping-up-with-trends">Industry Innovations: Keeping Up with Trends</h3>
+
+<p>Adapting to industry innovations has been a key aspect of my career. Whether it was cloud computing or AI, staying updated on the latest trends has been crucial for my professional development.</p>
+
+<h2 id="9-reflecting-on-ambitions-and-aspirations">9. Reflecting on Ambitions and Aspirations</h2>
+
+<h3 id="understanding-my-empires-of-greed">Understanding ‘My Empires of Greed’</h3>
+
+<p>Reflecting on my journey, I realize that my ambitions and aspirations have been a double-edged sword. While they have propelled me forward, they have also been my greatest adversaries.</p>
+
+<h3 id="ambition-desire-and-finding-contentment">Ambition, Desire, and Finding Contentment</h3>
+
+<p>The pursuit of ambition and contentment is a complex interplay of emotions, desires, and practicalities. It’s a journey that I continue to navigate with both caution and enthusiasm.</p>
+
+<h2 id="10-epilogue-the-journey-is-just-beginning">10. Epilogue: The Journey is Just Beginning</h2>
+
+<h3 id="past-lessons-future-horizons">Past Lessons, Future Horizons</h3>
+
+<p>As I look back at my journey, I see a tapestry of experiences, each one contributing to the person I am today. And as I look ahead, I see a horizon filled with opportunities, challenges, and endless possibilities.</p>
+
+<h3 id="an-invitation-to-connect-collaborate-and-continue-the-tale">An Invitation to Connect, Collaborate, and Continue the Tale</h3>
+
+<p>This is not the end; it’s just the beginning. I invite you, the reader, to connect with me, collaborate on future endeavors, and continue this tale that is far from over.</p>
+
+<p><em>Thank you for taking the time to read my shniz. Your attention is sincerely appreciated.</em>
+<em>For further inquiries, collaborations, or to continue this journey with me, feel free to reach out.</em></p>
+
+<hr />
+<p><em>© 2023 Suleman Manji, All Rights Reserved.</em></p>
+<ul>
+  <li><a href="https://www.sulemanji.com">Contact via Website</a></li>
+  <li><a href="https://www.linkedin.com/in/sulemanmanji/">LinkedIn</a></li>
+  <li><a href="mailto:ssmanji89@gmail.com">Email</a></li>
+</ul>
+
+</div><section class="page__comments d-print-none"></section></article><!-- start custom main bottom snippet -->
+
+<!-- end custom main bottom snippet -->
+</div>
+            </div></div></div><div class="page__footer d-print-none">
+<footer class="footer py-4 js-page-footer">
+  <div class="main"><div itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Suleman S. Manji"><meta itemprop="url" content="/"><div class="footer__author-links"><div class="author-links">
+  <ul class="menu menu--nowrap menu--inline"><li title="Send me an Email.">
+      <a class="button button--circle mail-button" itemprop="email" href="mailto:ssmanji89@gmail.com" target="_blank">
+        <i class="fas fa-envelope"></i>
+      </a></ul>
+</div>
+</div>
+    </div><div class="site-info mt-2">
+    </div>
+  </div>
+</footer>
+</div></div>
+    </div><script>(function() {
+  var SOURCES = window.TEXT_VARIABLES.sources;
+  window.Lazyload.js(SOURCES.jquery, function() {
+    var $body = $('body'), $window = $(window);
+    var $pageRoot = $('.js-page-root'), $pageMain = $('.js-page-main');
+    var activeCount = 0;
+    function modal(options) {
+      var $root = this, visible, onChange, hideWhenWindowScroll = false;
+      var scrollTop;
+      function setOptions(options) {
+        var _options = options || {};
+        visible = _options.initialVisible === undefined ? false : show;
+        onChange = _options.onChange;
+        hideWhenWindowScroll = _options.hideWhenWindowScroll;
+      }
+      function init() {
+        setState(visible);
+      }
+      function setState(isShow) {
+        if (isShow === visible) {
+          return;
+        }
+        visible = isShow;
+        if (visible) {
+          activeCount++;
+          scrollTop = $(window).scrollTop() || $pageMain.scrollTop();
+          $root.addClass('modal--show');
+          $pageMain.scrollTop(scrollTop);
+          activeCount === 1 && ($pageRoot.addClass('show-modal'), $body.addClass('of-hidden'));
+          hideWhenWindowScroll && window.hasEvent('touchstart') && $window.on('scroll', hide);
+          $window.on('keyup', handleKeyup);
+        } else {
+          activeCount > 0 && activeCount--;
+          $root.removeClass('modal--show');
+          $window.scrollTop(scrollTop);
+          activeCount === 0 && ($pageRoot.removeClass('show-modal'), $body.removeClass('of-hidden'));
+          hideWhenWindowScroll && window.hasEvent('touchstart') && $window.off('scroll', hide);
+          $window.off('keyup', handleKeyup);
+        }
+        onChange && onChange(visible);
+      }
+      function show() {
+        setState(true);
+      }
+      function hide() {
+        setState(false);
+      }
+      function handleKeyup(e) {
+        // Char Code: 27  ESC
+        if (e.which ===  27) {
+          hide();
+        }
+      }
+      setOptions(options);
+      init();
+      return {
+        show: show,
+        hide: hide,
+        $el: $root
+      };
+    }
+    $.fn.modal = modal;
+  });
+})();
+</script><div class="modal modal--overflow page__search-modal d-print-none js-page-search-modal"></div></div>
+
+
+<script>(function() {
+  var SOURCES = window.TEXT_VARIABLES.sources;
+  window.Lazyload.js(SOURCES.jquery, function() {
+    function scrollToAnchor(anchor, duration, callback) {
+      var $root = this;
+      $root.animate({ scrollTop: $(anchor).position().top }, duration, function() {
+        window.history.replaceState(null, '', window.location.href.split('#')[0] + anchor);
+        callback && callback();
+      });
+    }
+    $.fn.scrollToAnchor = scrollToAnchor;
+  });
+})();
+(function() {
+  var SOURCES = window.TEXT_VARIABLES.sources;
+  window.Lazyload.js(SOURCES.jquery, function() {
+    function affix(options) {
+      var $root = this, $window = $(window), $scrollTarget, $scroll,
+        offsetBottom = 0, scrollTarget = window, scroll = window.document, disabled = false, isOverallScroller = true,
+        rootTop, rootLeft, rootHeight, scrollBottom, rootBottomTop,
+        hasInit = false, curState;
+
+      function setOptions(options) {
+        var _options = options || {};
+        _options.offsetBottom && (offsetBottom = _options.offsetBottom);
+        _options.scrollTarget && (scrollTarget = _options.scrollTarget);
+        _options.scroll && (scroll = _options.scroll);
+        _options.disabled !== undefined && (disabled = _options.disabled);
+        $scrollTarget = $(scrollTarget);
+        isOverallScroller = window.isOverallScroller($scrollTarget[0]);
+        $scroll = $(scroll);
+      }
+      function preCalc() {
+        top();
+        rootHeight = $root.outerHeight();
+        rootTop = $root.offset().top + (isOverallScroller ? 0 :  $scrollTarget.scrollTop());
+        rootLeft = $root.offset().left;
+      }
+      function calc(needPreCalc) {
+        needPreCalc && preCalc();
+        scrollBottom = $scroll.outerHeight() - offsetBottom - rootHeight;
+        rootBottomTop = scrollBottom - rootTop;
+      }
+      function top() {
+        if (curState !== 'top') {
+          $root.removeClass('fixed').css({
+            left: 0,
+            top: 0
+          });
+          curState = 'top';
+        }
+      }
+      function fixed() {
+        if (curState !== 'fixed') {
+          $root.addClass('fixed').css({
+            left: rootLeft + 'px',
+            top: 0
+          });
+          curState = 'fixed';
+        }
+      }
+      function bottom() {
+        if (curState !== 'bottom') {
+          $root.removeClass('fixed').css({
+            left: 0,
+            top: rootBottomTop + 'px'
+          });
+          curState = 'bottom';
+        }
+      }
+      function setState() {
+        var scrollTop = $scrollTarget.scrollTop();
+        if (scrollTop >= rootTop && scrollTop <= scrollBottom) {
+          fixed();
+        } else if (scrollTop < rootTop) {
+          top();
+        } else {
+          bottom();
+        }
+      }
+      function init() {
+        if(!hasInit) {
+          var interval, timeout;
+          calc(true); setState();
+          // run calc every 100 millisecond
+          interval = setInterval(function() {
+            calc();
+          }, 100);
+          timeout = setTimeout(function() {
+            clearInterval(interval);
+          }, 45000);
+          window.pageLoad.then(function() {
+            setTimeout(function() {
+              clearInterval(interval);
+              clearTimeout(timeout);
+            }, 3000);
+          });
+          $scrollTarget.on('scroll', function() {
+            disabled || setState();
+          });
+          $window.on('resize', function() {
+            disabled || (calc(true), setState());
+          });
+          hasInit = true;
+        }
+      }
+
+      setOptions(options);
+      if (!disabled) {
+        init();
+      }
+      $window.on('resize', window.throttle(function() {
+        init();
+      }, 200));
+      return {
+        setOptions: setOptions,
+        refresh: function() {
+          calc(true, { animation: false }); setState();
+        }
+      };
+    }
+    $.fn.affix = affix;
+  });
+})();
+(function() {
+  var SOURCES = window.TEXT_VARIABLES.sources;
+  window.Lazyload.js(SOURCES.jquery, function() {
+    function toc(options) {
+      var $root = this, $window = $(window), $scrollTarget, $scroller, $tocUl = $('<ul class="toc toc--ellipsis"></ul>'), $tocLi, $headings, $activeLast, $activeCur,
+        selectors = 'h1,h2,h3', container = 'body', scrollTarget = window, scroller = 'html, body', disabled = false,
+        headingsPos, scrolling = false, hasRendered = false, hasInit = false;
+
+      function setOptions(options) {
+        var _options = options || {};
+        _options.selectors && (selectors = _options.selectors);
+        _options.container && (container = _options.container);
+        _options.scrollTarget && (scrollTarget = _options.scrollTarget);
+        _options.scroller && (scroller = _options.scroller);
+        _options.disabled !== undefined && (disabled = _options.disabled);
+        $headings = $(container).find(selectors).filter('[id]');
+        $scrollTarget = $(scrollTarget);
+        $scroller = $(scroller);
+      }
+      function calc() {
+        headingsPos = [];
+        $headings.each(function() {
+          headingsPos.push(Math.floor($(this).position().top));
+        });
+      }
+      function setState(element, disabled) {
+        var scrollTop = $scrollTarget.scrollTop(), i;
+        if (disabled || !headingsPos || headingsPos.length < 1) { return; }
+        if (element) {
+          $activeCur = element;
+        } else {
+          for (i = 0; i < headingsPos.length; i++) {
+            if (scrollTop >= headingsPos[i]) {
+              $activeCur = $tocLi.eq(i);
+            } else {
+              $activeCur || ($activeCur = $tocLi.eq(i));
+              break;
+            }
+          }
+        }
+        $activeLast && $activeLast.removeClass('active');
+        ($activeLast = $activeCur).addClass('active');
+      }
+      function render() {
+        if(!hasRendered) {
+          $root.append($tocUl);
+          $headings.each(function() {
+            var $this = $(this);
+            $tocUl.append($('<li></li>').addClass('toc-' + $this.prop('tagName').toLowerCase())
+              .append($('<a></a>').text($this.text()).attr('href', '#' + $this.prop('id'))));
+          });
+          $tocLi = $tocUl.children('li');
+          $tocUl.on('click', 'a', function(e) {
+            e.preventDefault();
+            var $this = $(this);
+            scrolling = true;
+            setState($this.parent());
+            $scroller.scrollToAnchor($this.attr('href'), 400, function() {
+              scrolling = false;
+            });
+          });
+        }
+        hasRendered = true;
+      }
+      function init() {
+        var interval, timeout;
+        if(!hasInit) {
+          render(); calc(); setState(null, scrolling);
+          // run calc every 100 millisecond
+          interval = setInterval(function() {
+            calc();
+          }, 100);
+          timeout = setTimeout(function() {
+            clearInterval(interval);
+          }, 45000);
+          window.pageLoad.then(function() {
+            setTimeout(function() {
+              clearInterval(interval);
+              clearTimeout(timeout);
+            }, 3000);
+          });
+          $scrollTarget.on('scroll', function() {
+            disabled || setState(null, scrolling);
+          });
+          $window.on('resize', window.throttle(function() {
+            if (!disabled) {
+              render(); calc(); setState(null, scrolling);
+            }
+          }, 100));
+        }
+        hasInit = true;
+      }
+
+      setOptions(options);
+      if (!disabled) {
+        init();
+      }
+      $window.on('resize', window.throttle(function() {
+        init();
+      }, 200));
+      return {
+        setOptions: setOptions
+      };
+    }
+    $.fn.toc = toc;
+  });
+})();
+/*(function () {
+
+})();*/
+</script>
+    </div>
+    
+    <script>(function () {
+  var $root = document.getElementsByClassName('root')[0];
+  if (window.hasEvent('touchstart')) {
+    $root.dataset.isTouch = true;
+    document.addEventListener('touchstart', function(){}, false);
+  }
+})();
+</script>
+  </body>
+</html>
+

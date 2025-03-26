@@ -1,0 +1,1029 @@
+<!DOCTYPE html><html lang="en">
+  <head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"><title>About Suleman Manji - Suleman S. Manji | Business Process Automation Expert</title>
+
+<meta name="description" content="Business Process Automation Specialist with expertise in Microsoft 365, cloud services, and AI-driven process improvements.">
+<link rel="canonical" href="https://www.sulemanji.com/about/"><link rel="alternate" type="application/rss+xml" title="Suleman S. Manji | Business Process Automation Expert" href="/feed.xml"><!-- start favicons snippet, use https://realfavicongenerator.net/ --><link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png"><link rel="manifest" href="/assets/site.webmanifest"><link rel="mask-icon" href="/assets/safari-pinned-tab.svg" color="#fc4d50"><link rel="shortcut icon" href="/assets/favicon.ico">
+
+<meta name="msapplication-TileColor" content="#ffc40d"><meta name="msapplication-config" content="/assets/browserconfig.xml">
+
+<meta name="theme-color" content="#ffffff">
+<!-- end favicons snippet --><link rel="stylesheet" href="/assets/css/main.css"><link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.15.1/css/all.css" ><!-- start custom head snippets -->
+
+<!-- end custom head snippets -->
+<script>(function() {
+  window.isArray = function(val) {
+    return Object.prototype.toString.call(val) === '[object Array]';
+  };
+  window.isString = function(val) {
+    return typeof val === 'string';
+  };
+
+  window.hasEvent = function(event) {
+    return 'on'.concat(event) in window.document;
+  };
+
+  window.isOverallScroller = function(node) {
+    return node === document.documentElement || node === document.body || node === window;
+  };
+
+  window.isFormElement = function(node) {
+    var tagName = node.tagName;
+    return tagName === 'INPUT' || tagName === 'SELECT' || tagName === 'TEXTAREA';
+  };
+
+  window.pageLoad = (function () {
+    var loaded = false, cbs = [];
+    window.addEventListener('load', function () {
+      var i;
+      loaded = true;
+      if (cbs.length > 0) {
+        for (i = 0; i < cbs.length; i++) {
+          cbs[i]();
+        }
+      }
+    });
+    return {
+      then: function(cb) {
+        cb && (loaded ? cb() : (cbs.push(cb)));
+      }
+    };
+  })();
+})();
+(function() {
+  window.throttle = function(func, wait) {
+    var args, result, thisArg, timeoutId, lastCalled = 0;
+
+    function trailingCall() {
+      lastCalled = new Date;
+      timeoutId = null;
+      result = func.apply(thisArg, args);
+    }
+    return function() {
+      var now = new Date,
+        remaining = wait - (now - lastCalled);
+
+      args = arguments;
+      thisArg = this;
+
+      if (remaining <= 0) {
+        clearTimeout(timeoutId);
+        timeoutId = null;
+        lastCalled = now;
+        result = func.apply(thisArg, args);
+      } else if (!timeoutId) {
+        timeoutId = setTimeout(trailingCall, remaining);
+      }
+      return result;
+    };
+  };
+})();
+(function() {
+  var Set = (function() {
+    var add = function(item) {
+      var i, data = this._data;
+      for (i = 0; i < data.length; i++) {
+        if (data[i] === item) {
+          return;
+        }
+      }
+      this.size ++;
+      data.push(item);
+      return data;
+    };
+
+    var Set = function(data) {
+      this.size = 0;
+      this._data = [];
+      var i;
+      if (data.length > 0) {
+        for (i = 0; i < data.length; i++) {
+          add.call(this, data[i]);
+        }
+      }
+    };
+    Set.prototype.add = add;
+    Set.prototype.get = function(index) { return this._data[index]; };
+    Set.prototype.has = function(item) {
+      var i, data = this._data;
+      for (i = 0; i < data.length; i++) {
+        if (this.get(i) === item) {
+          return true;
+        }
+      }
+      return false;
+    };
+    Set.prototype.is = function(map) {
+      if (map._data.length !== this._data.length) { return false; }
+      var i, j, flag, tData = this._data, mData = map._data;
+      for (i = 0; i < tData.length; i++) {
+        for (flag = false, j = 0; j < mData.length; j++) {
+          if (tData[i] === mData[j]) {
+            flag = true;
+            break;
+          }
+        }
+        if (!flag) { return false; }
+      }
+      return true;
+    };
+    Set.prototype.values = function() {
+      return this._data;
+    };
+    return Set;
+  })();
+
+  window.Lazyload = (function(doc) {
+    var queue = {js: [], css: []}, sources = {js: {}, css: {}}, context = this;
+    var createNode = function(name, attrs) {
+      var node = doc.createElement(name), attr;
+      for (attr in attrs) {
+        if (attrs.hasOwnProperty(attr)) {
+          node.setAttribute(attr, attrs[attr]);
+        }
+      }
+      return node;
+    };
+    var end = function(type, url) {
+      var s, q, qi, cbs, i, j, cur, val, flag;
+      if (type === 'js' || type ==='css') {
+        s = sources[type], q = queue[type];
+        s[url] = true;
+        for (i = 0; i < q.length; i++) {
+          cur = q[i];
+          if (cur.urls.has(url)) {
+            qi = cur, val = qi.urls.values();
+            qi && (cbs = qi.callbacks);
+            for (flag = true, j = 0; j < val.length; j++) {
+              cur = val[j];
+              if (!s[cur]) {
+                flag = false;
+              }
+            }
+            if (flag && cbs && cbs.length > 0) {
+              for (j = 0; j < cbs.length; j++) {
+                cbs[j].call(context);
+              }
+              qi.load = true;
+            }
+          }
+        }
+      }
+    };
+    var load = function(type, urls, callback) {
+      var s, q, qi, node, i, cur,
+        _urls = typeof urls === 'string' ? new Set([urls]) : new Set(urls), val, url;
+      if (type === 'js' || type ==='css') {
+        s = sources[type], q = queue[type];
+        for (i = 0; i < q.length; i++) {
+          cur = q[i];
+          if (_urls.is(cur.urls)) {
+            qi = cur;
+            break;
+          }
+        }
+        val = _urls.values();
+        if (qi) {
+          callback && (qi.load || qi.callbacks.push(callback));
+          callback && (qi.load && callback());
+        } else {
+          q.push({
+            urls: _urls,
+            callbacks: callback ? [callback] : [],
+            load: false
+          });
+          for (i = 0; i < val.length; i++) {
+            node = null, url = val[i];
+            if (s[url] === undefined) {
+              (type === 'js' ) && (node = createNode('script', { src: url }));
+              (type === 'css') && (node = createNode('link', { rel: 'stylesheet', href: url }));
+              if (node) {
+                node.onload = (function(type, url) {
+                  return function() {
+                    end(type, url);
+                  };
+                })(type, url);
+                (doc.head || doc.body).appendChild(node);
+                s[url] = false;
+              }
+            }
+          }
+        }
+      }
+    };
+    return {
+      js: function(url, callback) {
+        load('js', url, callback);
+      },
+      css: function(url, callback) {
+        load('css', url, callback);
+      }
+    };
+  })(this.document);
+})();
+</script><script>
+  (function() {
+    var TEXT_VARIABLES = {
+      version: '2.2.6',
+      sources: {
+        font_awesome: 'https://cdn.bootcdn.net/ajax/libs/font-awesome/5.15.1/css/all.css',
+        jquery: 'https://cdn.bootcss.com/jquery/3.1.1/jquery.min.js',
+        leancloud_js_sdk: '//cdn.jsdelivr.net/npm/leancloud-storage@3.13.2/dist/av-min.js',
+        chart: 'https://cdn.bootcss.com/Chart.js/2.7.2/Chart.bundle.min.js',
+        gitalk: {
+          js: 'https://cdn.bootcss.com/gitalk/1.2.2/gitalk.min.js',
+          css: 'https://cdn.bootcss.com/gitalk/1.2.2/gitalk.min.css'
+        },
+        valine: 'https://unpkg.com/valine/dist/Valine.min.js',
+        mathjax: 'https://cdn.bootcss.com/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML',
+        mermaid: 'https://cdn.bootcss.com/mermaid/8.0.0-rc.8/mermaid.min.js'
+      },
+      site: {
+        toc: {
+          selectors: 'h1,h2,h3'
+        }
+      },
+      paths: {
+        search_js: '/assets/search.js'
+      }
+    };
+    window.TEXT_VARIABLES = TEXT_VARIABLES;
+  })();
+</script>
+</head>
+  <body>
+    <div class="root" data-is-touch="false">
+      <div class="layout--page js-page-root"><div class="page__main js-page-main page__viewport cell cell--auto">
+
+      <div class="page__main-inner"><div class="page__header d-print-none"><header class="header"><div class="main">
+      <div class="header__title">
+        <div class="header__brand"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="24px" height="24px" viewBox="0 0 24 24">
+<style type="text/css">
+	.st0{fill:#515151;}
+</style>
+<path class="st0" d="M1.7,22.3c5.7-5.7,11.3-5.7,17,0c3.3-3.3,3.5-5.3,0.8-6c2.7,0.7,3.5-1.1,2.3-5.6s-3.3-5.2-6.3-2.1
+	c3-3,2.3-5.2-2.1-6.3S7,1.8,7.7,4.6C7,1.8,5,2.1,1.7,5.3C7.3,11,7.3,16.7,1.7,22.3"/>
+</svg>
+<a title="Business Process Automation Specialist with expertise in Microsoft 365, cloud services, and AI-driven process improvements." href="/">Suleman S. Manji | Business Process Automation Expert</a></div></div><nav class="navigation">
+        <ul><li class="navigation__item"><a href="/">About</a></li><li class="navigation__item"><a href="/services">Services</a></li><li class="navigation__item"><a href="/case-studies">Case Studies</a></li><li class="navigation__item"><a href="/contact">Contact</a></li></ul>
+      </nav></div>
+  </header>
+</div><div class="page__content"><div class ="main"><div class="grid grid--reverse">
+
+              <div class="col-aside d-print-none js-col-aside"></div>
+
+              <div class="col-main cell cell--auto"><!-- start custom main top snippet -->
+
+<!-- end custom main top snippet -->
+<article itemscope itemtype="http://schema.org/Article"><div class="article__header"><header><h1>About Suleman Manji</h1></header></div><meta itemprop="headline" content="About Suleman Manji"><meta itemprop="author" content="Suleman S. Manji"/><div class="js-article-content"><div class="layout--article"><!-- start custom article top snippet -->
+
+<!-- end custom article top snippet -->
+<div class="article__content" itemprop="articleBody" width="100%"><div class="grid-container">
+  <div class="hero-section">
+    <div class="grid grid--p-3">
+      <div class="cell cell--12 cell--md-8">
+        <h1>About Me</h1>
+        <p class="text-lead">I'm Suleman Manji, a business process automation expert with a passion for transforming manual workflows into efficient, reliable, and scalable automated solutions.</p>
+
+        <p>After years of delivering IT solutions for diverse organizations, I now specialize in automation solutions that help businesses innovate and drive growth. My expertise spans cloud services, Microsoft 365, and AI integration to create tailored, high-impact solutions.</p>
+
+        <p>With a Bachelor's degree in Management Information Systems from the University of Houston's Bauer School of Business, I combine academic rigor with real-world expertise to deliver measurable results.</p>
+      </div>
+
+      <div class="cell cell--12 cell--md-4">
+        <div class="profile-image">
+          <img src="/assets/images/sulemanji-profile.png" alt="Suleman Manji">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>My Background</h2>
+
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-date">2023-2025</div>
+        <div class="timeline-content">
+          <h3>ZG Companies</h3>
+          <p class="timeline-position">Senior Technical Consultant</p>
+          <p>Led Microsoft 365 governance and security initiatives, implemented property management automation solutions, and developed 70+ Power Automate flows for business process optimization.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-date">2023</div>
+        <div class="timeline-content">
+          <h3>StackAdvisors, LLC</h3>
+          <p class="timeline-position">Integrations Manager | Interim Azure C# .NET Engineer</p>
+          <p>Reduced Azure hosting costs by 40%, improved CI/CD pipelines, and enhanced system monitoring and reliability.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-date">2021-2023</div>
+        <div class="timeline-content">
+          <h3>Fulcrum Technology Solutions</h3>
+          <p class="timeline-position">Technical SME | Architect | Engineer | Project Manager</p>
+          <p>Led enterprise security implementations, spearheaded GDPR compliance initiatives, and developed scalable cloud solutions for hybrid identity and access management.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-date">2017-2020</div>
+        <div class="timeline-content">
+          <h3>Sugar Land Petroleum, LLC</h3>
+          <p class="timeline-position">Technical Consultant | Systems Administrator</p>
+          <p>Managed Azure cloud resources, implemented network infrastructure improvements, and provided technical support for retail systems across 17 remote sites.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-date">2013-2017</div>
+        <div class="timeline-content">
+          <h3>ERGOS Technology Partners</h3>
+          <p class="timeline-position">Various Roles</p>
+          <p>Progressed from Remote Support Consultant to Senior Automation Architect, developing monitoring systems and automation solutions for 15,000+ workstations and 2,500+ servers.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>My Approach</h2>
+
+    <p>I believe in a pragmatic, results-driven approach to business process automation. My methodology focuses on:</p>
+
+    <div class="approach-grid">
+      <div class="grid grid--p-3">
+        <div class="cell cell--12 cell--md-4">
+          <div class="approach-card">
+            <div class="approach-icon">
+              <i class="fas fa-search"></i>
+            </div>
+            <h3>Understanding</h3>
+            <p>I take the time to thoroughly understand your business, processes, pain points, and goals before proposing solutions.</p>
+          </div>
+        </div>
+
+        <div class="cell cell--12 cell--md-4">
+          <div class="approach-card">
+            <div class="approach-icon">
+              <i class="fas fa-lightbulb"></i>
+            </div>
+            <h3>Innovation</h3>
+            <p>I leverage the latest technologies and best practices to create innovative solutions that address your specific challenges.</p>
+          </div>
+        </div>
+
+        <div class="cell cell--12 cell--md-4">
+          <div class="approach-card">
+            <div class="approach-icon">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <h3>Measurable Results</h3>
+            <p>I focus on delivering solutions that provide tangible, measurable improvements to your business operations and bottom line.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Skills & Expertise</h2>
+
+    <div class="skills-grid">
+      <div class="grid grid--p-3">
+        <div class="cell cell--12 cell--md-4">
+          <div class="skill-category">
+            <h3>Cloud Platforms & DevOps</h3>
+            <ul class="skill-list">
+              <li>Azure</li>
+              <li>AWS</li>
+              <li>Oracle Cloud</li>
+              <li>Azure DevOps</li>
+              <li>CI/CD Pipelines</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="cell cell--12 cell--md-4">
+          <div class="skill-category">
+            <h3>Programming & Scripting</h3>
+            <ul class="skill-list">
+              <li>PowerShell</li>
+              <li>Python</li>
+              <li>.NET C# Blazor</li>
+              <li>Bash</li>
+              <li>SQL</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="cell cell--12 cell--md-4">
+          <div class="skill-category">
+            <h3>Security & Compliance</h3>
+            <ul class="skill-list">
+              <li>CyberArk PAM</li>
+              <li>IAM</li>
+              <li>GDPR</li>
+              <li>NIST</li>
+              <li>Zero Trust</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="cell cell--12 cell--md-4">
+          <div class="skill-category">
+            <h3>Microsoft 365</h3>
+            <ul class="skill-list">
+              <li>Power Automate</li>
+              <li>SharePoint</li>
+              <li>Power Apps</li>
+              <li>Power BI</li>
+              <li>Teams & Viva</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="cell cell--12 cell--md-4">
+          <div class="skill-category">
+            <h3>AI & Automation</h3>
+            <ul class="skill-list">
+              <li>AI Agent Development</li>
+              <li>ChatGPT Integration</li>
+              <li>Natural Language Processing</li>
+              <li>MetaGPT</li>
+              <li>AutoGen</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="cell cell--12 cell--md-4">
+          <div class="skill-category">
+            <h3>Project Management</h3>
+            <ul class="skill-list">
+              <li>Agile</li>
+              <li>Scrum</li>
+              <li>Kanban</li>
+              <li>ITIL</li>
+              <li>Process Optimization</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Education</h2>
+
+    <div class="education-item">
+      <h3>Bachelor of Business Administration in Management Information Systems</h3>
+      <p class="education-institution">University of Houston, C.T. Bauer College of Business</p>
+      <p class="education-date">2009 - 2013</p>
+      <p>Developed a strong foundation in information systems, combining business acumen with technical proficiency.</p>
+    </div>
+
+    <div class="education-item">
+      <h3>Certificate in Corporate Entrepreneurship</h3>
+      <p class="education-institution">University of Houston</p>
+      <p class="education-date">2011 - 2012</p>
+      <p>Focused on innovative business practices and entrepreneurial strategies within corporate environments.</p>
+    </div>
+
+    <div class="education-item">
+      <h3>Certificate in Corporate Intrapreneurship</h3>
+      <p class="education-institution">University of Houston</p>
+      <p class="education-date">2012</p>
+      <p>Emphasized fostering innovation and entrepreneurial thinking within existing organizations.</p>
+    </div>
+  </div>
+
+  <div class="cta-section">
+    <h2>Let's Work Together</h2>
+    <p>Ready to transform your business processes and drive growth through automation?</p>
+    <a href="/contact" class="button button--success button--rounded button--lg">Get in Touch</a>
+  </div>
+</div>
+
+<style>
+.text-lead {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+}
+
+.hero-section {
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #eee;
+}
+
+.profile-image {
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profile-image img {
+  width: 100%;
+  height: auto;
+}
+
+.section {
+  margin-bottom: 4rem;
+}
+
+.timeline {
+  position: relative;
+  margin-left: 120px;
+}
+
+.timeline:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 2px;
+  background-color: #228B22;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 2.5rem;
+  padding-left: 2rem;
+}
+
+.timeline-date {
+  position: absolute;
+  left: -120px;
+  top: 0;
+  width: 100px;
+  text-align: right;
+  font-weight: bold;
+  color: #228B22;
+}
+
+.timeline-position {
+  font-style: italic;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.approach-card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  transition: transform 0.3s ease;
+}
+
+.approach-card:hover {
+  transform: translateY(-5px);
+}
+
+.approach-icon {
+  font-size: 2rem;
+  color: #228B22;
+  margin-bottom: 1rem;
+}
+
+.skill-category {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  margin-bottom: 2rem;
+}
+
+.skill-category h3 {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  color: #228B22;
+}
+
+.skill-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.skill-list li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.skill-list li:last-child {
+  border-bottom: none;
+}
+
+.education-item {
+  margin-bottom: 2rem;
+}
+
+.education-institution {
+  font-style: italic;
+}
+
+.education-date {
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.cta-section {
+  background-color: #f9f9f9;
+  padding: 3rem;
+  text-align: center;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  .timeline {
+    margin-left: 0;
+  }
+
+  .timeline-date {
+    position: static;
+    display: block;
+    width: auto;
+    text-align: left;
+    margin-bottom: 0.5rem;
+  }
+}
+</style>
+</div><div class="d-print-none"><footer class="article__footer"><!-- start custom article footer snippet -->
+
+<!-- end custom article footer snippet -->
+</footer>
+</div>
+
+</div>
+
+<script>(function() {
+  var SOURCES = window.TEXT_VARIABLES.sources;
+  window.Lazyload.js(SOURCES.jquery, function() {
+    $(function() {
+      var $this ,$scroll;
+      var $articleContent = $('.js-article-content');
+      var hasSidebar = $('.js-page-root').hasClass('layout--page--sidebar');
+      var scroll = hasSidebar ? '.js-page-main' : 'html, body';
+      $scroll = $(scroll);
+
+      $articleContent.find('.highlight').each(function() {
+        $this = $(this);
+        $this.attr('data-lang', $this.find('code').attr('data-lang'));
+      });
+      $articleContent.find('h1[id], h2[id], h3[id], h4[id], h5[id], h6[id]').each(function() {
+        $this = $(this);
+        $this.append($('<a class="anchor d-print-none" aria-hidden="true"></a>').html('<i class="fas fa-anchor"></i>'));
+      });
+      $articleContent.on('click', '.anchor', function() {
+        $scroll.scrollToAnchor('#' + $(this).parent().attr('id'), 400);
+      });
+    });
+  });
+})();
+</script>
+</div><section class="page__comments d-print-none"></section></article><!-- start custom main bottom snippet -->
+
+<!-- end custom main bottom snippet -->
+</div>
+            </div></div></div><div class="page__footer d-print-none">
+<footer class="footer py-4 js-page-footer">
+  <div class="main"><div itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Suleman S. Manji"><meta itemprop="url" content="/"><div class="footer__author-links"><div class="author-links">
+  <ul class="menu menu--nowrap menu--inline"><li title="Send me an Email.">
+      <a class="button button--circle mail-button" itemprop="email" href="mailto:ssmanji89@gmail.com" target="_blank">
+        <i class="fas fa-envelope"></i>
+      </a></ul>
+</div>
+</div>
+    </div><div class="site-info mt-2">
+    </div>
+  </div>
+</footer>
+</div></div>
+    </div><script>(function() {
+  var SOURCES = window.TEXT_VARIABLES.sources;
+  window.Lazyload.js(SOURCES.jquery, function() {
+    var $body = $('body'), $window = $(window);
+    var $pageRoot = $('.js-page-root'), $pageMain = $('.js-page-main');
+    var activeCount = 0;
+    function modal(options) {
+      var $root = this, visible, onChange, hideWhenWindowScroll = false;
+      var scrollTop;
+      function setOptions(options) {
+        var _options = options || {};
+        visible = _options.initialVisible === undefined ? false : show;
+        onChange = _options.onChange;
+        hideWhenWindowScroll = _options.hideWhenWindowScroll;
+      }
+      function init() {
+        setState(visible);
+      }
+      function setState(isShow) {
+        if (isShow === visible) {
+          return;
+        }
+        visible = isShow;
+        if (visible) {
+          activeCount++;
+          scrollTop = $(window).scrollTop() || $pageMain.scrollTop();
+          $root.addClass('modal--show');
+          $pageMain.scrollTop(scrollTop);
+          activeCount === 1 && ($pageRoot.addClass('show-modal'), $body.addClass('of-hidden'));
+          hideWhenWindowScroll && window.hasEvent('touchstart') && $window.on('scroll', hide);
+          $window.on('keyup', handleKeyup);
+        } else {
+          activeCount > 0 && activeCount--;
+          $root.removeClass('modal--show');
+          $window.scrollTop(scrollTop);
+          activeCount === 0 && ($pageRoot.removeClass('show-modal'), $body.removeClass('of-hidden'));
+          hideWhenWindowScroll && window.hasEvent('touchstart') && $window.off('scroll', hide);
+          $window.off('keyup', handleKeyup);
+        }
+        onChange && onChange(visible);
+      }
+      function show() {
+        setState(true);
+      }
+      function hide() {
+        setState(false);
+      }
+      function handleKeyup(e) {
+        // Char Code: 27  ESC
+        if (e.which ===  27) {
+          hide();
+        }
+      }
+      setOptions(options);
+      init();
+      return {
+        show: show,
+        hide: hide,
+        $el: $root
+      };
+    }
+    $.fn.modal = modal;
+  });
+})();
+</script><div class="modal modal--overflow page__search-modal d-print-none js-page-search-modal"></div></div>
+
+
+<script>(function() {
+  var SOURCES = window.TEXT_VARIABLES.sources;
+  window.Lazyload.js(SOURCES.jquery, function() {
+    function scrollToAnchor(anchor, duration, callback) {
+      var $root = this;
+      $root.animate({ scrollTop: $(anchor).position().top }, duration, function() {
+        window.history.replaceState(null, '', window.location.href.split('#')[0] + anchor);
+        callback && callback();
+      });
+    }
+    $.fn.scrollToAnchor = scrollToAnchor;
+  });
+})();
+(function() {
+  var SOURCES = window.TEXT_VARIABLES.sources;
+  window.Lazyload.js(SOURCES.jquery, function() {
+    function affix(options) {
+      var $root = this, $window = $(window), $scrollTarget, $scroll,
+        offsetBottom = 0, scrollTarget = window, scroll = window.document, disabled = false, isOverallScroller = true,
+        rootTop, rootLeft, rootHeight, scrollBottom, rootBottomTop,
+        hasInit = false, curState;
+
+      function setOptions(options) {
+        var _options = options || {};
+        _options.offsetBottom && (offsetBottom = _options.offsetBottom);
+        _options.scrollTarget && (scrollTarget = _options.scrollTarget);
+        _options.scroll && (scroll = _options.scroll);
+        _options.disabled !== undefined && (disabled = _options.disabled);
+        $scrollTarget = $(scrollTarget);
+        isOverallScroller = window.isOverallScroller($scrollTarget[0]);
+        $scroll = $(scroll);
+      }
+      function preCalc() {
+        top();
+        rootHeight = $root.outerHeight();
+        rootTop = $root.offset().top + (isOverallScroller ? 0 :  $scrollTarget.scrollTop());
+        rootLeft = $root.offset().left;
+      }
+      function calc(needPreCalc) {
+        needPreCalc && preCalc();
+        scrollBottom = $scroll.outerHeight() - offsetBottom - rootHeight;
+        rootBottomTop = scrollBottom - rootTop;
+      }
+      function top() {
+        if (curState !== 'top') {
+          $root.removeClass('fixed').css({
+            left: 0,
+            top: 0
+          });
+          curState = 'top';
+        }
+      }
+      function fixed() {
+        if (curState !== 'fixed') {
+          $root.addClass('fixed').css({
+            left: rootLeft + 'px',
+            top: 0
+          });
+          curState = 'fixed';
+        }
+      }
+      function bottom() {
+        if (curState !== 'bottom') {
+          $root.removeClass('fixed').css({
+            left: 0,
+            top: rootBottomTop + 'px'
+          });
+          curState = 'bottom';
+        }
+      }
+      function setState() {
+        var scrollTop = $scrollTarget.scrollTop();
+        if (scrollTop >= rootTop && scrollTop <= scrollBottom) {
+          fixed();
+        } else if (scrollTop < rootTop) {
+          top();
+        } else {
+          bottom();
+        }
+      }
+      function init() {
+        if(!hasInit) {
+          var interval, timeout;
+          calc(true); setState();
+          // run calc every 100 millisecond
+          interval = setInterval(function() {
+            calc();
+          }, 100);
+          timeout = setTimeout(function() {
+            clearInterval(interval);
+          }, 45000);
+          window.pageLoad.then(function() {
+            setTimeout(function() {
+              clearInterval(interval);
+              clearTimeout(timeout);
+            }, 3000);
+          });
+          $scrollTarget.on('scroll', function() {
+            disabled || setState();
+          });
+          $window.on('resize', function() {
+            disabled || (calc(true), setState());
+          });
+          hasInit = true;
+        }
+      }
+
+      setOptions(options);
+      if (!disabled) {
+        init();
+      }
+      $window.on('resize', window.throttle(function() {
+        init();
+      }, 200));
+      return {
+        setOptions: setOptions,
+        refresh: function() {
+          calc(true, { animation: false }); setState();
+        }
+      };
+    }
+    $.fn.affix = affix;
+  });
+})();
+(function() {
+  var SOURCES = window.TEXT_VARIABLES.sources;
+  window.Lazyload.js(SOURCES.jquery, function() {
+    function toc(options) {
+      var $root = this, $window = $(window), $scrollTarget, $scroller, $tocUl = $('<ul class="toc toc--ellipsis"></ul>'), $tocLi, $headings, $activeLast, $activeCur,
+        selectors = 'h1,h2,h3', container = 'body', scrollTarget = window, scroller = 'html, body', disabled = false,
+        headingsPos, scrolling = false, hasRendered = false, hasInit = false;
+
+      function setOptions(options) {
+        var _options = options || {};
+        _options.selectors && (selectors = _options.selectors);
+        _options.container && (container = _options.container);
+        _options.scrollTarget && (scrollTarget = _options.scrollTarget);
+        _options.scroller && (scroller = _options.scroller);
+        _options.disabled !== undefined && (disabled = _options.disabled);
+        $headings = $(container).find(selectors).filter('[id]');
+        $scrollTarget = $(scrollTarget);
+        $scroller = $(scroller);
+      }
+      function calc() {
+        headingsPos = [];
+        $headings.each(function() {
+          headingsPos.push(Math.floor($(this).position().top));
+        });
+      }
+      function setState(element, disabled) {
+        var scrollTop = $scrollTarget.scrollTop(), i;
+        if (disabled || !headingsPos || headingsPos.length < 1) { return; }
+        if (element) {
+          $activeCur = element;
+        } else {
+          for (i = 0; i < headingsPos.length; i++) {
+            if (scrollTop >= headingsPos[i]) {
+              $activeCur = $tocLi.eq(i);
+            } else {
+              $activeCur || ($activeCur = $tocLi.eq(i));
+              break;
+            }
+          }
+        }
+        $activeLast && $activeLast.removeClass('active');
+        ($activeLast = $activeCur).addClass('active');
+      }
+      function render() {
+        if(!hasRendered) {
+          $root.append($tocUl);
+          $headings.each(function() {
+            var $this = $(this);
+            $tocUl.append($('<li></li>').addClass('toc-' + $this.prop('tagName').toLowerCase())
+              .append($('<a></a>').text($this.text()).attr('href', '#' + $this.prop('id'))));
+          });
+          $tocLi = $tocUl.children('li');
+          $tocUl.on('click', 'a', function(e) {
+            e.preventDefault();
+            var $this = $(this);
+            scrolling = true;
+            setState($this.parent());
+            $scroller.scrollToAnchor($this.attr('href'), 400, function() {
+              scrolling = false;
+            });
+          });
+        }
+        hasRendered = true;
+      }
+      function init() {
+        var interval, timeout;
+        if(!hasInit) {
+          render(); calc(); setState(null, scrolling);
+          // run calc every 100 millisecond
+          interval = setInterval(function() {
+            calc();
+          }, 100);
+          timeout = setTimeout(function() {
+            clearInterval(interval);
+          }, 45000);
+          window.pageLoad.then(function() {
+            setTimeout(function() {
+              clearInterval(interval);
+              clearTimeout(timeout);
+            }, 3000);
+          });
+          $scrollTarget.on('scroll', function() {
+            disabled || setState(null, scrolling);
+          });
+          $window.on('resize', window.throttle(function() {
+            if (!disabled) {
+              render(); calc(); setState(null, scrolling);
+            }
+          }, 100));
+        }
+        hasInit = true;
+      }
+
+      setOptions(options);
+      if (!disabled) {
+        init();
+      }
+      $window.on('resize', window.throttle(function() {
+        init();
+      }, 200));
+      return {
+        setOptions: setOptions
+      };
+    }
+    $.fn.toc = toc;
+  });
+})();
+/*(function () {
+
+})();*/
+</script>
+    </div>
+    
+    <script>(function () {
+  var $root = document.getElementsByClassName('root')[0];
+  if (window.hasEvent('touchstart')) {
+    $root.dataset.isTouch = true;
+    document.addEventListener('touchstart', function(){}, false);
+  }
+})();
+</script>
+  </body>
+</html>
+
