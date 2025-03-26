@@ -1,19 +1,20 @@
 header:
-  - title: Home
+  - title: About
     url: /
   - title: Services
-    url: /services/
-    key: services
-    children:
-      - title: Microsoft 365 Power Platform
-        url: /services/power-platform/
-      - title: Cloud Infrastructure Automation
-        url: /services/cloud-automation/
-      - title: AI-Enhanced Process Automation
-        url: /services/ai-automation/
+    url: /services
   - title: Case Studies
-    url: /case-studies/
-  - title: About
-    url: /about/
+    url: /case-studies
   - title: Contact
-    url: /contact/
+    url: /contact
+
+footer:
+  - title: LinkedIn
+    url: https://www.linkedin.com/in/sulemanmanji
+    external: true
+  - title: GitHub
+    url: https://github.com/ssmanji89
+    external: true
+  - title: Download Resume
+    url: /assets/Resume-Detailed-281.904.1969.pdf
+    external: true
