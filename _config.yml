@@ -6,21 +6,19 @@ description: >
 url: "https://www.sulemanji.com"
 baseurl: ""
 
-# SEO Settings
-author: Suleman S. Manji
-twitter:
-  username: ssmanji89
-  card: summary
-
-social:
-  name: Suleman S. Manji
-  links:
-    - https://www.linkedin.com/in/sulemanmanji
-    - https://github.com/ssmanji89
+# Theme Settings
+theme: jekyll-text-theme
+remote_theme: kitian616/jekyll-TeXt-theme
 
 # Build Settings
 markdown: kramdown
-theme: jekyll-text-theme
+highlighter: rouge
+
+# Conversion
+incremental: false
+
+# Serving
+detach: false
 
 # Plugins
 plugins:
@@ -29,18 +27,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-redirect-from
-
-# Conversion
-highlighter: rouge
-incremental: false
-
-# Serving
-detach: false
-
-# Outputting
-permalink: /:categories/:title/
-paginate: 5
-paginate_path: "/blog/page:num/"
+  - jemoji
 
 # Markdown Processing
 kramdown:
@@ -59,9 +46,8 @@ defaults:
       path: ""
       type: "pages"
     values:
-      layout: "default"
+      layout: "page"
       comments: false
-      author_profile: true
       sidebar:
         nav: "main"
 
@@ -74,18 +60,26 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
-  - docker
   - README.md
-  - HOW_TO_RELEASE.md
-  - .travis.yml
-  - .eslintrc
-  - .editorconfig
-  - .commitlintrc.js
+  - LICENSE
 
-# Custom Configuration
+# Theme Specific Configuration
+text_skin: default
+highlight_theme: default
+lang: en
+timezone: America/Chicago
+
+# Author
+author:
+  name: Suleman S. Manji
+  email: ssmanji89@gmail.com
+  links:
+    - label: LinkedIn
+      icon: fab fa-linkedin
+      url: https://www.linkedin.com/in/sulemanmanji
+    - label: GitHub
+      icon: fab fa-github
+      url: https://github.com/ssmanji89
+
+# CDN and Performance
 image_cdn: https://cdn.sulemanji.com
-
-# Additional SEO configurations
-webmaster_verifications:
-  google: your_google_site_verification_code
-  bing: your_bing_site_verification_code

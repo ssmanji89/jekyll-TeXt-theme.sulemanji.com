@@ -4,7 +4,10 @@ source 'https://rubygems.org'
 gem 'jekyll', '~> 4.4.1'
 
 # Theme
-gem 'jekyll-text-theme'
+gem 'jekyll-text-theme', git: 'https://github.com/kitian616/jekyll-TeXt-theme.git'
+
+# GitHub Pages gem for compatibility
+gem 'github-pages', group: :jekyll_plugins
 
 # Plugins
 group :jekyll_plugins do
