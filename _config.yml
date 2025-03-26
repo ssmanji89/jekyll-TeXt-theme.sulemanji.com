@@ -4,13 +4,13 @@ description: Business Process Automation Specialist with expertise in Microsoft 
 url: "https://www.sulemanji.com"
 baseurl: ""
 
+# Jekyll and GitHub Pages Configuration
+markdown: kramdown
+highlighter: rouge
+
 # Theme Configuration
 theme: jekyll-text-theme
 remote_theme: "kitian616/jekyll-TeXt-theme"
-
-# Build Settings
-markdown: kramdown
-highlighter: rouge
 
 # Plugins
 plugins:
@@ -28,11 +28,15 @@ kramdown:
   input: GFM
   hard_wrap: false
   syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
 
 # Theme-Specific Settings
 text_skin: default
 highlight_theme: default
 lang: en
+timezone: America/Chicago
 
 # Author Information
 author:
@@ -45,6 +49,10 @@ author:
     - label: GitHub
       icon: fab fa-github
       url: https://github.com/ssmanji89
+
+# Build Settings
+incremental: false
+future: false
 
 # Exclude from Processing
 exclude:
