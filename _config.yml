@@ -37,7 +37,7 @@ author:
   type      : person # "person" (default), "organization"
   name      : Suleman Manji
   url       : https://www.sulemanji.com
-  avatar    : /assets/images/sulemanji-profile.png # path or url of avatar image (square)
+  avatar    : /assets/images/sulemanji-profile.jpg # path or url of avatar image (square)
   bio       : Business Process Automation Expert specializing in Microsoft 365, Power Platform, and AI-driven solutions.
   email     : ssmanji89@gmail.com
   facebook  : # "user_name" the last part of your profile url, e.g. https://www.facebook.com/user_name
