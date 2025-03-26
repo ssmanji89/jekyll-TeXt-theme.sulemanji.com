@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<head>
+  {%- include head.html -%}
+  
+  <!-- Theme and Color Handling -->
+  <style>
+    :root {
+      /* Light Mode Colors */
+      --background-light: #ffffff;
+      --text-primary-light: #333333;
+      --text-secondary-light: #666666;
+      --accent-light: #228B22;
+
+      /* Dark Mode Colors */
+      --background-dark: #121212;
+      --text-primary-dark: #e0e0e0;
+      --text-secondary-dark: #a0a0a0;
+      --accent-dark: #4CAF50;
+    }
+
+    body {
+      background-color: var(--background-light);
+      color: var(--text-primary-light);
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    body.dark-mode {
+      background-color: var(--background-dark);
+      color: var(--text-primary-dark);
+    }
+  </style>
+
+  <!-- Theme Toggle -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const themeToggle = document.getElementById('theme-toggle');
+      const body = document.body;
+
+      // Check saved theme preference
+      const savedTheme = localStorage.getItem('site-theme');
+      if (savedTheme === 'dark') {
+        body.classList.add('dark-mode');
+      }
+
+      if (themeToggle) {
+        themeToggle.addEventListener('click', function() {
+          body.classList.toggle('dark-mode');
+          
+          // Save theme preference
+          const isDarkMode = body.classList.contains('dark-mode');
+          localStorage.setItem('site-theme', isDarkMode ? 'dark' : 'light');
+        });
+      }
+    });
+  </script>
+</head>
+
+<body>
+  {%- include header.html -%}
+
+  <main class="main">
+    {{ content }}
+  </main>
+
+  {%- include footer.html -%}
+
+  <!-- Global Image Handler -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const imageMap = {
+        'profile-image': 'https://raw.githubusercontent.com/ssmanji89/jekyll-TeXt-theme.sulemanji.com/master/assets/images/sulemanji-profile.jpg',
+        'case-study-cover': 'https://cdn.sulemanji.com/case-studies/cover-placeholder.jpg'
+      };
+
+      Object.keys(imageMap).forEach(key => {
+        const elements = document.querySelectorAll(`[data-image-key="${key}"]`);
+        elements.forEach(el => {
+          el.src = imageMap[key];
+          el.setAttribute('alt', `Suleman Manji - ${key}`);
+        });
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,44 +1,74 @@
-/* Custom SCSS Imports */
-@import "custom/accessibility";
+// Global Theme Variables
+:root {
+  // Light Mode
+  --bg-light: #ffffff;
+  --text-primary-light: #333333;
+  --text-secondary-light: #666666;
+  --accent-light: #228B22;
 
-// External Image References Handler
-.external-image {
-  max-width: 100%;
-  height: auto;
-  object-fit: cover;
-  transition: transform 0.3s ease;
+  // Dark Mode
+  --bg-dark: #121212;
+  --text-primary-dark: #e0e0e0;
+  --text-secondary-dark: #a0a0a0;
+  --accent-dark: #4CAF50;
+}
 
-  &:hover {
-    transform: scale(1.02);
+// Dark Mode Base Styles
+body {
+  background-color: var(--bg-light);
+  color: var(--text-primary-light);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+  background-color: var(--bg-dark);
+  color: var(--text-primary-dark);
+
+  // Dark mode specific adjustments
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--text-primary-dark);
+  }
+
+  p, span, div {
+    color: var(--text-secondary-dark);
+  }
+
+  a {
+    color: var(--accent-dark);
   }
 }
 
-// Ensure External Image References
-@mixin external-image-handler {
-  img {
-    @extend .external-image;
-    
-    // Ensure no locally stored images
-    @if str-index(#{&}, 'local-') {
-      display: none;
-      content: 'Invalid local image reference';
-    }
+// Universal Accessibility Improvements
+* {
+  transition: color 0.3s, background-color 0.3s;
+}
+
+// Text Readability Enhancements
+body {
+  line-height: 1.6;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+// Specific Component Theme Handling
+.card, .case-study-card, .availability-card {
+  background-color: var(--bg-light);
+  color: var(--text-primary-light);
+  
+  body.dark-mode & {
+    background-color: #1e1e1e;
+    color: var(--text-primary-dark);
   }
 }
 
-// Apply to key components
-.case-study-card {
-  @include external-image-handler;
-}
-
-.service-card {
-  @include external-image-handler;
-}
-
-// Responsive Image Handling
-@media (max-width: 768px) {
-  .external-image {
-    width: 100%;
-    max-height: 300px;
+// Form Elements Theme Support
+input, textarea, select {
+  background-color: var(--bg-light);
+  color: var(--text-primary-light);
+  border: 1px solid #ddd;
+  
+  body.dark-mode & {
+    background-color: #2a2a2a;
+    color: var(--text-primary-dark);
+    border-color: #444;
   }
 }
