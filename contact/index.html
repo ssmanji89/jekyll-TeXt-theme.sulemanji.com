@@ -4,7 +4,7 @@ title: Contact Me
 permalink: /contact/
 ---
 
-<div class="grid-container">
+<div class="grid-container contact-page">
   <div class="hero-section">
     <h1>Get in Touch</h1>
     <p class="text-lead">Let's discuss how automation can transform your business processes and drive growth. Reach out using any of the methods below, and I'll get back to you promptly.</p>
@@ -118,87 +118,160 @@ permalink: /contact/
 </div>
 
 <style>
+:root {
+  /* Light mode colors */
+  --primary-text-color: #333;
+  --secondary-text-color: #555;
+  --background-color: #ffffff;
+  --form-background: #f9f9f9;
+  --border-color: #ddd;
+  --icon-color: #228B22;
+  
+  /* Dark mode colors */
+  --dark-primary-text-color: #e0e0e0;
+  --dark-secondary-text-color: #b0b0b0;
+  --dark-background-color: #121212;
+  --dark-form-background: #1e1e1e;
+  --dark-border-color: #333;
+}
+
+.contact-page {
+  color: var(--primary-text-color);
+  background-color: var(--background-color);
+  transition: all 0.3s ease;
+}
+
+/* Dark mode adjustments */
+.dark-mode .contact-page {
+  color: var(--dark-primary-text-color);
+  background-color: var(--dark-background-color);
+}
+
 .text-lead {
   font-size: 1.25rem;
   line-height: 1.6;
   font-weight: 300;
   margin-bottom: 1.5rem;
+  color: var(--secondary-text-color);
+}
+
+.dark-mode .text-lead {
+  color: var(--dark-secondary-text-color);
 }
 
 .hero-section {
   margin-bottom: 3rem;
   padding-bottom: 2rem;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid var(--border-color);
 }
 
-.section {
-  margin-bottom: 4rem;
-}
-
-.contact-info {
-  margin-bottom: 2rem;
+.dark-mode .hero-section {
+  border-bottom-color: var(--dark-border-color);
 }
 
 .contact-method {
   margin-bottom: 2rem;
 }
 
+.contact-method h3 {
+  color: var(--primary-text-color);
+  margin-bottom: 0.5rem;
+}
+
+.dark-mode .contact-method h3 {
+  color: var(--dark-primary-text-color);
+}
+
+.contact-method p,
+.contact-method a {
+  color: var(--secondary-text-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.dark-mode .contact-method p,
+.dark-mode .contact-method a {
+  color: var(--dark-secondary-text-color);
+}
+
+.contact-method a:hover {
+  color: var(--icon-color);
+}
+
 .contact-icon {
   font-size: 2rem;
-  color: #228B22;
+  color: var(--icon-color);
   margin-bottom: 1rem;
 }
 
 .contact-form-container {
-  background-color: #f9f9f9;
+  background-color: var(--form-background);
   padding: 2rem;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: var(--primary-text-color);
 }
 
-.form-group {
-  margin-bottom: 1.5rem;
+.dark-mode .contact-form-container {
+  background-color: var(--dark-form-background);
+  color: var(--dark-primary-text-color);
 }
 
 .form-group label {
   display: block;
   margin-bottom: 0.5rem;
   font-weight: bold;
+  color: var(--primary-text-color);
+}
+
+.dark-mode .form-group label {
+  color: var(--dark-primary-text-color);
 }
 
 .form-group input,
 .form-group textarea {
   width: 100%;
   padding: 0.75rem;
-  border: 1px solid #ddd;
+  border: 1px solid var(--border-color);
   border-radius: 4px;
   font-size: 1rem;
+  background-color: #ffffff;
+  color: var(--primary-text-color);
 }
 
-.availability-section {
-  text-align: center;
-}
-
-.availability-section p {
-  margin-bottom: 2rem;
+.dark-mode .form-group input,
+.dark-mode .form-group textarea {
+  background-color: #2a2a2a;
+  border-color: var(--dark-border-color);
+  color: var(--dark-primary-text-color);
 }
 
 .availability-card {
-  background-color: #fff;
+  background-color: var(--form-background);
   border-radius: 8px;
   padding: 2rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   height: 100%;
   transition: transform 0.3s ease;
+  color: var(--primary-text-color);
 }
 
-.availability-card:hover {
-  transform: translateY(-5px);
+.dark-mode .availability-card {
+  background-color: var(--dark-form-background);
+  color: var(--dark-primary-text-color);
+}
+
+.availability-card h3 {
+  color: var(--primary-text-color);
+}
+
+.dark-mode .availability-card h3 {
+  color: var(--dark-primary-text-color);
 }
 
 .availability-icon {
   font-size: 2rem;
-  color: #228B22;
+  color: var(--icon-color);
   margin-bottom: 1rem;
 }
 
@@ -208,3 +281,29 @@ permalink: /contact/
   }
 }
 </style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Enhance form accessibility
+  const form = document.querySelector('.contact-form');
+  const inputs = form.querySelectorAll('input, textarea');
+  
+  inputs.forEach(input => {
+    input.addEventListener('invalid', function() {
+      this.setAttribute('aria-invalid', 'true');
+    });
+    
+    input.addEventListener('input', function() {
+      this.removeAttribute('aria-invalid');
+    });
+  });
+
+  // Toggle dark mode compatibility
+  const darkModeToggle = document.querySelector('.dark-mode-toggle');
+  if (darkModeToggle) {
+    darkModeToggle.addEventListener('click', function() {
+      document.body.classList.toggle('dark-mode');
+    });
+  }
+});
+</script>
