@@ -1,0 +1,12 @@
+PASS exact sparse-polynomial identity: det(JF) == -2
+PASS collision point 1: F(Fraction(0, 1), Fraction(0, 1), Fraction(-1, 4)) = (Fraction(-1, 4), Fraction(0, 1), Fraction(0, 1))
+PASS collision point 2: F(Fraction(1, 1), Fraction(-3, 2), Fraction(13, 2)) = (Fraction(-1, 4), Fraction(0, 1), Fraction(0, 1))
+PASS collision point 3: F(Fraction(-1, 1), Fraction(3, 2), Fraction(13, 2)) = (Fraction(-1, 4), Fraction(0, 1), Fraction(0, 1))
+PASS normalized Lean variant: det(JL) == 1 and its two points collide
+PASS conclusion: F is polynomial, everywhere étale, and not injective
+PASS SymPy exact determinant: -2
+PASS compact hand-proof factorization and chain decomposition
+PASS SymPy collision point 1: F(0, 0, -1/4) = (Fraction(-1, 4), Fraction(0, 1), Fraction(0, 1))
+PASS SymPy collision point 2: F(1, -3/2, 13/2) = (Fraction(-1, 4), Fraction(0, 1), Fraction(0, 1))
+PASS SymPy collision point 3: F(-1, 3/2, 13/2) = (Fraction(-1, 4), Fraction(0, 1), Fraction(0, 1))
+PASS SymPy normalized Lean variant: determinant 1 and exact collision
