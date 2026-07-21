@@ -221,16 +221,17 @@ The verification bundle deliberately uses different trust paths. Humanity has pr
 | Path | Arithmetic | What it checks |
 |---|---|---|
 | `verify_exact.py` | Custom sparse polynomials over `fractions.Fraction`; no third-party packages | Full coefficient identity \(\det JF=-2\), all three collision points, normalized Lean variant |
-| `verify_sympy.py` | SymPy 1.14.0 exact symbolic and rational arithmetic | Independent determinant expansion, collisions, normalization relation |
+| `verify_sympy.py` | SymPy 1.14.0 exact symbolic and rational arithmetic | Independent determinant expansion, compact hand-proof factorization, collisions, normalization relation |
 | Public Lean formalization | Lean kernel checking in Google DeepMind's `formal-conjectures` repository | A determinant-one normalized variant, exact collision, and the formal theorem that the conjecture is false over characteristic-zero fields |
 
-Run locally:
+Run locally from a clone of this repository:
 
 ```bash
+cd assets/code/jacobian-counterexample
 python -m venv .venv
 . .venv/bin/activate
 python -m pip install -r requirements.txt
-./run_verification.sh
+bash run_verification.sh
 sha256sum -c SHA256SUMS
 ```
 
