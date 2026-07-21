@@ -20,6 +20,37 @@ def main() -> None:
     determinant = sp.cancel(mapping.jacobian((x, y, z)).det())
     assert determinant == -2
 
+    # Verify every algebraic step used by the compact hand proof.
+    q_aux = u**2 * z + y**2 * (4 + 3 * x * y)
+    assert sp.expand(mapping[0] - u * q_aux) == 0
+    assert sp.expand(mapping[1] - (y + 3 * x * q_aux)) == 0
+    assert sp.expand(u**2 * mapping[2] - x * (u + 1 - x**2 * q_aux)) == 0
+
+    q_symbol = sp.symbols("q")
+    g = sp.Matrix(
+        [
+            u * q_symbol,
+            y + 3 * x * q_symbol,
+            x * (u + 1 - x**2 * q_symbol) / u**2,
+        ]
+    )
+    jg = g.jacobian((x, y, q_symbol))
+    hand_matrix = jg.copy()
+    hand_matrix[2, :] = u**3 * hand_matrix[2, :]
+    expected_hand_matrix = sp.Matrix(
+        [
+            [q_symbol * y, q_symbol * x, u],
+            [3 * q_symbol, 1, 3 * x],
+            [
+                2 - (u + 2) * x**2 * q_symbol,
+                x**2 * (2 * x**2 * q_symbol - u - 2),
+                -x**3 * u,
+            ],
+        ]
+    )
+    assert all(sp.cancel(a - b) == 0 for a, b in zip(hand_matrix, expected_hand_matrix))
+    assert sp.factor(expected_hand_matrix.det() + 2 * u) == 0
+
     points = (
         (sp.Rational(0), sp.Rational(0), sp.Rational(-1, 4)),
         (sp.Rational(1), sp.Rational(-3, 2), sp.Rational(13, 2)),
@@ -45,6 +76,7 @@ def main() -> None:
     assert lean_images[0] == lean_images[1]
 
     print(f"PASS SymPy exact determinant: {determinant}")
+    print("PASS compact hand-proof factorization and chain decomposition")
     for index, (point, image) in enumerate(zip(points, images), start=1):
         rendered = tuple(Fraction(int(v.p), int(v.q)) for v in image)
         print(f"PASS SymPy collision point {index}: F{point} = {rendered}")
