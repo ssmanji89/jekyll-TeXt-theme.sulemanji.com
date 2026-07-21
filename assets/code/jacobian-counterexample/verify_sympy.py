@@ -51,6 +51,22 @@ def main() -> None:
     assert all(sp.cancel(a - b) == 0 for a, b in zip(hand_matrix, expected_hand_matrix))
     assert sp.factor(expected_hand_matrix.det() + 2 * u) == 0
 
+    # Check the displayed determinant factorization before imposing U = 1 + xy.
+    U = sp.symbols("U")
+    formal_hand_matrix = sp.Matrix(
+        [
+            [q_symbol * y, q_symbol * x, U],
+            [3 * q_symbol, 1, 3 * x],
+            [
+                2 - (U + 2) * x**2 * q_symbol,
+                x**2 * (2 * x**2 * q_symbol - U - 2),
+                -x**3 * U,
+            ],
+        ]
+    )
+    displayed_factor = -2 * q_symbol * x**2 * (x * y + 1 - U) * (3 * q_symbol * x**2 - U - 3)
+    assert sp.expand(formal_hand_matrix.det() + 2 * U - displayed_factor) == 0
+
     points = (
         (sp.Rational(0), sp.Rational(0), sp.Rational(-1, 4)),
         (sp.Rational(1), sp.Rational(-3, 2), sp.Rational(13, 2)),
