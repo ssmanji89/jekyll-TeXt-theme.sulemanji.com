@@ -524,7 +524,7 @@ F(A)=F(B)=F(C)=\left(-\frac14,0,0\right).
     <tr>
       <td><code class="language-plaintext highlighter-rouge">verify_sympy.py</code></td>
       <td>SymPy 1.14.0 exact symbolic and rational arithmetic</td>
-      <td>Independent determinant expansion, collisions, normalization relation</td>
+      <td>Independent determinant expansion, compact hand-proof factorization, collisions, normalization relation</td>
     </tr>
     <tr>
       <td>Public Lean formalization</td>
@@ -534,17 +534,19 @@ F(A)=F(B)=F(C)=\left(-\frac14,0,0\right).
   </tbody>
 </table>
 
-<p>Run locally:</p>
+<p>Run locally from a clone of this repository:</p>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 3
 4
 5
-</pre></td><td class="rouge-code"><pre>python <span class="nt">-m</span> venv .venv
+6
+</pre></td><td class="rouge-code"><pre><span class="nb">cd </span>assets/code/jacobian-counterexample
+python <span class="nt">-m</span> venv .venv
 <span class="nb">.</span> .venv/bin/activate
 python <span class="nt">-m</span> pip <span class="nb">install</span> <span class="nt">-r</span> requirements.txt
-./run_verification.sh
+bash run_verification.sh
 <span class="nb">sha256sum</span> <span class="nt">-c</span> SHA256SUMS
 </pre></td></tr></tbody></table></code></pre></div></div>
 
